@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="mypassword"/>
+    <parameter name="uname" value="software@qa.com"/>
+    <classes>
+      <class name="ipltesting.SoftAssertExample">
+        <methods>
+          <include name="tc2"/>
+        </methods>
+      </class> <!-- ipltesting.SoftAssertExample -->
+      <class name="ipltesting.ParametersExample">
+        <methods>
+          <include name="ValidusrnameValidPasswordTest"/>
+        </methods>
+      </class> <!-- ipltesting.ParametersExample -->
+      <class name="ipltesting.Para_Example">
+        <methods>
+          <include name="validLogin"/>
+          <include name="InvalidLogin"/>
+        </methods>
+      </class> <!-- ipltesting.Para_Example -->
+      <class name="ipltesting.ReadExcel">
+        <methods>
+          <include name="WriteExcel"/>
+        </methods>
+      </class> <!-- ipltesting.ReadExcel -->
+      <class name="ipltesting.Rollsroyce">
+        <methods>
+          <include name="mediaNavigation"/>
+        </methods>
+      </class> <!-- ipltesting.Rollsroyce -->
+      <class name="ipltesting.RobotExample">
+        <methods>
+          <include name="robotExample"/>
+        </methods>
+      </class> <!-- ipltesting.RobotExample -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

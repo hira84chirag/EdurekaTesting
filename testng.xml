@@ -7,11 +7,9 @@
 		<parameter name="password" value="mypassword"></parameter>
 		
 		<packages>
-			
+			<package name="ipltesting"></package>
 			</packages>
 
-	 	<classes>
-			<class name="ipltesting.AlertExample" />
-		</classes>
+
  	</test> 
 </suite> 
