@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+// parameter  para_exmple for that
+	
+		
+<!-- 		<parameter name="browser" value="chrome" /> -->
+<!-- 		<parameter name="Fb" value="https://www.facebook.com" /> -->
+		
+		<packages>				 
+			 <package name="Live_testcases"></package>
+		</packages>
+	 	
+	 	<classes> 
+	 			 		 
+		</classes>
+ 	</test> 
+</suite> 
+
+		<!-- 	
+	 		<class name="ipltesting.BrowserCommand"/>
+			<class name="ipltesting.AllAnnotationExample"/>
+	 		<class name="ipltesting.DataproviderExample"/>
+			<class name="ipltesting.DependacyExample"/>
+			<class name="ipltesting.GroupsExample"/> 
+			<class name="ipltesting.GroupsTesting"/>
+			<class name="ipltesting.HardAssertExample"/>
+	 		<class name="ipltesting.IframeExample"/> 		
+			<class name="ipltesting.LocatorExample"/>
+			<class name="ipltesting.Para_Example"/>
+	 		<class name="ipltesting.ParametersExample"/>
+	 		<class name="ipltesting.Rollsroycewait"/>
+	 		<class name="ipltesting.ScrollExample"/>
+			<class name="ipltesting.Testing"/>
+	 		<class name="ipltesting.TestPriorityExample"/>
+	 		<class name="ipltesting.TestRelatedExample"/>
+	 		<class name="ipltesting.SoftAssertExample"/>
+	 		<class name="ipltesting.StaleElementExample"/>
+	 		<class name="ipltesting.WaitExample"/>
+	 		<class name="ipltesting.ReadExcel"/>	
+	 		<class name="ipltesting.WebElementCommand"/>	
+	
+		<parameter name="Username" value="software@qa.com"></parameter>		
+		<parameter name="Password" value="mypassword"></parameter>
+		<parameter name="Username1" value="software@qa.com"></parameter>		
+		<parameter name="Password1" value="mypassword"></parameter>
+		<parameter name="uname" value="software@qa.com"></parameter>
+		<parameter name="password" value="mypassword"></parameter>	
+			
+	
+			-->
+			
+			
