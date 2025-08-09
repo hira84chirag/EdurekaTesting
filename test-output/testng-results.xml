@@ -1,35 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-01T23:17:59 IST" name="Suite" finished-at="2025-08-01T23:18:14 IST" duration-ms="15019">
+  <suite started-at="2025-08-09T17:14:57 IST" name="Default suite" finished-at="2025-08-09T17:15:08 IST" duration-ms="11173">
     <groups>
     </groups>
-    <test started-at="2025-08-01T23:17:59 IST" name="Test" finished-at="2025-08-01T23:18:14 IST" duration-ms="15019">
-      <class name="basic.Flipkart">
-        <test-method signature="software()[pri:0, instance:basic.Flipkart@3e2055d6]" started-at="2025-08-01T23:18:06 IST" name="software" finished-at="2025-08-01T23:18:10 IST" duration-ms="3615" status="PASS">
+    <test started-at="2025-08-09T17:14:57 IST" name="Default test" finished-at="2025-08-09T17:15:08 IST" duration-ms="11173">
+      <class name="ipltesting.AlertExample">
+        <test-method signature="alertDemo()[pri:0, instance:ipltesting.AlertExample@12591ac8]" started-at="2025-08-09T17:14:57 IST" name="alertDemo" finished-at="2025-08-09T17:15:08 IST" duration-ms="11051" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- software -->
-      </class> <!-- basic.Flipkart -->
-      <class name="basic.RadioButton_Facebook">
-        <test-method signature="webElementCommandDemo()[pri:0, instance:basic.RadioButton_Facebook@e3b3b2f]" started-at="2025-08-01T23:18:10 IST" name="webElementCommandDemo" finished-at="2025-08-01T23:18:14 IST" duration-ms="4206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- webElementCommandDemo -->
-      </class> <!-- basic.RadioButton_Facebook -->
-      <class name="basic.Java_set_map">
-        <test-method signature="setExample()[pri:0, instance:basic.Java_set_map@50029372]" started-at="2025-08-01T23:18:10 IST" name="setExample" finished-at="2025-08-01T23:18:10 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setExample -->
-      </class> <!-- basic.Java_set_map -->
-      <class name="basic.Dummy">
-        <test-method signature="Testcheckbox()[pri:0, instance:basic.Dummy@769a1df5]" started-at="2025-08-01T23:17:59 IST" name="Testcheckbox" finished-at="2025-08-01T23:18:06 IST" duration-ms="7047" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Testcheckbox -->
-      </class> <!-- basic.Dummy -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- alertDemo -->
+      </class> <!-- ipltesting.AlertExample -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -84,7 +84,7 @@ public class CommonFunctions {
 	public static String Snap(WebDriver driver,String name)  
 	{
 		String path=null;			
-		String fileName= "C:\\Users\\Dell Enterprise\\eclipse-workspace\\Training\\test-output\\Screenshot\\";
+		String fileName= "C:\\Users\\Dell Enterprise\\eclipse-workspace\\EdurekaTesting\\test-output\\Screenshot\\";
 
 		try{			
 		//Unique DateTimestamp code		
@@ -181,7 +181,7 @@ public class CommonFunctions {
 		
 		BufferedImage bufferedImage =robot.createScreenCapture(rect);
 		// Create a file name
-		String screenshotPath = System.getProperty("user.dir")+"//test-output//photo//"+filename+System.currentTimeMillis() + ".jpg";;
+		String screenshotPath = System.getProperty("user.dir")+"//test-output//Screenshot//"+filename+System.currentTimeMillis() + ".jpg";;
 		
 		File destinationFile = new File(screenshotPath);
 
