@@ -1,8 +1,4 @@
 package ipltesting;
-
-import java.io.File;
-import java.util.Collections;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,11 +11,9 @@ public class BaseTest {
 	static WebDriver driver;
 	
 	public void setupBrowser(String browser, String url) {
-		
+	
 		if(browser.equalsIgnoreCase("chrome")) 
-			{
-			
-			 // Create ChromeOptions and add incognito argument
+			{		
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--disable-extensions");
@@ -46,8 +40,6 @@ public class BaseTest {
 	}
 }
 
-
-
 /*
  * // object of ChromeOptions ChromeOptions opt = new ChromeOptions(); // adding
  * .crx extension
@@ -59,4 +51,4 @@ public class BaseTest {
  * // disable information bar opt.setExperimentalOption("excludeSwitches",
  * Collections.singletonList("enable-automation"));
  * 
- */		    
+ */		      

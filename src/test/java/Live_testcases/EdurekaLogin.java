@@ -1,7 +1,8 @@
 package Live_testcases;
 import org.testng.annotations.Test;
+
 import pom.Obj_Edureka;
-import ipltesting.SetupBrowser;
+import test.SetupBrowser;
 
 
 public class EdurekaLogin extends SetupBrowser{
