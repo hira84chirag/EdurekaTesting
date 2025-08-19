@@ -6,10 +6,17 @@
 		<parameter name="uname" value="software@qa.com"></parameter>
 		<parameter name="password" value="mypassword"></parameter>
 		
-		<packages>
-			<package name="basic"></package>
-			</packages>
-
+	
+		<classes>
+		<class name="test.Flipkart" />
+		<class name="test.Checkin" />
+	<!-- 		
+			<class name="test.RadioButton_Facebook" />
+			 -->
+			
+		</classes>
+		
+	
 
  	</test> 
 </suite> 

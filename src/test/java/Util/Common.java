@@ -20,25 +20,23 @@ public class Common {
 	
 		List <WebElement> links =  driver.findElements(By.xpath(xpath));
 	//	 List<WebElement> links = driver.findElements(By.xpath("//img[@class='_46-i img']")); 
-       
-		 int i=0;
+		
+		 Reporter.log("Total links   first=" +  links.size());
 		 for (WebElement element : links) {
              String linkText = element.getText();
              String href = element.getAttribute("href");
 
              if (href != null && !href.isEmpty()) {
             	 Reporter.log("Text: " + linkText + " - Link: " + href);
-                 i++;
              }
     		 
          }
-		 Reporter.log("Total links=" + i);
 	      //  obj.quiteBrowser();
-			driver.findElement(By.xpath("//a[starts-with(text(),'Sign')]")).click();
+		//	driver.findElement(By.xpath("//a[starts-with(text(),'Sign')]")).click();
 			
 	}
 
-	public void countclass(WebDriver driver,String classname) {	
+	public static void countclass(WebDriver driver,String classname) {	
 		List <WebElement> links =  driver.findElements(By.className(classname));
 	//	 List<WebElement> links = driver.findElements(By.xpath("//img[@class='_46-i img']")); 
        

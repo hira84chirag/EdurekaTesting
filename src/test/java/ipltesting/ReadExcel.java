@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.time.Duration;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -14,6 +13,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
+
+//error aave che
 
 public class ReadExcel extends SetupBrowser{
 	
@@ -72,11 +73,11 @@ public class ReadExcel extends SetupBrowser{
 	           }
 	          count++;
 	          // Close workbook
-		      workbook.close();	 
-		      driver.quit();
+		    //  workbook.close();	 
+		    //  driver.quit();
 	      }
-	
-	@Test ( priority = 2)
+//	@Ignore
+	@Test ( priority = 1)
 	public void WriteExcel(String value,int i) throws IOException {
 
 	        // Create a workbook and sheet

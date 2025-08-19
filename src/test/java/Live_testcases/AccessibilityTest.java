@@ -1,10 +1,5 @@
 package Live_testcases;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import java.io.File;
-import com.deque.axe.AXE;
-import com.deque.axe.AXE.Builder;
+import org.testng.Reporter;
 import com.deque.html.axecore.providers.FileAxeScriptProvider;
 // import com.deque.html.axecore.AXE;
 import com.deque.html.axecore.results.Results;
@@ -50,18 +45,18 @@ public class AccessibilityTest extends BaseBrowser {
             
             // Step 5: Check for accessibility violations
             if (results.getViolations().size() == 0) {
-                System.out.println("No accessibility violations found!");
+            	Reporter.log("No accessibility violations found!");
             } else {
-                System.out.println("Accessibility Violations:");
+            	Reporter.log("Accessibility Violations:");
 
                 // Print details of violations
             //    List<Rule> violations = results.getViolations();
                 for (Rule violation : violations) {
-                    System.out.println("Violation ID: " + violation.getId());
-                    System.out.println("Description: " + violation.getDescription());
-                    System.out.println("Impact: " + violation.getImpact());
-                    System.out.println("Elements:");
-                    violation.getNodes().forEach(node -> System.out.println(" - " + node.getTarget()));
+                   Reporter.log("Violation ID: " + violation.getId());
+                   Reporter.log("Description: " + violation.getDescription());
+                   Reporter.log("Impact: " + violation.getImpact());
+                   Reporter.log("Elements:");
+                    violation.getNodes().forEach(node -> Reporter.log(" - " + node.getTarget()));
                 }
             }
 
