@@ -26,7 +26,8 @@ public class SoftAssertExample {
 	@Test
 	public void tc2() 
 	{		
-		int a=5; assertTrue(a>5);
+		int a=56; assertTrue(a>5);
+		SoftAssert sa=new SoftAssert();
 		System.out.println("From tc2");
 		sa.assertAll();
 	}

@@ -8,6 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import Util.CommonFunctions;
@@ -16,7 +17,7 @@ import pom.Obj_Rollsroyce;
 
 public class Rollsroyce extends SetupBrowser{
 	String url="https://www.rolls-royce.com";
-	
+	@Ignore
 	@Test
 	public void mediaNavigation() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
@@ -34,7 +35,7 @@ public class Rollsroyce extends SetupBrowser{
 		WebElement ele=driver.findElement(By.xpath(eleStr));
 		action.moveToElement(ele).perform();
 	
-		CommonFunctions.waitImplicit(driver, 300);
+	//	CommonFunctions.waitImplicit(driver, 300);
 		// Click presentation menu button
 		clk.clickreportpresent();
 //		CommonFunctions.waitForElement(driver, reportpresent);

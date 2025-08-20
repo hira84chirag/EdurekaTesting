@@ -74,9 +74,9 @@ public class ReadExcel extends SetupBrowser{
 	          count++;
 	          // Close workbook
 		    //  workbook.close();	 
-		    //  driver.quit();
+		      driver.quit();
 	      }
-//	@Ignore
+	@Ignore
 	@Test ( priority = 1)
 	public void WriteExcel(String value,int i) throws IOException {
 

@@ -3,32 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ipltesting.ReadExcel">
-        <methods>
-          <include name="WriteExcel"/>
-        </methods>
-      </class> <!-- ipltesting.ReadExcel -->
-      <class name="ipltesting.SoftAssertExample">
+      <class name="test.SoftAssertExample">
         <methods>
           <include name="tc2"/>
         </methods>
-      </class> <!-- ipltesting.SoftAssertExample -->
-      <class name="ipltesting.ParametersExample">
-        <methods>
-          <include name="ValidusrnameValidPasswordTest"/>
-        </methods>
-      </class> <!-- ipltesting.ParametersExample -->
-      <class name="ipltesting.Rollsroyce">
-        <methods>
-          <include name="mediaNavigation"/>
-        </methods>
-      </class> <!-- ipltesting.Rollsroyce -->
-      <class name="ipltesting.Para_Example">
-        <methods>
-          <include name="validLogin"/>
-          <include name="InvalidLogin"/>
-        </methods>
-      </class> <!-- ipltesting.Para_Example -->
+      </class> <!-- test.SoftAssertExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
