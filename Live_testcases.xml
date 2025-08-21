@@ -3,22 +3,22 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 
-	
-		
-		<parameter name="browser" value="chrome" />
+			<parameter name="browser" value="chrome" />
 		<parameter name="urlfb" value="https://www.facebook.com" />
 		
-		<packages>				 
-			 <package name="Live_testcases"></package>
-		</packages>
+		
 	 	
 	 	<classes> 
-	 			 		 
+	 			 <class name="Live_testcases.CountCountry"/>		 
 		</classes>
  	</test> 
 </suite> 
 
 		<!-- 	
+		<packages>				 
+			 <package name="Live_testcases"></package>
+		</packages>
+		
 	 		<class name="ipltesting.BrowserCommand"/>
 			<class name="ipltesting.AllAnnotationExample"/>
 	 		<class name="ipltesting.DataproviderExample"/>
