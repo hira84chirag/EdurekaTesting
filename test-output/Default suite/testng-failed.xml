@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Live_testcases.CountCountry">
+      <class name="test.ScrollExample">
         <methods>
-          <include name="beforetest"/>
-          <include name="FaceBookServiceDirectory"/>
-          <include name="quiteBrowser"/>
+          <include name="CloseBrowser"/>
+          <include name="amazonScrolling"/>
         </methods>
-      </class> <!-- Live_testcases.CountCountry -->
+      </class> <!-- test.ScrollExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

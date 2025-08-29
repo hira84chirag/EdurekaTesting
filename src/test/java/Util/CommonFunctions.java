@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalTime;
+import java.util.NoSuchElementException;
 
 import javax.imageio.ImageIO;
 
@@ -30,6 +31,15 @@ public class CommonFunctions {
 		wait.until(ExpectedConditions.visibilityOf(e));
 		wait.until(ExpectedConditions.elementToBeClickable(e)).click();
 	}
+    public static boolean isElementPresent(WebDriver driver, By by) {
+	        try {
+	            driver.findElement(by);
+	            return true;
+	        } catch (NoSuchElementException e) {
+	            return false;
+	        }
+    }
+	
 	public static void ClickWebElement(WebDriver driver, By abc){
  		WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(100));
  		wait.until(ExpectedConditions.visibilityOfElementLocated(abc));
