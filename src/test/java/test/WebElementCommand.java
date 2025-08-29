@@ -10,20 +10,6 @@ import Util.CommonFunctions;
 public class WebElementCommand extends SetupBrowser {
 
 	String field,fieldx;
-	@Test(priority =3)
-	public void Internet_AletExample() throws InterruptedException {		
-		WebElementCommand bc=new WebElementCommand();
-		bc.browserOpen("chrome", "https://the-internet.herokuapp.com/javascript_alerts");
-		WebElement aletbutn = driver.findElement(By.xpath("//button[contains(text(),'Prompt')]"));
-		aletbutn.click();
-		String msg=driver.switchTo().alert().getText();
-		Reporter.log(msg);	
-		// driver.switchTo().alert().accept();
-		driver.switchTo().alert().dismiss();
-		Thread.sleep(3000);
-	}
-	
-	
 //	@Parameters({"browser,Fb"})
 	@Test(priority =1)
 	public void facebook_elementAction() {
