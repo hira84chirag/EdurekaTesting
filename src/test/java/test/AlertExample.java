@@ -31,5 +31,3 @@ public class AlertExample extends BaseTest{
 	}
 
 }
-//cancel or reset or close button or keyboard escape key
-//driver.switchTo().alert().dismiss();
