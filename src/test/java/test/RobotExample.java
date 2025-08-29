@@ -14,7 +14,7 @@ import Util.CommonFunctions;
 public class RobotExample  extends BaseTest{
 	
 	@Test
-	public void robotExample() throws AWTException, InterruptedException {
+	public void tinypng_robotExample() throws AWTException, InterruptedException {
 		RobotExample obj = new RobotExample();
 		obj.setupBrowser("chrome", "https://tinypng.com/");
 //		driver.manage().window().maximize();

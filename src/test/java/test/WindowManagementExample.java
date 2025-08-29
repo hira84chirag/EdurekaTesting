@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class WindowManagementExample extends BaseTest{
 	@Test	
-	public void WindowHandlesdemo() throws InterruptedException  {
+	public void facebook_WindowHandlesdemo() throws InterruptedException  {
 		
 		WindowManagementExample obj = new WindowManagementExample();
 		obj.setupBrowser("chrome", "https://www.facebook.com");

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import Util.CommonFunctions;
 public class AlertExample extends BaseTest{
 @Test	
-	public void alertDemo() throws AWTException{
+	public void InternetSite_alertDemo() throws AWTException{
 	String alertstr="//button[contains(text(),'Prompt')]";
 		AlertExample obj = new AlertExample();
 		obj.setupBrowser("firefox", "https://the-internet.herokuapp.com/javascript_alerts");

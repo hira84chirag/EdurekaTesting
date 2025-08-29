@@ -14,9 +14,10 @@ public class SetupBrowser {
 		
 		
 		if (browser.equalsIgnoreCase("chrome")) {
-			ChromeOptions options = new ChromeOptions(); 
-			options.addArguments("--incognito"); 
-			driver = new ChromeDriver(options);
+		//	ChromeOptions options = new ChromeOptions(); 
+		//	options.addArguments("--incognito"); 
+		//	driver = new ChromeDriver(options);
+			driver = new ChromeDriver();
 		}
 		else if(browser.equalsIgnoreCase("firefox"))
 			driver=new FirefoxDriver();			

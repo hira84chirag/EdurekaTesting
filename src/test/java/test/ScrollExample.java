@@ -1,14 +1,16 @@
 package test;
 import java.time.Duration;
+import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import Util.GenericFun;
 public class ScrollExample extends SetupBrowser {
 	ScrollExample obj;
-	@Test(priority = 1)
+	@Test(invocationCount  =1)
 	public void amazonScrolling() {		
 		String url="https://www.amazon.in/Apple-iPhone-15-128-GB/dp/"
 				+ "B0CHX2F5QT/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.8-aKrERwPzd"
@@ -22,15 +24,40 @@ public class ScrollExample extends SetupBrowser {
 		obj=new ScrollExample();
 		obj.browserOpen("Chrome",url);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(560));
-		WebElement Webtech= driver.findElement(By.xpath(techstr));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(160));
+//		String contbtn=	"//button[@alt='Continue shopping']";
 		
-		JavascriptExecutor js=(JavascriptExecutor)(SetupBrowser.driver);
-		js.executeScript("arguments[0].scrollIntoView();",Webtech);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(930));
+		By elementLocator = By.xpath("//button[@alt='Continue shopping']");
+
+		List<WebElement> elements = driver.findElements(elementLocator);
+
+		// Store the result as a boolean
+		boolean isElementPresent = !elements.isEmpty();
+		System.out.println("elements visilbe : "+isElementPresent);
+		if (isElementPresent) {
+		    System.out.println("The element exists! It's safe to interact with it.");
+		    elements.get(0).click(); // Interact with the first element found
+        	
+		} else {
+			WebElement Webtech= driver.findElement(By.xpath(techstr));
+			
+			JavascriptExecutor js=(JavascriptExecutor)(SetupBrowser.driver);
+			js.executeScript("arguments[0].scrollIntoView();",Webtech);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(930));
+		
+		    System.out.println("The element is not present on the page.");
+		    // Continue with alternative actions
+		}
+		
+		/*
+		 * Boolean bol=driver.findElement(By.xpath(contbtn)).isDisplayed();
+		 * System.out.println("Element displayed : "+ bol);
+		 */
+
+		
 	}	
 
-	
+
 	@Test(priority = 2)
 	public void githubScrolling() throws InterruptedException {
 		obj.browserOpen("Chrome","https://www.github.com/");
@@ -40,6 +67,7 @@ public class ScrollExample extends SetupBrowser {
 		Thread.sleep(4000);
 		GenericFun.ScrollingPageSize(driver, 970);
 	}	
+
 		@Test(priority = 3)
 		public void youtubeScrolling() throws InterruptedException {
 //			obj=new ScrollExample();

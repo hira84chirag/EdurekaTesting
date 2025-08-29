@@ -18,7 +18,7 @@ public class Test_facebook extends SetupBrowser{
 	}
 
 	@Test 
-	public void locator()
+	public void facebook_locator()
 	{
 		Test_facebook obj =new Test_facebook();	
 		obj.browserOpen("Firefox", "https://www.facebook.com"); 	

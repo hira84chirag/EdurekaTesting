@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 public class WaitExample extends SetupBrowser{
 	
 	@Test 
-	public void explitcitWaitExample() {
+	public void facebook_explitcitWaitExample() {
 		
 		WaitExample obj=new WaitExample();
 		obj.browserOpen("chrome", "https://www.facebook.com");

@@ -10,8 +10,8 @@ import Util.CommonFunctions;
 public class WebElementCommand extends SetupBrowser {
 
 	String field,fieldx;
-	@Test(priority =0)
-	public void AletExample() throws InterruptedException {		
+	@Test(priority =3)
+	public void Internet_AletExample() throws InterruptedException {		
 		WebElementCommand bc=new WebElementCommand();
 		bc.browserOpen("chrome", "https://the-internet.herokuapp.com/javascript_alerts");
 		WebElement aletbutn = driver.findElement(By.xpath("//button[contains(text(),'Prompt')]"));
@@ -26,7 +26,7 @@ public class WebElementCommand extends SetupBrowser {
 	
 //	@Parameters({"browser,Fb"})
 	@Test(priority =1)
-	public void elementAction() {
+	public void facebook_elementAction() {
 		WebElementCommand bc=new WebElementCommand();
 		bc.browserOpen("chrome","");
 		driver.get("https://www.facebook.com");
@@ -46,7 +46,7 @@ public class WebElementCommand extends SetupBrowser {
 	}
 	
 	@Test(priority =2)
-	public void ButtonAttribute() {
+	public void facebook_ButtonAttribute() {
 		// TODO Auto-generated method stub
 		
 		WebElementCommand bc=new WebElementCommand();

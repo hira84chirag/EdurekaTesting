@@ -25,7 +25,7 @@ public class IframeExample extends SetupBrowser{
 	  	//  @Test(invocationCount=1)
 
 	  @Test(priority =1,invocationCount = 1)
-	public void iframeDemo()  {
+	public void Internet_iframeDemo()  {
 		
 		IframeExample obj=new IframeExample();
 		obj.browserOpen("Firefox", "https://the-internet.herokuapp.com/iframe");

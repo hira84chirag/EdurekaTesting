@@ -21,7 +21,7 @@ public class ReadExcel extends SetupBrowser{
 	int count=0;
 		
 	@Test ( priority = 1)	
-	public void Readfile() throws IOException {		
+	public void Facebook_login() throws IOException {		
 	  // Path to Excel file
 	  String excelFilePath = "src/test/java/Util/Book1.xlsx";
 

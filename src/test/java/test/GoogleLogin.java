@@ -21,7 +21,7 @@ public class GoogleLogin extends BaseTest{
 		}
 			
 	@Test(invocationCount=1) // Running looping multiple Times
-	public void LoginTestcase() throws InterruptedException  {
+	public void Google_LoginTC() throws InterruptedException  {
 		// TODO Auto-generated method stub
 		String path="";
 		String strcreatebtn="//span[contains(text(),'Create account')]";

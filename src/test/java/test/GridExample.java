@@ -16,7 +16,7 @@ public class GridExample {
 	
 	WebDriver driver;
 	
-	public void gridSetup() {
+	public void Rolls_royce_gridSetup() {
 		
 		System.out.println("Calling Browser from Selenium Grid");	
 		
@@ -47,7 +47,7 @@ public class GridExample {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		GridExample ge=new GridExample();
-		ge.gridSetup();
+		ge.Rolls_royce_gridSetup();
 		ge.pageTitleValidation();
 	}
 

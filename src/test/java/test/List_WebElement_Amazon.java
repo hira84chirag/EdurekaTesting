@@ -11,7 +11,7 @@ import Util.CommonFunctions;
 public class List_WebElement_Amazon extends SetupBrowser{
 	List_WebElement_Amazon obj;
 	@Test(priority = 1) 
-	public void locatoramazon()
+	public void Amazon_locatoramazon()
 	{
 		List_WebElement_Amazon obj=new List_WebElement_Amazon();
 		obj.browserOpen("chrome","https://www.amazon.in");
@@ -19,12 +19,13 @@ public class List_WebElement_Amazon extends SetupBrowser{
 	//	String str="//button[@alt='Continue shopping']";
 	//	WebElement webshopping=driver.findElement(By.xpath(str));		
 	//	if(webshopping.isDisplayed()) webshopping.click();		
+		
 		driver.findElement(By.partialLinkText("Best")).click();		
 
 		
 	}
 	@Test(priority = 2) 
-	public void software() throws InterruptedException {
+	public void Amazon_software() throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		String dealpath= "//a[contains(text(),'Today')]";

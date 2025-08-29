@@ -13,7 +13,7 @@ import java.util.List;
 public class Dummy {
 
 	@Test
-    public void software() {
+    public void Amzon_software() {
        // Set path to your ChromeDriver
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-dev-shm-usage");

@@ -13,7 +13,7 @@ public class BrowserCommand extends SetupBrowser {
 	String url="", path="";
 	
 	@Test(priority =1)
-	public void Browsercommand() {
+	public void Google_Browsercommand() {
 		// TODO Auto-generated method stub
 		String gle="https://www.gmail.com";
 		try {			
@@ -38,7 +38,7 @@ public class BrowserCommand extends SetupBrowser {
 	}
 	// Browser command forward, Refresh,back and 
 	@Test(priority =2)
-	public void Navigation() throws InterruptedException {
+	public void Youtube_Navigation() throws InterruptedException {
 		String google="https://www.google.com";
 		String youtube="https://www.youtube.com/results?search_query=Trending";
 		BrowserCommand bc=new BrowserCommand();
@@ -75,7 +75,7 @@ public class BrowserCommand extends SetupBrowser {
 		
 	}
 	@Test(priority = 4)
-	public void navDemo() throws InterruptedException {
+	public void Google_navDemo() throws InterruptedException {
 		String photo;
 
 		BrowserCommand obj=new BrowserCommand();
