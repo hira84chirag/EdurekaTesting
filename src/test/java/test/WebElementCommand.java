@@ -13,8 +13,7 @@ public class WebElementCommand extends SetupBrowser {
 //	@Parameters({"browser,Fb"})
 	@Test(priority =1)
 	public void facebook_elementAction() {
-		WebElementCommand bc=new WebElementCommand();
-		bc.browserOpen("chrome","");
+	
 		driver.get("https://www.facebook.com");
 		WebElement we = driver.findElement(By.id("email"));
 		Reporter.log("is emaild displayed or not=" + we.isDisplayed());
@@ -35,8 +34,7 @@ public class WebElementCommand extends SetupBrowser {
 	public void facebook_ButtonAttribute() {
 		// TODO Auto-generated method stub
 		
-		WebElementCommand bc=new WebElementCommand();
-		bc.browserOpen("chrome","https://www.facebook.com");
+		driver.get("https://www.facebook.com");
 	//	driver.get("https://www.facebook.com");
 		WebElement we=driver.findElement(By.id("email"));
 		field=we.getAttribute("placeholder");
@@ -65,9 +63,6 @@ public class WebElementCommand extends SetupBrowser {
 		Reporter.log("TagName =" + field);
 					
 	}
-	@AfterMethod
-	public void quiteBrowser() {
-		driver.quit();
-	}
+	
 	
 }

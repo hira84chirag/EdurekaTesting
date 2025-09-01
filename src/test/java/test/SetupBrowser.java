@@ -6,12 +6,14 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 public class SetupBrowser {
 	public static WebDriver driver;
-	
-	public void browserOpen(String browser,String url) {
-		
+	@BeforeClass
+	public void browserOpen() {
+		String browser="chrome",url="";
 		
 		if (browser.equalsIgnoreCase("chrome")) {
 		//	ChromeOptions options = new ChromeOptions(); 
@@ -39,9 +41,14 @@ public class SetupBrowser {
 	public void navigatetourl(String url) {
 		driver.get(url);
 	}
-	public void quit() {
-		driver.quit();
-	}
+	@AfterClass
+	public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+            System.out.println("Browser closed");
+        }
+	    
+  }
 }
 // implicit wait ==>  at pom Level
 //driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(50));

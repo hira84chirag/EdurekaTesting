@@ -9,23 +9,16 @@ import org.testng.annotations.Test;
 import Util.CommonFunctions;
 
 public class List_WebElement_Amazon extends SetupBrowser{
-	List_WebElement_Amazon obj;
+//	List_WebElement_Amazon obj;
 	@Test(priority = 1) 
 	public void Amazon_locatoramazon()
 	{
-		List_WebElement_Amazon obj=new List_WebElement_Amazon();
-		obj.browserOpen("chrome","https://www.amazon.in");
+		driver.get("https://www.amazon.in");
 		CommonFunctions.waitImplicit(driver, 100);		
-	//	String str="//button[@alt='Continue shopping']";
-	//	WebElement webshopping=driver.findElement(By.xpath(str));		
-	//	if(webshopping.isDisplayed()) webshopping.click();		
-		
 		driver.findElement(By.partialLinkText("Best")).click();		
-
-		
 	}
 	@Test(priority = 2) 
-	public void Amazon_software() throws InterruptedException {
+	public void Amazon_product_scrolling() throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		String dealpath= "//a[contains(text(),'Today')]";
@@ -62,13 +55,9 @@ public class List_WebElement_Amazon extends SetupBrowser{
  //           }    		 
         }
 	        System.out.println("Total links=" + i);
-	        driver.close();
+//	        driver.close();
 	}
 	
-	@AfterMethod
-	public void TearDown()
-	{
-	//	driver.quit();
-	}
+
 	
 }

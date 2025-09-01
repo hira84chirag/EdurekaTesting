@@ -9,24 +9,22 @@ public class Test_facebook extends SetupBrowser{
 
 	@Test
 	public void openFacebook() {
-		Test_facebook obj =new Test_facebook();
-		obj.browserOpen("Firefox", "http://www.facebook.com");
+		driver.get("http://www.facebook.com");
 		Obj_Facebook aobj=new Obj_Facebook(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
 		aobj.clickCreateNewAccount();
-		driver.quit();
+
 	}
 
 	@Test 
 	public void facebook_locator()
 	{
-		Test_facebook obj =new Test_facebook();	
-		obj.browserOpen("Firefox", "https://www.facebook.com"); 	
+		driver.get("https://www.facebook.com"); 	
 		driver.findElement(By.xpath(path)).sendKeys("from Royal id");		
 		CommonFunctions.waitImplicit(driver, 30);
 		driver.findElement(By.linkText("Create new account")).click();	
 		CommonFunctions.waitImplicit(driver, 1000);		
-		driver.quit();
+	
 	}
 
 

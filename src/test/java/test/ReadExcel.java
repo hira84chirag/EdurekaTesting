@@ -42,8 +42,8 @@ public class ReadExcel extends SetupBrowser{
           
       }
 
-	  SetupBrowser bt=new SetupBrowser();	  
-	  bt.browserOpen("chrome","https://www.facebook.com/r.php"); 
+//	  SetupBrowser bt=new SetupBrowser();	  
+	  driver.get("https://www.facebook.com/r.php"); 
       
 	  String username="",lastname="",regemail="",password="";
       
@@ -74,7 +74,6 @@ public class ReadExcel extends SetupBrowser{
 	          count++;
 	          // Close workbook
 		    //  workbook.close();	 
-		      driver.quit();
 	      }
 	@Ignore
 	@Test ( priority = 1)

@@ -21,8 +21,8 @@ public class ScrollExample extends SetupBrowser {
 				+ "MOX7UqQM0g4lkYjz4Kfj0gsZeNMA&dib_tag=se&keywords=iphone+1"
 				+ "5&qid=1722790570&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1";
 		String techstr="//h1[text()='Technical Details']";
-		obj=new ScrollExample();
-		obj.browserOpen("Chrome",url);
+
+		driver.get(url);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(160));
 //		String contbtn=	"//button[@alt='Continue shopping']";
@@ -60,7 +60,7 @@ public class ScrollExample extends SetupBrowser {
 
 	@Test(priority = 2)
 	public void githubScrolling() throws InterruptedException {
-		obj.browserOpen("Chrome","https://www.github.com/");
+		driver.get("https://www.github.com/");
 		driver.manage().window().maximize();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0, document.body.scrollHeight);");
@@ -71,7 +71,7 @@ public class ScrollExample extends SetupBrowser {
 		@Test(priority = 3)
 		public void youtubeScrolling() throws InterruptedException {
 //			obj=new ScrollExample();
-			obj.browserOpen("Chrome","https://www.youtube.com/watch?v=nIHyr_fp_yI");
+			driver.get("https://www.youtube.com/watch?v=nIHyr_fp_yI");
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(1960));
 			driver.manage().window().maximize();
 			JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -80,9 +80,5 @@ public class ScrollExample extends SetupBrowser {
 			GenericFun.ScrollingPageSize(driver,2500);
 
 		}
-	@AfterMethod
-	public void CloseBrowser() 
-	{
-		 driver.quit();		
-	}
+	
 }

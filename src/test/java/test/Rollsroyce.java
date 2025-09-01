@@ -17,15 +17,13 @@ import pom.Obj_Rollsroyce;
 
 public class Rollsroyce extends SetupBrowser{
 	String url="https://www.rolls-royce.com";
-	@Ignore
+	@Ignore // due to error
 	@Test
 	public void Rolls_royce_mediaNavigation() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 	
 		String eleStr= "//li[@id='nav-investors-level1' and @class='level1 haschildren']";
-		
-		Rollsroyce obj=new Rollsroyce();
-		obj.browserOpen("chrome",url );		
+		driver.get(url );		
 		driver.manage().window().maximize();
 		// Click Accept All button
 		Obj_Rollsroyce clk= new Obj_Rollsroyce(driver);
@@ -55,6 +53,6 @@ public class Rollsroyce extends SetupBrowser{
 				
 		// Take Screenshot of the page.
         CommonFunctions.Snap(driver, "Rollsroyce");		
-		driver.quit();			
+			
 	}
 }

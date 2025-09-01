@@ -24,11 +24,11 @@ public class IframeExample extends SetupBrowser{
 	String contentstr="//p[contains(text(),'Your content')]";	
 	  	//  @Test(invocationCount=1)
 
-	  @Test(priority =1,invocationCount = 1)
+	  @Test(invocationCount = 1)
 	public void Internet_iframeDemo()  {
 		
-		IframeExample obj=new IframeExample();
-		obj.browserOpen("Firefox", "https://the-internet.herokuapp.com/iframe");
+
+		driver.get("https://the-internet.herokuapp.com/iframe");
 		CommonFunctions.Clickbutton(driver, closebtn);
 
 	//	driver.manage().window().maximize();				
@@ -41,7 +41,7 @@ public class IframeExample extends SetupBrowser{
 		CommonFunctions.getText(driver, contentstr);
 		String abc=CommonFunctions.Snap(driver,"IframeExample");
 		System.out.println(abc);
-		driver.quit();
+
 	}
 
 }

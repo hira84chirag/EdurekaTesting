@@ -11,14 +11,12 @@ import Util.CommonFunctions;
 public class BrowserCommand extends SetupBrowser {
 
 	String url="", path="";
-	
+	String google="https://www.google.com";
 	@Test(priority =1)
 	public void Google_Browsercommand() {
 		// TODO Auto-generated method stub
 		String gle="https://www.gmail.com";
 		try {			
-			BrowserCommand bc=new BrowserCommand();
-			bc.browserOpen("chrome","");
 			driver.get(gle);
 			url=driver.getCurrentUrl();
 			Reporter.log("Current URL=" + url);
@@ -33,16 +31,14 @@ public class BrowserCommand extends SetupBrowser {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.quit();
+		
 		
 	}
 	// Browser command forward, Refresh,back and 
 	@Test(priority =2)
 	public void Youtube_Navigation() throws InterruptedException {
-		String google="https://www.google.com";
+		
 		String youtube="https://www.youtube.com/results?search_query=Trending";
-		BrowserCommand bc=new BrowserCommand();
-		bc.browserOpen("chrome","");
 		driver.get(google);
 		driver.manage().window().maximize();
 		Thread.sleep(100);
@@ -60,26 +56,24 @@ public class BrowserCommand extends SetupBrowser {
 		// refresh
 		Reporter.log("Navigating to refresh youtube page");
 		driver.navigate().refresh();
-		driver.quit();
+	
 	}
 	
 	@Test(priority =3)
 	public void GoogleSignClick() {		
-		BrowserCommand bc=new BrowserCommand();	
-		bc.browserOpen("chrome","https://www.google.com/");						
+		driver.get(google);	
 		path="//span[contains(text(),'Next')]";	
 		driver.findElement(By.partialLinkText("Sign in")).click();		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7000));
 		driver.findElement(By.xpath(path)).click(); 
-		driver.quit();
+	
 		
 	}
 	@Test(priority = 4)
 	public void Google_navDemo() throws InterruptedException {
 		String photo;
 
-		BrowserCommand obj=new BrowserCommand();
-		obj.browserOpen("chrome", "https://www.google.com");		
+		driver.get(google);
 		//Thread.sleep is used only for demo purpose
 		System.out.println("Navigating to youtube page");
 		Thread.sleep(1000);
@@ -108,7 +102,7 @@ public class BrowserCommand extends SetupBrowser {
 		System.out.println("Refresh the youtube page");
 		CommonFunctions.waitThread(1000);
 		driver.navigate().refresh();
-		driver.quit();
+	
 	}
 }
 
