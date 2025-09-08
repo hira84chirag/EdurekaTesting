@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import java.time.Duration;
 
 public class Testing extends SetupBrowser {
-	SetupBrowser bt;
+//	SetupBrowser bt;
 	@Test
 	public void OpenFacebook() {
 		driver.get( "https://www.facebook.com/?");		

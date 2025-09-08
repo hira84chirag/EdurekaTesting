@@ -9,14 +9,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-import Util.CommonFunctions;
+import Utilities.CommonFunctions;
 // error aave che
 public class RobotExample  extends BaseTest{
 	
 	@Test
 	public void tinypng_robotExample() throws AWTException, InterruptedException {
-		RobotExample obj = new RobotExample();
-		obj.setupBrowser("chrome", "https://tinypng.com/");
+		driver.get("https://tinypng.com/");
 //		driver.manage().window().maximize();
 		CommonFunctions.waitThread(400);
 		driver.findElement(By.xpath("//section[@class='target']")).click();
@@ -24,7 +23,7 @@ public class RobotExample  extends BaseTest{
 		Robot robot = new Robot();
 
 		//copy the file location
-		String fileName = "D:\\wallpaper.jpg";
+		String fileName = "D:\\test.jpg";
 		
 		 Actions actions = new Actions(driver);
 	     // Type "keyword" anywhere the focus is

@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import Util.CommonFunctions;
+
+import Utilities.CommonFunctions;
 
 public class WebElementCommand extends SetupBrowser {
 

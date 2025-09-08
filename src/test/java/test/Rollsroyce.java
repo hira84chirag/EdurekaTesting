@@ -11,33 +11,45 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-import Util.CommonFunctions;
-import Util.GenericFun;
+import Utilities.CommonFunctions;
+import Utilities.GenericFun;
 import pom.Obj_Rollsroyce;
 
 public class Rollsroyce extends SetupBrowser{
 	String url="https://www.rolls-royce.com";
-	@Ignore // due to error
+	@Ignore // still error
 	@Test
 	public void Rolls_royce_mediaNavigation() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 	
-		String eleStr= "//li[@id='nav-investors-level1' and @class='level1 haschildren']";
+		String eleInvestor= "//li[@id='nav-investors-level1' and @class='level1 haschildren']";
 		driver.get(url );		
 		driver.manage().window().maximize();
 		// Click Accept All button
 		Obj_Rollsroyce clk= new Obj_Rollsroyce(driver);
 		clk.clickAcceptAll();  // CommonFunctions.Clickbutton(driver,acceptAll);
-				
-		Actions action = new Actions(driver);
-		WebElement ele=driver.findElement(By.xpath(eleStr));
-		action.moveToElement(ele).perform();
-	
-	//	CommonFunctions.waitImplicit(driver, 300);
-		// Click presentation menu button
-		clk.clickreportpresent();
+		CommonFunctions.waitImplicit(driver, 1000);		
+		
+		Actions action = new Actions(driver);		
+		WebElement eleInv=driver.findElement(By.xpath(eleInvestor));
+		action.moveToElement(eleInv).perform();
+		Thread.sleep(3000);
+		
+		WebElement eleInv1 = driver.findElement(By.xpath("//a[contains(text(), 'Results, reports and presentations')]"));
+		action.moveToElement(eleInv).click(eleInv1).click();
+
+		Thread.sleep(3000);
+	// Click presentation menu button
+//		clk.clickreportpresent();
+		
 //		CommonFunctions.waitForElement(driver, reportpresent);
 
+		CommonFunctions.waitImplicit(driver, 1000);
+//		String fineResult="//a[@id='nav-financial-results-level3')]";
+//		WebElement ele1=driver.findElement(By.xpath(fineResult));
+//		ele1.click();
+		
+		
 		// Scroll by Pixels
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0, 500)"); // Scroll down by 1000 pixels      

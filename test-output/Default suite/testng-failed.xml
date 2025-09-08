@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.WaitExample">
+      <class name="test.GoogleLogin">
         <methods>
-          <include name="browserOpen"/>
+          <include name="Google_LoginTC"/>
           <include name="tearDown"/>
-          <include name="facebook_explitcitWaitExample"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- test.WaitExample -->
+      </class> <!-- test.GoogleLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

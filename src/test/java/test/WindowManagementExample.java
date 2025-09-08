@@ -8,9 +8,7 @@ public class WindowManagementExample extends BaseTest{
 	@Test	
 	public void facebook_WindowHandlesdemo() throws InterruptedException  {
 		
-		WindowManagementExample obj = new WindowManagementExample();
-		obj.setupBrowser("chrome", "https://www.facebook.com");
-		
+		driver.get(prop.getProperty("fburl"));
 		//Thread.sleep is used for demo purpose only
 		
 		Reporter.log("page title:  " + driver.getTitle());

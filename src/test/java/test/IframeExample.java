@@ -7,7 +7,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Rectangle;
 import org.testng.annotations.Test;
 
-import Util.CommonFunctions;
+import Utilities.CommonFunctions;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 

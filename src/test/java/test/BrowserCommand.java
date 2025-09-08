@@ -5,15 +5,15 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+import Utilities.CommonFunctions;
 
-import Util.CommonFunctions;
-
-public class BrowserCommand extends SetupBrowser {
+public class BrowserCommand extends BaseTest {
 
 	String url="", path="";
-	String google="https://www.google.com";
+//	String google=prop.getProperty("googleurl");
 	@Test(priority =1)
 	public void Google_Browsercommand() {
+		
 		// TODO Auto-generated method stub
 		String gle="https://www.gmail.com";
 		try {			
@@ -39,7 +39,7 @@ public class BrowserCommand extends SetupBrowser {
 	public void Youtube_Navigation() throws InterruptedException {
 		
 		String youtube="https://www.youtube.com/results?search_query=Trending";
-		driver.get(google);
+		driver.get(prop.getProperty("googleurl"));
 		driver.manage().window().maximize();
 		Thread.sleep(100);
 		Reporter.log("Navigating to youtube page");
@@ -61,7 +61,7 @@ public class BrowserCommand extends SetupBrowser {
 	
 	@Test(priority =3)
 	public void GoogleSignClick() {		
-		driver.get(google);	
+		driver.get(prop.getProperty("googleurl"));	
 		path="//span[contains(text(),'Next')]";	
 		driver.findElement(By.partialLinkText("Sign in")).click();		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7000));
@@ -73,7 +73,7 @@ public class BrowserCommand extends SetupBrowser {
 	public void Google_navDemo() throws InterruptedException {
 		String photo;
 
-		driver.get(google);
+		driver.get(prop.getProperty("googleurl"));
 		//Thread.sleep is used only for demo purpose
 		System.out.println("Navigating to youtube page");
 		Thread.sleep(1000);

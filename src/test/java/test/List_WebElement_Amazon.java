@@ -6,7 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import Util.CommonFunctions;
+
+import Utilities.CommonFunctions;
 
 public class List_WebElement_Amazon extends SetupBrowser{
 //	List_WebElement_Amazon obj;

@@ -7,9 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
-import Util.GenericFun;
+
+import Utilities.GenericFun;
 public class ScrollExample extends SetupBrowser {
-	ScrollExample obj;
+//	ScrollExample obj;
 	@Test(invocationCount  =1)
 	public void amazonScrolling() {		
 		String url="https://www.amazon.in/Apple-iPhone-15-128-GB/dp/"

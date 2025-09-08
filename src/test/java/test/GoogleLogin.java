@@ -11,22 +11,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-import Util.CommonFunctions;
+
+import Utilities.CommonFunctions;
 
 public class GoogleLogin extends BaseTest{
-	// Wait for Element	
-		public void WaitElement(String xpath) {
-			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(100));		  
-			WebElement text=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));			
-		}
-			
+	
 	@Test(invocationCount=1) // Running looping multiple Times
 	public void Google_LoginTC() throws InterruptedException  {
 		// TODO Auto-generated method stub
 		String path="";
 		String strcreatebtn="//span[contains(text(),'Create account')]";
-		GoogleLogin obj=new GoogleLogin();
-		obj.setupBrowser("chrome","https://www.google.com/");
+		driver.get(prop.getProperty("googleurl"));
 		driver.manage().window().maximize();
 		
 // Click Sign in button		
@@ -87,9 +82,16 @@ public class GoogleLogin extends BaseTest{
 			e.printStackTrace();
 		}
 		
-		driver.quit();
+		//driver.quit();
 		 
 	}
+
+	// Wait for Element	
+	public void WaitElement(String xpath) {
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(100));		  
+		WebElement text=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));			
+	}
+		
 
 }
 

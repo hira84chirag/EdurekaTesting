@@ -5,14 +5,15 @@ import java.awt.AWTException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import Util.CommonFunctions;
+
+import Utilities.CommonFunctions;
 public class AlertExample extends BaseTest{
 @Test	
 	public void InternetSite_alertDemo() throws AWTException{
-	String alertstr="//button[contains(text(),'Prompt')]";
-		AlertExample obj = new AlertExample();
-		obj.setupBrowser("firefox", "https://the-internet.herokuapp.com/javascript_alerts");
-
+		String alertstr="//button[contains(text(),'Prompt')]";
+		String url="https://the-internet.herokuapp.com/javascript_alerts";
+		
+		driver.get(url);
 		WebElement alertBtn = driver.findElement(By.xpath(alertstr));
 		alertBtn.click();
 		

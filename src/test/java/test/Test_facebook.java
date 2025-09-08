@@ -2,7 +2,8 @@ package test;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import Util.CommonFunctions;
+
+import Utilities.CommonFunctions;
 import pom.Obj_Facebook;
 public class Test_facebook extends SetupBrowser{
 	private	String path="//input[@aria-label='Email address or phone number']";

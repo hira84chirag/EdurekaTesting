@@ -3,13 +3,18 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
+
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Reporter;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
@@ -21,7 +26,8 @@ public class ReadExcel extends SetupBrowser{
 	int count=0;
 		
 	@Test ( priority = 1)	
-	public void Facebook_login() throws IOException {		
+	public void Facebook_login() throws IOException 
+	{		
 	  // Path to Excel file
 	  String excelFilePath = "src/test/java/Util/Book1.xlsx";
 
@@ -74,7 +80,21 @@ public class ReadExcel extends SetupBrowser{
 	          count++;
 	          // Close workbook
 		    //  workbook.close();	 
-	      }
+	}
+	
+	@Test ( priority = 2)
+	public void downloadfile() {		
+		// Example for Chrome		
+		String downloadFilepath = "C:\\Users\\Dell Enterprise\\Downloads\\Charvi";
+		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+		chromePrefs.put("download.default_directory", downloadFilepath);
+		chromePrefs.put("download.prompt_for_download", false);
+	
+		ChromeOptions options = new ChromeOptions();
+		options.setExperimentalOption("prefs", chromePrefs);
+		WebDriver driver = new ChromeDriver(options);
+	}
+	
 	@Ignore
 	@Test ( priority = 1)
 	public void WriteExcel(String value,int i) throws IOException {
