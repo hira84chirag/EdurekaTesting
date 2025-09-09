@@ -26,10 +26,10 @@ public class ReadExcel extends SetupBrowser{
 	int count=0;
 		
 	@Test ( priority = 1)	
-	public void Facebook_login() throws IOException 
+	public void Facebook_login() throws IOException, InterruptedException 
 	{		
 	  // Path to Excel file
-	  String excelFilePath = "src/test/java/Util/Book1.xlsx";
+	  String excelFilePath = "src/test/java/Utilities/Book1.xlsx";
 
       // Open the file
       FileInputStream fis = new FileInputStream(excelFilePath);
@@ -80,6 +80,7 @@ public class ReadExcel extends SetupBrowser{
 	          count++;
 	          // Close workbook
 		    //  workbook.close();	 
+	          Thread.sleep(300);
 	}
 	
 	@Test ( priority = 2)
@@ -93,6 +94,7 @@ public class ReadExcel extends SetupBrowser{
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("prefs", chromePrefs);
 		WebDriver driver = new ChromeDriver(options);
+		driver.close();
 	}
 	
 	@Ignore

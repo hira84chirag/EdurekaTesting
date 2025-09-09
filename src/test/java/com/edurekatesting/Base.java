@@ -12,6 +12,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -67,4 +69,12 @@ public class Base {
 			driver.get("about:blank");
 		return driver;
 	}
+	
+	@AfterSuite
+	public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+            System.out.println("All Browser closed");
+        }
+	}    
 }

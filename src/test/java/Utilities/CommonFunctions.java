@@ -77,7 +77,7 @@ public class CommonFunctions {
 	        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	        long currentTimeMillis = System.currentTimeMillis();        	        
 	        // Define the destination file path like "D:/screenshot.png";
-	        String filestr= "D:\\";
+	        String filestr= System.getProperty("user.dir")+"\\test-output\\Screenshot\\";
 	        //Timeslot combination
 	        LocalTime filestr1 = LocalTime.now();
 	        fileName=filestr + fileName + currentTimeMillis+ ".jpg";
@@ -93,8 +93,10 @@ public class CommonFunctions {
     }
 	public static String Snap(WebDriver driver,String name)  
 	{
-		String path=null;			
-		String fileName= "C:\\Users\\Dell Enterprise\\eclipse-workspace\\EdurekaTesting\\test-output\\Screenshot\\";
+		String path=null;
+	//	String commpath=System.getProperty("user.dir")+"\\test-output\\Screenshot\\"; 	
+ 
+		String fileName= System.getProperty("user.dir")+"\\test-output\\Screenshot\\"; 
 
 		try{			
 		//Unique DateTimestamp code		
@@ -119,7 +121,7 @@ public class CommonFunctions {
 	}
 	
 	public static void ScreenShot(WebDriver driver,String fileName) {
-	    fileName="D:\\" +fileName + System.currentTimeMillis() +  ".jpg";
+	    fileName=System.getProperty("user.dir")+"\\test-output\\Screenshot\\" +fileName + System.currentTimeMillis() +  ".jpg";
 	    File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	    try {
 	    FileUtils.copyFile(screenshot, new File(fileName));

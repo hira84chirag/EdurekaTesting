@@ -9,13 +9,13 @@
     <parameter name="Password1" value="mypassword"/>
     <parameter name="Password" value="mypassword"/>
     <classes>
-      <class name="test.Test_facebook">
+      <class name="test.GoogleLogin">
         <methods>
-          <include name="browserOpen"/>
+          <include name="Google_LoginTC"/>
           <include name="tearDown"/>
-          <include name="openFacebook"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- test.Test_facebook -->
+      </class> <!-- test.GoogleLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

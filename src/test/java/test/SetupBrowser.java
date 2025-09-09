@@ -13,13 +13,14 @@ public class SetupBrowser {
 	public static WebDriver driver;
 	@BeforeClass
 	public void browserOpen() {
-		String browser="firefox",url="";
+		String browser="chrome",url="";
 		
 		if (browser.equalsIgnoreCase("chrome")) {
 		//	ChromeOptions options = new ChromeOptions(); 
 		//	options.addArguments("--incognito"); 
 		//	driver = new ChromeDriver(options);
 			driver = new ChromeDriver();
+			
 		}
 		else if(browser.equalsIgnoreCase("firefox"))
 			driver=new FirefoxDriver();			
@@ -27,7 +28,7 @@ public class SetupBrowser {
 			System.out.println("valid browser no provided,hence quitting the automation");	
 			System.exit(0);
 		}
-		
+		System.out.println("Browser opened");
 		if(url!="")
 			driver.get(url);
 		else

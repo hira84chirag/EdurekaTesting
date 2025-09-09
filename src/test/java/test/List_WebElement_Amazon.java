@@ -1,12 +1,8 @@
 package test;
-import java.io.IOException;
 import java.util.List;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-
 import Utilities.CommonFunctions;
 
 public class List_WebElement_Amazon extends SetupBrowser{
@@ -58,7 +54,5 @@ public class List_WebElement_Amazon extends SetupBrowser{
 	        System.out.println("Total links=" + i);
 //	        driver.close();
 	}
-	
-
 	
 }

@@ -18,6 +18,9 @@ public class GoogleLogin extends BaseTest{
 	
 	@Test(invocationCount=1) // Running looping multiple Times
 	public void Google_LoginTC() throws InterruptedException  {
+		driver.close();
+		driver=intilizeBrowserAndOpenApplication(prop.getProperty("fxbrowser"));	
+		
 		// TODO Auto-generated method stub
 		String path="";
 		String strcreatebtn="//span[contains(text(),'Create account')]";
@@ -71,8 +74,8 @@ public class GoogleLogin extends BaseTest{
 		driver.navigate().back();
 		CommonFunctions.Clickbutton(driver, strcreatebtn);
 //		driver.close();
-
-		String filename="D://Screenshot" + System.currentTimeMillis()+".jpg";
+		
+		String filename=System.getProperty("user.dir")+"\\test-output\\Screenshot\\" + System.currentTimeMillis()+".jpg";
 		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
 		try {
