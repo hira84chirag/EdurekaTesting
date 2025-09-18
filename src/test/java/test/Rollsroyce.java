@@ -12,7 +12,6 @@ import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import Utilities.CommonFunctions;
-import Utilities.GenericFun_bkp;
 import pom.Obj_Rollsroyce;
 
 public class Rollsroyce extends SetupBrowser{
@@ -60,7 +59,7 @@ public class Rollsroyce extends SetupBrowser{
         clk.clickyear2022();
         Thread.sleep(200);
   //      clk.clickreportpresent();
-        GenericFun_bkp.ScrollingPageSize(driver, 996);   //		CommonFunctions.Clickbutton(driver, year2022);		
+        CommonFunctions.ScrollingPageSize(driver, 996);   //		CommonFunctions.Clickbutton(driver, year2022);		
 //		CommonFunctions.waitForElement(driver, Presentele);
 				
 		// Take Screenshot of the page.

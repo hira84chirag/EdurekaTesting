@@ -121,7 +121,12 @@ public class CommonFunctions {
 			System.out.println(eleText.getText());
 		}
 
-
+		public static void ScrollingPageSize(WebDriver driver,int i) throws InterruptedException {
+			Thread.sleep(3000);
+			System.out.println(driver.manage().window().getSize());
+			Dimension d=new Dimension(1382, i);
+			driver.manage().window().setSize(d);
+		}
 	public static void scrollpage(WebDriver driver, int last) throws InterruptedException {
 		// Scroll by Pixels
         JavascriptExecutor js = (JavascriptExecutor) driver;

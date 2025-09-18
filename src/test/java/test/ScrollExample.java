@@ -56,7 +56,7 @@ public class ScrollExample extends SetupBrowser {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0, document.body.scrollHeight);");
 		Thread.sleep(4000);
-		GenericFun_bkp.ScrollingPageSize(driver, 970);
+		CommonFunctions.ScrollingPageSize(driver, 970);
 	}	
 
 		@Test(priority = 3)
@@ -68,7 +68,7 @@ public class ScrollExample extends SetupBrowser {
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("window.scrollBy(0, document.body.scrollHeight);");
 			Thread.sleep(4000);
-			GenericFun_bkp.ScrollingPageSize(driver,2500);
+			CommonFunctions.ScrollingPageSize(driver,2500);
 
 		}
 	

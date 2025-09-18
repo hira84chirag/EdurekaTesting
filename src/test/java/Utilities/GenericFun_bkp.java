@@ -255,12 +255,7 @@ public class GenericFun_bkp {
 	{
 		GenericFun_bkp.BtnClick(e, driver);
 	}
-	public static void ScrollingPageSize(WebDriver driver,int i) throws InterruptedException {
-		Thread.sleep(3000);
-		System.out.println(driver.manage().window().getSize());
-		Dimension d=new Dimension(1382, i);
-		driver.manage().window().setSize(d);
-	}
+
 	public static void WriteForSuccess(String s3i, String ENm, String SNm, int Rid) throws IOException
 	{
 /*		WriteExcelFile objExcel= new WriteExcelFile();
