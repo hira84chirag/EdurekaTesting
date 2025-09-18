@@ -41,11 +41,11 @@ public class Dummy {
 		                }
 		                
 		            }
-		            CommonFunctions.scrollpage(driver,500);
+		            CommonFunctions.scrollpage(driver,1000);
 		        } catch (Exception e) {
 		            e.printStackTrace();
 		        } finally {
-		        //    driver.quit();
+		            driver.quit();
         }
     }
 }

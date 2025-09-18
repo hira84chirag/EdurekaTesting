@@ -39,8 +39,8 @@ public class IframeExample extends SetupBrowser{
 		driver.switchTo().defaultContent();
 		contentstr="//h3[contains(text(),'An')]";
 		CommonFunctions.getText(driver, contentstr);
-		String abc=CommonFunctions.Snap(driver,"IframeExample");
-		System.out.println(abc);
+		closebtn=CommonFunctions.Snap(driver,"IframeExample");
+		//System.out.println(abc);
 
 	}
 

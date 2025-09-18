@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.List_WebElement_Amazon">
+      <class name="test.Dummy">
         <methods>
-          <include name="browserOpen"/>
-          <include name="tearDown"/>
-          <include name="Amazon_product_scrolling"/>
-          <include name="Amazon_locatoramazon"/>
+          <include name="Amzon_software"/>
         </methods>
-      </class> <!-- test.List_WebElement_Amazon -->
+      </class> <!-- test.Dummy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

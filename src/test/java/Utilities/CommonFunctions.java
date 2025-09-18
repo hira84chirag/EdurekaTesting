@@ -123,16 +123,14 @@ public class CommonFunctions {
     }
 	public static String Snap(WebDriver driver,String name)  
 	{
-		String path=null;
-	//	String commpath=System.getProperty("user.dir")+"\\test-output\\Screenshot\\"; 	
- 
+		String path=null; 
 		String fileName= System.getProperty("user.dir")+"\\test-output\\Screenshot\\"; 
 
 		try{			
 		//Unique DateTimestamp code		
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
 		long timestamp = System.currentTimeMillis();	        
-        System.out.println(name+sdf.format(timestamp));
+        System.out.println("File Name:"+name+sdf.format(timestamp));
         name = name+"_"+ sdf.format(timestamp);
          path = fileName;
         
@@ -196,17 +194,21 @@ public class CommonFunctions {
 	public static void scrollpage(WebDriver driver, int last) throws InterruptedException {
 		// Scroll by Pixels
         JavascriptExecutor js = (JavascriptExecutor) driver;
+        
+        js.executeScript("window.scrollBy(0,200)");
         // Scroll to a specific element (like Footer or any section)
-        WebElement footer = driver.findElement(By.id("contents"));
-        js.executeScript("arguments[0].scrollIntoView(true);", footer);
+        
+  //      if you want to perticular element then below case.
+ //        WebElement footer = driver.findElement(By.id("contents"));
+ //       js.executeScript("arguments[0].scrollIntoView(true);", footer);
       //  Thread.sleep(2000);
         int j=0;
        // js.executeScript("window.scrollBy(700, 1500)");
 
-        for (int i = 600; j <= last; i += 500) {
-        	j=i+600;
+        for (int i = 100; j <= last; i += 100) {
+        	j=i+200;
             js.executeScript("window.scrollBy(" +i+"," + j + ");");
-            Thread.sleep(7000);  // Adjust speed
+            Thread.sleep(500);  // Adjust speed
         }  
 	}
 	public static void getText(WebDriver driver, String str) {

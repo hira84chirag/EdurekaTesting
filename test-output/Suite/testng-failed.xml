@@ -16,6 +16,13 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- test.GoogleLogin -->
+      <class name="test.Testing">
+        <methods>
+          <include name="OpenAmazon"/>
+          <include name="browserOpen"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.Testing -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

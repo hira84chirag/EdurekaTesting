@@ -17,6 +17,7 @@ public class List_WebElement_Amazon extends SetupBrowser{
 		CommonFunctions.waitImplicit(driver, 100);	
 		String contbtn=	"//button[@alt='Continue shopping']";
 		CommonFunctions.findHiddenElement(driver, contbtn,null);
+		
 		driver.findElement(By.partialLinkText("Best")).click();		
 	}
 	@Test(priority = 2) 

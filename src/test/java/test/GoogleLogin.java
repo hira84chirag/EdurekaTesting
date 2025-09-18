@@ -38,7 +38,7 @@ public class GoogleLogin extends BaseTest{
 // print validation message for email field
 		WebElement Emailmsg=driver.findElement(By.xpath("//div[@class='Ekjuhf Jj6Lae']"));
 		System.out.println(Emailmsg.getText());
-
+		
 // Click on Create link
 		CommonFunctions.Clickbutton(driver,strcreatebtn);
 		//createbtn.click();	
@@ -72,7 +72,8 @@ public class GoogleLogin extends BaseTest{
 		System.out.println(Createbusiness.getText());
 		Createbusiness.click(); 
 		driver.navigate().back();
-		CommonFunctions.Clickbutton(driver, strcreatebtn);
+		CommonFunctions.waitForElement(driver, strcreatebtn);
+//		CommonFunctions.Clickbutton(driver, strcreatebtn);
 //		driver.close();
 		
 		String filename=System.getProperty("user.dir")+"\\test-output\\Screenshot\\" + System.currentTimeMillis()+".jpg";
