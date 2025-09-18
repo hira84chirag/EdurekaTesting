@@ -26,7 +26,7 @@ public class AlertExample extends BaseTest{
 		driver.switchTo().alert().accept();
 		CommonFunctions.WaitExpt(driver, alertstr);
 		alertBtn.click();
-		CommonFunctions.photo("AlertExample");
+		CommonFunctions.Screenshots_ImageIO("AlertExample");
 		driver.switchTo().alert().dismiss();
 		driver.quit();
 	}

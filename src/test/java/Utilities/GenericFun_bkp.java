@@ -24,7 +24,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class GenericFun {
+public class GenericFun_bkp {
 	
 	public static void ScreenShot(String Name, WebDriver ldriver)
 	{
@@ -242,7 +242,7 @@ public class GenericFun {
 		{
 			if(!e.isSelected())
 			{
-				GenericFun.BtnClick(e, driver);
+				GenericFun_bkp.BtnClick(e, driver);
 			}
 		}
 		catch(Exception ex)
@@ -253,7 +253,7 @@ public class GenericFun {
 	
 	public static void CheckboxUntick(WebElement e, WebDriver driver)
 	{
-		GenericFun.BtnClick(e, driver);
+		GenericFun_bkp.BtnClick(e, driver);
 	}
 	public static void ScrollingPageSize(WebDriver driver,int i) throws InterruptedException {
 		Thread.sleep(3000);

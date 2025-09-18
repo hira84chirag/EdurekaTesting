@@ -3,6 +3,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -16,7 +17,10 @@ public class List_WebElement_Amazon extends SetupBrowser{
 		driver.get("https://www.amazon.in");
 		CommonFunctions.waitImplicit(driver, 100);	
 		String contbtn=	"//button[@alt='Continue shopping']";
-		CommonFunctions.findHiddenElement(driver, contbtn,null);
+		By id= By.xpath(contbtn);
+		boolean btn=CommonFunctions.isElementPresent(driver,id);
+		if(btn==true) driver.findElement(id).click(); 
+	//	CommonFunctions.findHiddenElement(driver, contbtn,null);
 		
 		driver.findElement(By.partialLinkText("Best")).click();		
 	}
@@ -78,12 +82,7 @@ public class List_WebElement_Amazon extends SetupBrowser{
            	 
             }
             
-			/*
-			 * if (!linkText.isEmpty()) { // System.out.println("Text: " + linkText ); // +
-			 * " - Link: " + href Reporter.log("Text: "+"--"+ linkText + " - Link: " + url);
-			 * 
-			 * }
-			 */	 
+
         }
 	        System.out.println("Total links=" + products.size());
 //	        driver.close();
