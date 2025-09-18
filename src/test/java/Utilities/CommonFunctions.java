@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalTime;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 import javax.imageio.ImageIO;
@@ -24,6 +25,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import test.SetupBrowser;
 public class CommonFunctions {
 	
 	public static void ClickonElement(WebDriver driver, WebElement e){
@@ -31,6 +34,8 @@ public class CommonFunctions {
 		wait.until(ExpectedConditions.visibilityOf(e));
 		wait.until(ExpectedConditions.elementToBeClickable(e)).click();
 	}
+	
+	
     public static boolean isElementPresent(WebDriver driver, By by) {
 	        try {
 	            driver.findElement(by);
@@ -40,6 +45,31 @@ public class CommonFunctions {
 	        }
     }
 	
+    public static void findHiddenElement(WebDriver driver,String xpath,String path) {
+    	String techstr=path;
+    	By elementLocator = By.xpath(xpath);
+
+		List<WebElement> elements = driver.findElements(elementLocator);
+
+		// Store the result as a boolean
+		boolean isElementPresent = !elements.isEmpty();
+		System.out.println("elements visilbe : "+isElementPresent);
+		if (isElementPresent) {
+		    System.out.println("The element exists! It's safe to interact with it.");
+		    elements.get(0).click(); // Interact with the first element found
+        	
+		} else {
+			WebElement Webtech= driver.findElement(By.xpath(techstr));
+						JavascriptExecutor js=(JavascriptExecutor)(SetupBrowser.driver);
+			js.executeScript("arguments[0].scrollIntoView();",Webtech);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(930));
+		
+		    System.out.println("The element is not present on the page.");
+		    // Continue with alternative actions
+		}
+
+    }
+    
 	public static void ClickWebElement(WebDriver driver, By abc){
  		WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(100));
  		wait.until(ExpectedConditions.visibilityOfElementLocated(abc));

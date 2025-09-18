@@ -1,6 +1,9 @@
 package test;
 
 import org.testng.annotations.Test;
+
+import Utilities.CommonFunctions;
+
 import org.openqa.selenium.By;
 import java.time.Duration;
 
@@ -21,7 +24,10 @@ public class Testing extends SetupBrowser {
 		// Open chrome browser and maximize
 		driver.get( "https://www.amazon.in");
 		driver.manage().window().maximize();
-		driver.get("https://www.amazon.in");
+		
+		String contbtn=	"//button[@alt='Continue shopping']";
+		CommonFunctions.findHiddenElement(driver, contbtn,null);
+		
 		// wait page load time and select Best Sellers menu
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(260));
 		driver.findElement(By.partialLinkText("Best")).click();

@@ -8,6 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
+import Utilities.CommonFunctions;
 import Utilities.GenericFun;
 public class ScrollExample extends SetupBrowser {
 //	ScrollExample obj;
@@ -26,30 +27,31 @@ public class ScrollExample extends SetupBrowser {
 		driver.get(url);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(160));
-//		String contbtn=	"//button[@alt='Continue shopping']";
+		String contbtn=	"//button[@alt='Continue shopping']";
 		
-		By elementLocator = By.xpath("//button[@alt='Continue shopping']");
-
-		List<WebElement> elements = driver.findElements(elementLocator);
-
-		// Store the result as a boolean
-		boolean isElementPresent = !elements.isEmpty();
-		System.out.println("elements visilbe : "+isElementPresent);
-		if (isElementPresent) {
-		    System.out.println("The element exists! It's safe to interact with it.");
-		    elements.get(0).click(); // Interact with the first element found
-        	
-		} else {
-			WebElement Webtech= driver.findElement(By.xpath(techstr));
-			
-			JavascriptExecutor js=(JavascriptExecutor)(SetupBrowser.driver);
-			js.executeScript("arguments[0].scrollIntoView();",Webtech);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(930));
-		
-		    System.out.println("The element is not present on the page.");
-		    // Continue with alternative actions
-		}
-		
+		CommonFunctions.findHiddenElement(driver, contbtn,techstr);
+	
+		/*
+		 * By elementLocator = By.xpath("//button[@alt='Continue shopping']");
+		 * 
+		 * List<WebElement> elements = driver.findElements(elementLocator);
+		 * 
+		 * // Store the result as a boolean boolean isElementPresent =
+		 * !elements.isEmpty();
+		 * System.out.println("elements visilbe : "+isElementPresent); if
+		 * (isElementPresent) {
+		 * System.out.println("The element exists! It's safe to interact with it.");
+		 * elements.get(0).click(); // Interact with the first element found
+		 * 
+		 * } else { WebElement Webtech= driver.findElement(By.xpath(techstr));
+		 * 
+		 * JavascriptExecutor js=(JavascriptExecutor)(SetupBrowser.driver);
+		 * js.executeScript("arguments[0].scrollIntoView();",Webtech);
+		 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(930));
+		 * 
+		 * System.out.println("The element is not present on the page."); // Continue
+		 * with alternative actions }
+		 */		
 		/*
 		 * Boolean bol=driver.findElement(By.xpath(contbtn)).isDisplayed();
 		 * System.out.println("Element displayed : "+ bol);
