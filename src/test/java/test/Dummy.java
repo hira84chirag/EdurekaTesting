@@ -31,6 +31,7 @@ public class Dummy {
 		            Thread.sleep(5000); // Basic wait
 
 		            // Find all product link elements
+		            
 		            List<WebElement> productLinks = driver.findElements(By.xpath("//a[contains(@href, '/dp/')]"));
 
 		            System.out.println("Found " + productLinks.size() + " product links:");

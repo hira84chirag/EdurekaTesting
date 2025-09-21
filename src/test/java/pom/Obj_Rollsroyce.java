@@ -25,11 +25,12 @@ public class Obj_Rollsroyce {
 		WebElement reportpresent;
 */
 		By acceptAll=By.xpath("//button[@id='cc-acceptAll-btn']");	
-		By reportpresent=By.xpath("//li[@id='nav-results-reports-and-presentations-level2' and @class='level2 haschildren' and @aria-haspopup='true']");
+//		By reportpresent=By.xpath("//li[@id='nav-results-reports-and-presentations-level2' and @class='level2 haschildren' and @aria-haspopup='true']");
 		By Presentele=By.xpath("//th[contains(text(),'Presentation')]");
 		By year2022=By.xpath("//ul[2]//a[contains(text(),2022)]");
-		
-		
+		By reportpresent=By.xpath("//li[@id='nav-results-reports-and-presentations-level2' and @aria-haspopup='true']");
+	
+//		"//li[@id='nav-results-reports-and-presentations-level2' and @aria-haspopup='true']"		
 		
 //		String reportpresent="//li[@id='nav-results-reports-and-presentations-level2' and @class='level2 haschildren' and @aria-haspopup='true']";	
 //	String acceptAll="//button[@id='cc-acceptAll-btn']";

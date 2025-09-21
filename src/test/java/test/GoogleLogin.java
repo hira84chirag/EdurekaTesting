@@ -39,13 +39,12 @@ public class GoogleLogin extends BaseTest{
 		WebElement Emailmsg=driver.findElement(By.xpath("//div[@class='Ekjuhf Jj6Lae']"));
 		System.out.println(Emailmsg.getText());
 		
-// Click on Create link
-		CommonFunctions.Clickbutton(driver,strcreatebtn);
+// Click on Create link chirag updating from here
+		CommonFunctions.waitForElementToClick(driver,strcreatebtn);
 		//createbtn.click();	
 
-// Wait for my personal use element
-		
-		WaitElement("//span[contains(text(),'For my personal use')]");
+// Wait for my personal use element - i updated
+		CommonFunctions.WaitExpt(driver,"//span[contains(text(),'For my personal use')]");
 
 // click for my personal use 
 		WebElement persparent=driver.findElement(By.xpath("//span[@class='VfPpkd-StrnGf-rymPhb-b9t22c']"));			
@@ -53,7 +52,7 @@ public class GoogleLogin extends BaseTest{
 		System.out.println(Createpersonal.getText());
 		Createpersonal.click(); 
 		driver.navigate().back(); 
-		CommonFunctions.Clickbutton(driver, strcreatebtn);
+		CommonFunctions.waitForElementToClick(driver, strcreatebtn);
 		
 // click for my child
 		WebElement Createparent1=driver.findElement(By.xpath("//span[@class='VfPpkd-StrnGf-rymPhb-b9t22c']"));
@@ -62,7 +61,7 @@ public class GoogleLogin extends BaseTest{
 		System.out.println(Createchild.getText());
 		Createchild.click();
 		driver.navigate().back();
-		CommonFunctions.Clickbutton(driver, strcreatebtn);
+		CommonFunctions.waitForElementToClick(driver, strcreatebtn);
 		
 // click for my business 
 		path="//span[contains(text(),'For work or my business')]";	
@@ -72,20 +71,10 @@ public class GoogleLogin extends BaseTest{
 		System.out.println(Createbusiness.getText());
 		Createbusiness.click(); 
 		driver.navigate().back();
-		CommonFunctions.waitForElement(driver, strcreatebtn);
+		CommonFunctions.waitForElementToClick(driver, strcreatebtn);
 //		CommonFunctions.Clickbutton(driver, strcreatebtn);
 //		driver.close();
-		
-		String filename=System.getProperty("user.dir")+"\\test-output\\Screenshot\\" + System.currentTimeMillis()+".jpg";
-		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-		try {
-			FileUtils.copyFile(screenshot,new File(filename));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+		CommonFunctions.ScreenShot(driver,"GoogleMenu");
 		//driver.quit();
 		 
 	}

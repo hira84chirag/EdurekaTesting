@@ -8,6 +8,8 @@ import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.List;
@@ -25,18 +27,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 import test.SetupBrowser;
 public class CommonFunctions {
 	
-	public static void ClickonElement(WebDriver driver, WebElement e){
- 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(120));
-		wait.until(ExpectedConditions.visibilityOf(e));
-		wait.until(ExpectedConditions.elementToBeClickable(e)).click();
-	}
-	
-	
-    public static boolean isElementPresent(WebDriver driver, By by) {
+   public static boolean isElementPresent(WebDriver driver, By by) {
     	
 	        try {
 	            driver.findElement(by);
@@ -72,24 +68,24 @@ public class CommonFunctions {
 
     }
     
-	public static void ClickWebElement(WebDriver driver, By abc){
- 		WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(100));
- 		wait.until(ExpectedConditions.visibilityOfElementLocated(abc));
-		wait.until(ExpectedConditions.presenceOfElementLocated(abc)); 
-		wait.until(ExpectedConditions.alertIsPresent());
-		
-		driver.findElement(abc).click();
-	}
 	public static void BtnClick(WebDriver driver,WebElement obj)
 	{
 		obj.click();
 	}
-
-	public static void waitForElement(WebDriver driver, String Webele){
-		WebElement elewait=driver.findElement(By.xpath(Webele));
+	// Wait for element
+	public static void waitForElementToClick(WebDriver driver, String Webele){
+		WebElement ele=driver.findElement(By.xpath(Webele));
  		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(120));
-		wait.until(ExpectedConditions.visibilityOf(elewait));
-		wait.until(ExpectedConditions.elementToBeClickable(elewait)).click();
+		wait.until(ExpectedConditions.visibilityOf(ele));
+		wait.until(ExpectedConditions.elementToBeClickable(ele)).click();
+	}
+
+	// Wait for click createlink
+	public static void Clickbutton(WebDriver driver,String xpath) {
+		//xpath="//span[contains(text(),'Create account')]";
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(100));		  
+		WebElement elewait=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));			
+		elewait.click();
 	}
 
 	// Wait for Element	
@@ -100,33 +96,23 @@ public class CommonFunctions {
 
 	public static void waitImplicit(WebDriver driver,int num){
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(num));
-
 	}
 
 	public static void waitThread(int number) throws InterruptedException {
 		Thread.sleep(number);
 	}
 	
-	
-	// Wait for click createlink
-		public static void Clickbutton(WebDriver driver,String xpath) {
-			//xpath="//span[contains(text(),'Create account')]";
-			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(100));		  
-			WebElement elewait=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));			
-			elewait.click();
+	public static void getText(WebDriver driver, String str) {
+		WebElement eleText=driver.findElement(By.xpath(str));
+		System.out.println(eleText.getText());
+	}
 
-		}
-		public static void getText(WebDriver driver, String str) {
-			WebElement eleText=driver.findElement(By.xpath(str));
-			System.out.println(eleText.getText());
-		}
-
-		public static void ScrollingPageSize(WebDriver driver,int i) throws InterruptedException {
-			Thread.sleep(3000);
-			System.out.println(driver.manage().window().getSize());
-			Dimension d=new Dimension(1382, i);
-			driver.manage().window().setSize(d);
-		}
+	public static void ScrollingPageSize(WebDriver driver,int i) throws InterruptedException {
+		Thread.sleep(3000);
+		System.out.println(driver.manage().window().getSize());
+		Dimension d=new Dimension(1382, i);
+		driver.manage().window().setSize(d);
+	}
 	public static void scrollpage(WebDriver driver, int last) throws InterruptedException {
 		// Scroll by Pixels
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -182,17 +168,17 @@ public class CommonFunctions {
 		long timestamp = System.currentTimeMillis();	        
         System.out.println("File Name:"+name+sdf.format(timestamp));
         name = name+"_"+ sdf.format(timestamp);
-        name+=fileName;
+        name=fileName+name+ ".jpg";
         
 		//Screenshot code
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(src, new File(name + ".jpg"));
+		FileUtils.copyFile(src, new File(name));
 		
 		}catch (Exception e) { 
 			e.printStackTrace();
 			//return false;
 		}		
-		return name+".jpg";
+		return name;
 	}
 
 	public static void Screenshots_ImageIO(String filename) throws AWTException {		 
@@ -214,7 +200,39 @@ public class CommonFunctions {
 		 }
 	
 	}
+	public static void BrokenLinks(WebDriver driver,String xpath)  {		 
+	    List<WebElement> products=driver.findElements(By.xpath(xpath)); 			
+			for (WebElement product : products) {
+	         String linkText = product.getText() ; //.getAttribute("value");
+	         String url = product.getAttribute("href"); // element.getAttribute("value"); 
+	         System.out.println("Total links=" + products.size());
+	         if (url != null && !url.isEmpty()) {
+	        	 try {
+	 	            URL urltest = new URL(url);
+	 	            HttpURLConnection httpURLConnect = (HttpURLConnection) urltest.openConnection();
+	 	            httpURLConnect.setConnectTimeout(3000);
+	 	            httpURLConnect.connect();
+	 	            int responseCode = httpURLConnect.getResponseCode();
+		             	
+		             		if (httpURLConnect.getResponseCode() >= 400) {            	
+			 	            	Reporter.log(" HTTP status code: "+responseCode+"=" + httpURLConnect.getResponseMessage());
+			 	            	Reporter.log(url + " is a broken link.");
+			 	            	 } 
+							else {
+		 	            		Reporter.log("URL :" + url ); }		             	
+		 	        } catch (Exception e) {
+		 	            // This catch block handles exceptions like MalformedURLException or IOExceptions
+		 	        	Reporter.log(url + " is a broken link due to an exception: " + e.getMessage());
+		 	        }
+		       }          	 
+			}
+		
+	}
+	
 }
+	
+
+	
 /*
 public static void CreateImage123(WebDriver driver,String fileName)  {
 try {

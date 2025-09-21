@@ -19,7 +19,6 @@ import java.time.Duration;
 import javax.imageio.ImageIO;
 import org.openqa.selenium.WebDriver;
 public class IframeExample extends SetupBrowser{
-
 	String closebtn="//div[@class='tox-notifications-container']//div[@aria-label='Close']";
 	String contentstr="//p[contains(text(),'Your content')]";	
 	  	//  @Test(invocationCount=1)
@@ -27,11 +26,10 @@ public class IframeExample extends SetupBrowser{
 	  @Test(invocationCount = 1)
 	public void Internet_iframeDemo()  {
 		
-
 		driver.get("https://the-internet.herokuapp.com/iframe");
-		CommonFunctions.Clickbutton(driver, closebtn);
-
-	//	driver.manage().window().maximize();				
+	//	code would be enabled if closebtn is enabled 
+	//	CommonFunctions.Clickbutton(driver, closebtn);
+		driver.manage().window().maximize();				
 		driver.switchTo().frame("mce_0_ifr");	
 		
 		CommonFunctions.getText(driver, contentstr);

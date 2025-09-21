@@ -38,7 +38,7 @@ public class List_WebElement_Amazon extends SetupBrowser{
 		
 // Click Today deals link
 
-		CommonFunctions.waitForElement(driver,todaydeal);
+		CommonFunctions.waitForElementToClick(driver,todaydeal);
 		CommonFunctions.scrollpageamazon(driver);
 				
         List<WebElement> productLinks = driver.findElements(By.xpath(strprod));
@@ -48,44 +48,11 @@ public class List_WebElement_Amazon extends SetupBrowser{
             String productUrl = link.getAttribute("href");
             if (productUrl != null && productUrl.contains("/dp/")) {
                 Reporter.log(linkText +"--->" +productUrl);
-            }
-        }
-		List<WebElement> products=driver.findElements(By.xpath(classname)); 			
-		for (WebElement product : products) {
-            String linkText = product.getText() ; //.getAttribute("value");
-            String url = product.getAttribute("href"); // element.getAttribute("value"); 
-            int count=0;
-            if (url != null && !url.isEmpty()) {
-           	 if (count <5) {
-           	 try {
-    	            URL urltest = new URL(url);
-    	            HttpURLConnection httpURLConnect = (HttpURLConnection) urltest.openConnection();
-    	            httpURLConnect.setConnectTimeout(3000);
-    	            httpURLConnect.connect();
-    	            int responseCode = httpURLConnect.getResponseCode();
-                	
-                		if (httpURLConnect.getResponseCode() >= 400) {            	
-    	            	Reporter.log(" HTTP status code: "+responseCode+"=" + httpURLConnect.getResponseMessage());
-    	            	Reporter.log(url + " is a broken link.");
-    	            	count++;
-    	            	} else {
-    	            	Reporter.log("URL :" + url );
-    	            	}
-                	
-    	        } catch (Exception e) {
-    	            // This catch block handles exceptions like MalformedURLException or IOExceptions
-    	        	Reporter.log(url + " is a broken link due to an exception: " + e.getMessage());
-    	        }
-           	 }else {
-           		 break;
-           	 }
-           	 
-            }
-            
 
+            }
         }
-	        System.out.println("Total links=" + products.size());
-//	        driver.close();
+        Reporter.log("Hello this is broken line");
+		CommonFunctions.BrokenLinks(driver,classname);
 	}
 	
 }
