@@ -30,22 +30,20 @@ public class ScrollExample extends SetupBrowser {
 		String contbtn=	"//button[@alt='Continue shopping']";
 		By xpath=By.xpath(contbtn);
 		
-		boolean btnele=CommonFunctions.isElementPresent(driver,xpath);
+		boolean btnele=CommonFunctions.findEles(driver,contbtn);
 		
-		if(btnele==true) driver.findElement(xpath).click(); 		
-		else System.out.println("The element is not present on the page.");
+		if(btnele==true) {
+			System.out.println("The element is present on the page.");
+			//driver.findElement(xpath).click(); 		
+		}
+			else System.out.println("The element is not present on the page.");
 		
 			
 			WebElement Webtech= driver.findElement(By.xpath(techstr));
 			JavascriptExecutor js=(JavascriptExecutor)(SetupBrowser.driver);
 			js.executeScript("arguments[0].scrollIntoView();",Webtech);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(930));
-			Thread.sleep(1000);
-			// Continue with alternative actions
-		
-	//	CommonFunctions.findHiddenElement(driver, contbtn,techstr);
-
-		
+			//		Thread.sleep(1000);	
 	}	
 
 
@@ -75,28 +73,3 @@ public class ScrollExample extends SetupBrowser {
 }
 
 
-/*
- * By elementLocator = By.xpath("//button[@alt='Continue shopping']");
- * 
- * List<WebElement> elements = driver.findElements(elementLocator);
- * 
- * // Store the result as a boolean boolean isElementPresent =
- * !elements.isEmpty();
- * System.out.println("elements visilbe : "+isElementPresent); if
- * (isElementPresent) {
- * System.out.println("The element exists! It's safe to interact with it.");
- * elements.get(0).click(); // Interact with the first element found
- * 
- * } else { WebElement Webtech= driver.findElement(By.xpath(techstr));
- * 
- * JavascriptExecutor js=(JavascriptExecutor)(SetupBrowser.driver);
- * js.executeScript("arguments[0].scrollIntoView();",Webtech);
- * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(930));
- * 
- * System.out.println("The element is not present on the page."); // Continue
- * with alternative actions }
- */		
-/*
- * Boolean bol=driver.findElement(By.xpath(contbtn)).isDisplayed();
- * System.out.println("Element displayed : "+ bol);
- */

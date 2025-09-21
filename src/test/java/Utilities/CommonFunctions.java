@@ -41,7 +41,24 @@ public class CommonFunctions {
 	            return false;
 	        }
     }
-	
+   
+   public static boolean findEles(WebDriver driver,String xpath) {
+   	
+   	By elementLocator = By.xpath(xpath);
+
+		List<WebElement> elements = driver.findElements(elementLocator);
+
+		// Store the result as a boolean
+		boolean isElementPresent = !elements.isEmpty();
+		System.out.println("elements visilbe : "+isElementPresent);
+		if (isElementPresent==true) {
+		    System.out.println("The element exists! It's safe to interact with it.");
+		    elements.get(0).click(); // Interact with the first element found
+		    
+		}
+		return isElementPresent;
+		
+   }
     public static void findHiddenElement(WebDriver driver,String xpath,String path) {
     	String techstr=path;
     	techstr="//h1[text()='Technical Details']";
@@ -52,15 +69,16 @@ public class CommonFunctions {
 		// Store the result as a boolean
 		boolean isElementPresent = !elements.isEmpty();
 		System.out.println("elements visilbe : "+isElementPresent);
-		if (isElementPresent) {
+		if (isElementPresent==true) {
 		    System.out.println("The element exists! It's safe to interact with it.");
 		    elements.get(0).click(); // Interact with the first element found
         	
 		} else {
-			WebElement Webtech= driver.findElement(By.xpath(techstr));
-						JavascriptExecutor js=(JavascriptExecutor)(SetupBrowser.driver);
-			js.executeScript("arguments[0].scrollIntoView();",Webtech);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(930));
+			/*
+			 * WebElement Webtech= driver.findElement(By.xpath(techstr)); JavascriptExecutor
+			 * js=(JavascriptExecutor)(SetupBrowser.driver);
+			 * js.executeScript("arguments[0].scrollIntoView();",Webtech);
+			 */			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(930));
 		
 		    System.out.println("The element is not present on the page.");
 		    // Continue with alternative actions

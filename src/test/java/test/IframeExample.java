@@ -28,7 +28,7 @@ public class IframeExample extends SetupBrowser{
 		
 		driver.get("https://the-internet.herokuapp.com/iframe");
 	//	code would be enabled if closebtn is enabled 
-	//	CommonFunctions.Clickbutton(driver, closebtn);
+		CommonFunctions.Clickbutton(driver, closebtn);
 		driver.manage().window().maximize();				
 		driver.switchTo().frame("mce_0_ifr");	
 		

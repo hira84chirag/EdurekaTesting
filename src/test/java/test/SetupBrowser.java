@@ -45,7 +45,7 @@ public class SetupBrowser {
 	@AfterClass
 	public void tearDown() {
         if (driver != null) {
-          //  driver.quit();
+            driver.quit();
             System.out.println("Browser closed");
         }
 	    

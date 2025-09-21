@@ -9,20 +9,13 @@
     <parameter name="Password1" value="mypassword"/>
     <parameter name="Password" value="mypassword"/>
     <classes>
-      <class name="test.GoogleLogin">
+      <class name="test.ScrollExample">
         <methods>
-          <include name="Google_LoginTC"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- test.GoogleLogin -->
-      <class name="test.Testing">
-        <methods>
-          <include name="OpenAmazon"/>
           <include name="browserOpen"/>
           <include name="tearDown"/>
+          <include name="amazonScrolling"/>
         </methods>
-      </class> <!-- test.Testing -->
+      </class> <!-- test.ScrollExample -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
