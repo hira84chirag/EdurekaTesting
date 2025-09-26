@@ -223,7 +223,7 @@ public class CommonFunctions {
 			for (WebElement product : products) {
 	         String linkText = product.getText() ; //.getAttribute("value");
 	         String url = product.getAttribute("href"); // element.getAttribute("value"); 
-	         System.out.println("Total links=" + products.size());
+	        // System.out.println("Total links=" + products.size());
 	         if (url != null && !url.isEmpty()) {
 	        	 try {
 	 	            URL urltest = new URL(url);
