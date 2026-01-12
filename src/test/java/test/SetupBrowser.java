@@ -16,9 +16,12 @@ public class SetupBrowser {
 		String browser="chrome",url="";
 		
 		if (browser.equalsIgnoreCase("chrome")) {
-		//	ChromeOptions options = new ChromeOptions(); 
-		//	options.addArguments("--incognito"); 
-		//	driver = new ChromeDriver(options);
+			/*
+			 * ChromeOptions options = new ChromeOptions();
+			 * options.addArguments("--incognito");
+			 * options.addArguments("--disable-notifications") driver = new
+			 * ChromeDriver(options);
+			 */			
 			driver = new ChromeDriver();
 			
 		}

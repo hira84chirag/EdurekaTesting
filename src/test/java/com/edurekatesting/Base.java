@@ -76,5 +76,6 @@ public class Base {
             driver.quit();
             System.out.println("All Browser closed");
         }
-	}    
+	}   
+	
 }

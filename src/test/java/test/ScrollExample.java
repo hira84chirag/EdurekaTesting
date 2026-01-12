@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import Utilities.CommonFunctions;
 import Utilities.GenericFun_bkp;
 public class ScrollExample extends SetupBrowser {
-//	ScrollExample obj;
+
 	@Test(invocationCount  =1)
 	public void amazonScrolling() throws InterruptedException {		
 		String url="https://www.amazon.in/Apple-iPhone-15-128-GB/dp/"
@@ -32,18 +32,16 @@ public class ScrollExample extends SetupBrowser {
 		
 		boolean btnele=CommonFunctions.findEles(driver,contbtn);
 		
-		if(btnele==true) {
+		if(btnele==true)
 			System.out.println("The element is present on the page.");
-			//driver.findElement(xpath).click(); 		
-		}
-			else System.out.println("The element is not present on the page.");
-		
-			
+		else 
+			System.out.println("The element is not present on the page.");
+			Thread.sleep(3000);		
 			WebElement Webtech= driver.findElement(By.xpath(techstr));
 			JavascriptExecutor js=(JavascriptExecutor)(SetupBrowser.driver);
 			js.executeScript("arguments[0].scrollIntoView();",Webtech);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(930));
-			//		Thread.sleep(1000);	
+
 	}	
 
 
@@ -59,7 +57,6 @@ public class ScrollExample extends SetupBrowser {
 
 		@Test(priority = 3)
 		public void youtubeScrolling() throws InterruptedException {
-//			obj=new ScrollExample();
 			driver.get("https://www.youtube.com/watch?v=nIHyr_fp_yI");
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(1960));
 			driver.manage().window().maximize();
