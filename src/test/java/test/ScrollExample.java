@@ -13,7 +13,7 @@ import Utilities.GenericFun_bkp;
 public class ScrollExample extends SetupBrowser {
 
 	@Test(invocationCount  =1)
-	public void amazonScrolling() throws InterruptedException {		
+	public void amazonScrolling() throws Exception {		
 		String url="https://www.amazon.in/Apple-iPhone-15-128-GB/dp/"
 				+ "B0CHX2F5QT/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.8-aKrERwPzd"
 				+ "GyJWfWOa56I4wwdlI59jT8Bz9mNMoRuJhDPQn-fIYfKJxxKAv6p4v1WokuX"

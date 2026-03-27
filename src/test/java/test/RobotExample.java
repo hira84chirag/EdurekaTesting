@@ -14,7 +14,7 @@ import Utilities.CommonFunctions;
 public class RobotExample  extends BaseTest{
 	
 	@Test
-	public void tinypng_robotExample() throws AWTException, InterruptedException {
+	public void tinypng_robotExample() throws Exception {
 		driver.get("https://tinypng.com/");
 //		driver.manage().window().maximize();
 		CommonFunctions.waitThread(400);

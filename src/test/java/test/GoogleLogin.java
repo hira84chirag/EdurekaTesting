@@ -17,7 +17,7 @@ import Utilities.CommonFunctions;
 public class GoogleLogin extends BaseTest{
 	
 	@Test(invocationCount=1) // Running looping multiple Times
-	public void Google_LoginTC() throws InterruptedException  {
+	public void Google_LoginTC() throws Exception  {
 		driver.close();
 		driver=intilizeBrowserAndOpenApplication(prop.getProperty("fxbrowser"));	
 		

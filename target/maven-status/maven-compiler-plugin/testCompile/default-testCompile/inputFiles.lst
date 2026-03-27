@@ -1,5 +1,5 @@
+C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\com\edurekatesting\Base.java
 C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\pom\AmazonOR.java
-C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\pom\Obj_Edureka.java
 C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\pom\Obj_Facebook.java
 C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\pom\Obj_RediffValidation.java
 C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\pom\Obj_Rollsroyce.java
@@ -10,7 +10,6 @@ C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\test\Bro
 C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\test\DataproviderExample.java
 C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\test\DependacyExample.java
 C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\test\Dummy.java
-C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\test\GLogin.java
 C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\test\GoogleLogin.java
 C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\test\GridExample.java
 C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\test\GroupsExample.java
@@ -35,8 +34,8 @@ C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\test\Wai
 C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\test\WebElementCommand.java
 C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\test\WindowManagementExample.java
 C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\uSGrid\SeleniumGrid.java
-C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\Util\Common.java
-C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\Util\CommonFunctions.java
-C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\Util\GenericFun.java
-C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\Util\ReadExcelSheet.java
-C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\Util\SetupBrowser.java
+C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\Utilities\Common_delete.java
+C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\Utilities\CommonFunctions.java
+C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\Utilities\GenericFun_bkp.java
+C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\Utilities\ReadExcelSheet.java
+C:\Users\Dell Enterprise\eclipse-workspace\EdurekaTesting\src\test\java\Utilities\SetupBrowser.java

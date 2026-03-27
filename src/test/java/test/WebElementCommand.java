@@ -16,7 +16,7 @@ public class WebElementCommand extends SetupBrowser {
 	public void facebook_elementAction() {
 	
 		driver.get("https://www.facebook.com");
-		WebElement we = driver.findElement(By.id("email"));
+		WebElement we = driver.findElement(By.name("email"));
 		Reporter.log("is emaild displayed or not=" + we.isDisplayed());
 		Reporter.log("is Email enabled or not=" + we.isEnabled());
 

@@ -19,12 +19,12 @@ public class WaitExample extends SetupBrowser{
 		
 		driver.get( "https://www.facebook.com");
 		//	obj.explitcitWaitExample();
-		WebElement email = driver.findElement(By.id("email"));
+		WebElement email = driver.findElement(By.name("email"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		email.sendKeys("Testing of email address");				
 		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));		
-		WebElement pass= wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("pass"))));
+		WebElement pass= wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.name("pass"))));
 	
 		pass.sendKeys("entered passworking test");	
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -43,7 +43,7 @@ public class WaitExample extends SetupBrowser{
 	public void fluentWaitExample() {
 		
 		Wait<WebDriver> wait= new FluentWait<WebDriver>(driver).pollingEvery(Duration.ofSeconds(2)).withTimeout(Duration.ofSeconds(2)).ignoring(ElementNotInteractableException.class);		
-		WebElement pass= wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("pass"))));
+		WebElement pass= wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.name("pass"))));
 		pass.sendKeys("Testing of email address");	
 		//driver.quit();
 	}

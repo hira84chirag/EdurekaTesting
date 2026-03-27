@@ -4,6 +4,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
+import java.util.List;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -26,7 +27,7 @@ public class ReadExcel extends SetupBrowser{
 	int count=0;
 		
 	@Test ( priority = 1)	
-	public void Facebook_login() throws IOException, InterruptedException 
+	public void Facebook_login() throws Exception 
 	{		
 	  // Path to Excel file
 	  String excelFilePath = "src/test/java/Utilities/Book1.xlsx";
@@ -47,12 +48,14 @@ public class ReadExcel extends SetupBrowser{
           }
           
       }
-
+      System.out.println(" ");
 //	  SetupBrowser bt=new SetupBrowser();	  
 	  driver.get("https://www.facebook.com/r.php"); 
       
 	  String username="",lastname="",regemail="",password="";
-      
+      	int i=0;
+        List<WebElement> controls = driver.findElements(By.xpath("//div[@class='x78zum5 xdt5ytf xh8yej3']"));
+
 	      // Iterate through rows
 	      for (Row row : sheet) {
 	    	  
@@ -62,25 +65,27 @@ public class ReadExcel extends SetupBrowser{
               regemail = row.getCell(3).getStringCellValue(); // Column 1
               password = row.getCell(4).getStringCellValue(); // Column 1
          	 
-	      
-	              // Print each cell value	
-	        	  if (!username.equals("usename")) {
-		    	      driver.findElement(By.name("firstname")).sendKeys(username);	    	      
-		    	      driver.findElement(By.name("lastname")).sendKeys(lastname);
-		    	      driver.findElement(By.name("reg_email__")).sendKeys(regemail);
-		    	      driver.findElement(By.name("reg_passwd__")).sendKeys(password);		    	      
-		    	  	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
-		              driver.navigate().refresh();
-		              	Reporter.log(username+"\t"+lastname +"\t"+ regemail+"\t"+password);
-		        	  }
-	        	  else {
-	        		  System.out.println("sdfsd");
-	        		}
+              controls.get(i).sendKeys(username);
+              controls.get(i+1).sendKeys(lastname);
+              controls.get(i+2).clear();
+              controls.get(i+2)controls. .select("2");
+              
+              //for (int i = 0; i < controls.size(); i++) {
+                  System.out.println("Element index: " + i);
+                  controls.get(i).click();  // or any action
+                  Thread.sleep(3000);
+              //}
+              i++;
+              
+              
 	           }
-	          count++;
+	           
+              
+	          count++; 
 	          // Close workbook
 		    //  workbook.close();	 
-	          Thread.sleep(300);
+	      
+	          
 	}
 	
 	@Test ( priority = 2)
@@ -99,7 +104,7 @@ public class ReadExcel extends SetupBrowser{
 	
 	@Ignore
 	@Test ( priority = 1)
-	public void WriteExcel(String value,int i) throws IOException {
+	public void WriteExcel(String value,int i) throws Exception {
 
 	        // Create a workbook and sheet
 	        Workbook workbook = new XSSFWorkbook();

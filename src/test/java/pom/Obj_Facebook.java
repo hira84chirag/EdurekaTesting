@@ -17,7 +17,7 @@ public class Obj_Facebook {
 
 	@FindBy(xpath = "//a[contains(text(),'Create new account')]") 
 	WebElement btnclick;
-	String str="//a[contains(text(),'Create new account')]";
+	String str="//div[@class='x3nfvp2 x1n2onr6 xh8yej3']/a[@aria-label='Create new account']";
 
 	
 	public Obj_Facebook(WebDriver driver) {
@@ -28,10 +28,18 @@ public class Obj_Facebook {
 
 
 	public void clickCreateNewAccount() {
-		// TODO Auto-generated method stub
+		String text = driver.findElement(By.linkText("Create new account")).getText();
 		WebElement ele= driver.findElement(By.xpath(str));
-	//	ele.click();
-		btnclick.click();
+		
+		if(text.equals("Create new account")) {
+		    System.out.println("Link text verified");
+		    ele.click();
+		}
+		else {
+		//	str="//div[@class='x3nfvp2 x1n2onr6 xh8yej3']/a[@aria-label='Create new account']";
+		//	WebElement ele= driver.findElement(By.xpath(str));
+			ele.click();
+		}
 	}
 	
 

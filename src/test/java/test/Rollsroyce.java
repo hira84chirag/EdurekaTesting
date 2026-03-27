@@ -16,7 +16,7 @@ public class Rollsroyce extends SetupBrowser{
 	String url="https://www.rolls-royce.com";
 
 	@Test
-	public void Rolls_royce_mediaNavigation() throws IOException, InterruptedException {
+	public void Rolls_royce_mediaNavigation() throws Exception {
 		// TODO Auto-generated method stub
 	
 		String eleInvestor= "//li[@id='nav-investors-level1' and @class='level1 haschildren']";

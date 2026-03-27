@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import Utilities.CommonFunctions;
 public class AlertExample extends BaseTest{
 @Test	
-	public void InternetSite_alertDemo() throws AWTException{
+	public void InternetSite_alertDemo() throws Exception{
 		String alertstr="//button[contains(text(),'Prompt')]";
 		String url="https://the-internet.herokuapp.com/javascript_alerts";
 		
