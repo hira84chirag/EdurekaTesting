@@ -68,7 +68,7 @@ public class ReadExcel extends SetupBrowser{
               controls.get(i).sendKeys(username);
               controls.get(i+1).sendKeys(lastname);
               controls.get(i+2).clear();
-              controls.get(i+2)controls. .select("2");
+              //controls.get(i+2).se .select("2");
               
               //for (int i = 0; i < controls.size(); i++) {
                   System.out.println("Element index: " + i);
@@ -79,8 +79,7 @@ public class ReadExcel extends SetupBrowser{
               
               
 	           }
-	           
-              
+	                         
 	          count++; 
 	          // Close workbook
 		    //  workbook.close();	 
