@@ -1,133 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[--->https://www.amazon.in/OnePlus-Snapdragon-Segments-Complete-Personalized/dp/B0GRB3FBBB?ref=dlx_deals_dg_dcl_B0GRB3FBBB_dt_sl10_0c_pi&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+      <![CDATA[Current URL=]]>
     </line>
     <line>
-      <![CDATA[26% off
-Ends in 07:22:28
-₹38,999
-00
-M.R.P:
-₹52,999.00
-OnePlus Nord 6 | 8GB+256GB | Pitch Black |…--->https://www.amazon.in/OnePlus-Snapdragon-Segments-Complete-Personalized/dp/B0GRB3FBBB?ref=dlx_deals_dg_dcl_B0GRB3FBBB_dt_sl10_0c&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+      <![CDATA[Tooltips of link=]]>
     </line>
     <line>
-      <![CDATA[+1 colours/patterns--->https://www.amazon.in/OnePlus-Snapdragon-Segments-Complete-Personalized/dp/B0GRB3FBBB?ref=dlx_deals_dg_dcl_B0GRB3FBBB_dt_sl10_0c_csml&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+      <![CDATA[Login button name=Log in]]>
     </line>
     <line>
-      <![CDATA[--->https://www.amazon.in/LG-Convertible-Anti-Virus-Protection-AS-Q18JNXE/dp/B0GF1JFPV8?ref=dlx_deals_dg_dcl_B0GF1JFPV8_dt_sl10_0c_pi&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+      <![CDATA[Button font size=12px]]>
     </line>
     <line>
-      <![CDATA[53% off
-Limited time deal
-₹35,490
-00
-M.R.P:
-₹75,190.00
-LG 1.5 Ton 3 Star, New star rated, Smart Inverter Split…--->https://www.amazon.in/LG-Convertible-Anti-Virus-Protection-AS-Q18JNXE/dp/B0GF1JFPV8?ref=dlx_deals_dg_dcl_B0GF1JFPV8_dt_sl10_0c&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+      <![CDATA[Button width=446px]]>
     </line>
     <line>
-      <![CDATA[--->https://www.amazon.in/Panasonic-DustBuster-Convertible-CS-CU-NU18BKY5WX/dp/B0GHR4W2DR?ref=dlx_deals_dg_dcl_B0GHR4W2DR_dt_sl10_0c_pi&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+      <![CDATA[Current URL=(521, 333)]]>
     </line>
     <line>
-      <![CDATA[29% off
-Limited time deal
-₹44,990
-00
-M.R.P:
-₹63,500.00
-Panasonic 1.5 Ton 5 Star,New Star rated, Premi…--->https://www.amazon.in/Panasonic-DustBuster-Convertible-CS-CU-NU18BKY5WX/dp/B0GHR4W2DR?ref=dlx_deals_dg_dcl_B0GHR4W2DR_dt_sl10_0c&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+      <![CDATA[521Co-ordinate of controls on page=333]]>
     </line>
     <line>
-      <![CDATA[--->https://www.amazon.in/Carrier-Flexicool-Inverter-Convertible-Gxi-CAI18EE5R36F0/dp/B0GCDZ3BSK?ref=dlx_deals_dg_dcl_B0GCDZ3BSK_dt_sl10_0c_pi&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+      <![CDATA[Login size=(446, 44)]]>
     </line>
     <line>
-      <![CDATA[44% off
-Limited time deal
-₹41,990
-00
-M.R.P:
-₹75,590.00
-Carrier 1.5 Ton 5 Star, New Star rated, Flexicool Invert…--->https://www.amazon.in/Carrier-Flexicool-Inverter-Convertible-Gxi-CAI18EE5R36F0/dp/B0GCDZ3BSK?ref=dlx_deals_dg_dcl_B0GCDZ3BSK_dt_sl10_0c&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+      <![CDATA[44Login button =446]]>
     </line>
     <line>
-      <![CDATA[Hello this is broken line]]>
+      <![CDATA[TagName =div]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-04-14T16:22:10 IST" name="Default suite" finished-at="2026-04-14T16:22:32 IST" duration-ms="21524">
+  <suite started-at="2026-04-14T16:40:29 IST" name="Default suite" finished-at="2026-04-14T16:40:32 IST" duration-ms="3116">
     <groups>
     </groups>
-    <test started-at="2026-04-14T16:22:10 IST" name="Default test" finished-at="2026-04-14T16:22:32 IST" duration-ms="21524">
-      <class name="test.List_WebElement_Amazon">
-        <test-method is-config="true" signature="browserOpen()[pri:0, instance:test.List_WebElement_Amazon@18f8cd79]" started-at="2026-04-14T16:22:10 IST" name="browserOpen" finished-at="2026-04-14T16:22:12 IST" duration-ms="1381" status="PASS">
+    <test started-at="2026-04-14T16:40:29 IST" name="Default test" finished-at="2026-04-14T16:40:32 IST" duration-ms="3116">
+      <class name="test.WebElementCommand">
+        <test-method is-config="true" signature="browserOpen()[pri:0, instance:test.WebElementCommand@3e2055d6]" started-at="2026-04-14T16:40:29 IST" name="browserOpen" finished-at="2026-04-14T16:40:31 IST" duration-ms="1288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserOpen -->
-        <test-method signature="Amazon_product_scrolling()[pri:1, instance:test.List_WebElement_Amazon@18f8cd79]" started-at="2026-04-14T16:22:12 IST" name="Amazon_product_scrolling" finished-at="2026-04-14T16:22:32 IST" duration-ms="19809" status="PASS">
+        <test-method signature="facebook_ButtonAttribute()[pri:1, instance:test.WebElementCommand@3e2055d6]" started-at="2026-04-14T16:40:31 IST" name="facebook_ButtonAttribute" finished-at="2026-04-14T16:40:32 IST" duration-ms="1508" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[--->https://www.amazon.in/OnePlus-Snapdragon-Segments-Complete-Personalized/dp/B0GRB3FBBB?ref=dlx_deals_dg_dcl_B0GRB3FBBB_dt_sl10_0c_pi&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+              <![CDATA[Current URL=]]>
             </line>
             <line>
-              <![CDATA[26% off
-Ends in 07:22:28
-₹38,999
-00
-M.R.P:
-₹52,999.00
-OnePlus Nord 6 | 8GB+256GB | Pitch Black |…--->https://www.amazon.in/OnePlus-Snapdragon-Segments-Complete-Personalized/dp/B0GRB3FBBB?ref=dlx_deals_dg_dcl_B0GRB3FBBB_dt_sl10_0c&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+              <![CDATA[Tooltips of link=]]>
             </line>
             <line>
-              <![CDATA[+1 colours/patterns--->https://www.amazon.in/OnePlus-Snapdragon-Segments-Complete-Personalized/dp/B0GRB3FBBB?ref=dlx_deals_dg_dcl_B0GRB3FBBB_dt_sl10_0c_csml&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+              <![CDATA[Login button name=Log in]]>
             </line>
             <line>
-              <![CDATA[--->https://www.amazon.in/LG-Convertible-Anti-Virus-Protection-AS-Q18JNXE/dp/B0GF1JFPV8?ref=dlx_deals_dg_dcl_B0GF1JFPV8_dt_sl10_0c_pi&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+              <![CDATA[Button font size=12px]]>
             </line>
             <line>
-              <![CDATA[53% off
-Limited time deal
-₹35,490
-00
-M.R.P:
-₹75,190.00
-LG 1.5 Ton 3 Star, New star rated, Smart Inverter Split…--->https://www.amazon.in/LG-Convertible-Anti-Virus-Protection-AS-Q18JNXE/dp/B0GF1JFPV8?ref=dlx_deals_dg_dcl_B0GF1JFPV8_dt_sl10_0c&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+              <![CDATA[Button width=446px]]>
             </line>
             <line>
-              <![CDATA[--->https://www.amazon.in/Panasonic-DustBuster-Convertible-CS-CU-NU18BKY5WX/dp/B0GHR4W2DR?ref=dlx_deals_dg_dcl_B0GHR4W2DR_dt_sl10_0c_pi&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+              <![CDATA[Current URL=(521, 333)]]>
             </line>
             <line>
-              <![CDATA[29% off
-Limited time deal
-₹44,990
-00
-M.R.P:
-₹63,500.00
-Panasonic 1.5 Ton 5 Star,New Star rated, Premi…--->https://www.amazon.in/Panasonic-DustBuster-Convertible-CS-CU-NU18BKY5WX/dp/B0GHR4W2DR?ref=dlx_deals_dg_dcl_B0GHR4W2DR_dt_sl10_0c&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+              <![CDATA[521Co-ordinate of controls on page=333]]>
             </line>
             <line>
-              <![CDATA[--->https://www.amazon.in/Carrier-Flexicool-Inverter-Convertible-Gxi-CAI18EE5R36F0/dp/B0GCDZ3BSK?ref=dlx_deals_dg_dcl_B0GCDZ3BSK_dt_sl10_0c_pi&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+              <![CDATA[Login size=(446, 44)]]>
             </line>
             <line>
-              <![CDATA[44% off
-Limited time deal
-₹41,990
-00
-M.R.P:
-₹75,590.00
-Carrier 1.5 Ton 5 Star, New Star rated, Flexicool Invert…--->https://www.amazon.in/Carrier-Flexicool-Inverter-Convertible-Gxi-CAI18EE5R36F0/dp/B0GCDZ3BSK?ref=dlx_deals_dg_dcl_B0GCDZ3BSK_dt_sl10_0c&pf_rd_r=KFHBCQ7EY68228QMQSTB&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c]]>
+              <![CDATA[44Login button =446]]>
             </line>
             <line>
-              <![CDATA[Hello this is broken line]]>
+              <![CDATA[TagName =div]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Amazon_product_scrolling -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.List_WebElement_Amazon@18f8cd79]" started-at="2026-04-14T16:22:32 IST" name="tearDown" finished-at="2026-04-14T16:22:32 IST" duration-ms="234" status="PASS">
+        </test-method> <!-- facebook_ButtonAttribute -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.WebElementCommand@3e2055d6]" started-at="2026-04-14T16:40:32 IST" name="tearDown" finished-at="2026-04-14T16:40:32 IST" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.List_WebElement_Amazon -->
+      </class> <!-- test.WebElementCommand -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

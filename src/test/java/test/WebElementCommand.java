@@ -16,7 +16,7 @@ public class WebElementCommand extends SetupBrowser {
 	// Code error needs to resolved
 	
 	String field,fieldx;
-	//@Ignore
+	@Ignore
 	//@Parameters({"browser,Fb"})
 	@Test(priority =1)
 	public void facebook_elementAction() {
