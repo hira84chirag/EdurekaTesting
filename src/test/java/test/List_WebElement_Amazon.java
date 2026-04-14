@@ -8,22 +8,11 @@ import Utilities.CommonFunctions;
 
 public class List_WebElement_Amazon extends SetupBrowser{
 	String url="https://www.amazon.in";
-//	List_WebElement_Amazon obj;
 	@Test(priority = 1) 
-	public void Amazon_locatoramazon()
-	{
-		driver.get(url);
-		CommonFunctions.waitImplicit(driver, 100);	
-		String contbtn=	"//button[@alt='Continue shopping']";
-		By id= By.xpath(contbtn);
-		//boolean btn=CommonFunctions.isElementPresent(driver,id);
-		boolean btn=CommonFunctions.findEles(driver, contbtn);		
-		driver.findElement(By.partialLinkText("Bestsellers")).click();		
-	}
-	@Test(priority = 2) 
 	public void Amazon_product_scrolling() throws InterruptedException {
 		// TODO Auto-generated method stub
 		driver.get(url);
+		driver.findElement(By.partialLinkText("Bestsellers")).click();
 		String todaydeal= "//a[contains(text(),'Deals')]";
 		String classname="//a//span[@class='a-truncate-cut']";
 		String strprod="//a[contains(@href, '/dp/')]";

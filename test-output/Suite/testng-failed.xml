@@ -9,13 +9,13 @@
     <parameter name="Password1" value="mypassword"/>
     <parameter name="Password" value="mypassword"/>
     <classes>
-      <class name="test.Test_facebook">
+      <class name="test.WebElementCommand">
         <methods>
           <include name="browserOpen"/>
-          <include name="facebook_locator"/>
           <include name="tearDown"/>
+          <include name="facebook_elementAction"/>
         </methods>
-      </class> <!-- test.Test_facebook -->
+      </class> <!-- test.WebElementCommand -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

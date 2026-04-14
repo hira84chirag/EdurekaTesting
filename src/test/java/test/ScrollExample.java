@@ -10,20 +10,17 @@ import org.testng.annotations.Test;
 
 import Utilities.CommonFunctions;
 import Utilities.GenericFun_bkp;
-public class ScrollExample extends SetupBrowser {
+public class ScrollExample extends BaseTest {
+
+	public ScrollExample() throws Exception {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	@Test(invocationCount  =1)
 	public void amazonScrolling() throws Exception {		
-		String url="https://www.amazon.in/Apple-iPhone-15-128-GB/dp/"
-				+ "B0CHX2F5QT/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.8-aKrERwPzd"
-				+ "GyJWfWOa56I4wwdlI59jT8Bz9mNMoRuJhDPQn-fIYfKJxxKAv6p4v1WokuX"
-				+ "VTy6CEak1Vh-NyyTAmDXkLE8-YpWVSsG52cuzHWfPGQmEHKBuZ28lHimBXoQFi"
-				+ "BwUPbI-ZeU-uwbRmEyhJD5fUfpVpnDipADtkVUwmxr6VbbPQvv5LFbY1WR9N3g"
-				+ "cPO9_X-kNXIO6PoI6QGW7ShecF0XyC5lFbzvZ5rcM._JVkc7BD-ArTQsO"
-				+ "MOX7UqQM0g4lkYjz4Kfj0gsZeNMA&dib_tag=se&keywords=iphone+1"
-				+ "5&qid=1722790570&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1";
-		String techstr="//h1[text()='Technical Details']";
-
+		String url=pro1.getProperty("amazonscroll");
+		String techstr="//div[@id='prodDetails']";
 		driver.get(url);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(160));
@@ -38,7 +35,7 @@ public class ScrollExample extends SetupBrowser {
 			System.out.println("The element is not present on the page.");
 			Thread.sleep(3000);		
 			WebElement Webtech= driver.findElement(By.xpath(techstr));
-			JavascriptExecutor js=(JavascriptExecutor)(SetupBrowser.driver);
+			JavascriptExecutor js=(JavascriptExecutor)(driver);
 			js.executeScript("arguments[0].scrollIntoView();",Webtech);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(930));
 

@@ -13,6 +13,11 @@ import Utilities.CommonFunctions;
 // error aave che
 public class RobotExample  extends BaseTest{
 	
+	public RobotExample() throws Exception {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	@Test
 	public void tinypng_robotExample() throws Exception {
 		driver.get("https://tinypng.com/");

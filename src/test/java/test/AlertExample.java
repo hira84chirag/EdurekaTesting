@@ -1,30 +1,27 @@
 package test;
-
-import java.awt.AWTException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import Utilities.CommonFunctions;
 public class AlertExample extends BaseTest{
+	public AlertExample() throws Exception{
+		super();
+	}
 @Test	
-	public void InternetSite_alertDemo() throws Exception{
-		String alertstr="//button[contains(text(),'Prompt')]";
-		String url="https://the-internet.herokuapp.com/javascript_alerts";
+	public void InternetURL_alertDemo() throws Exception{
 		
-		driver.get(url);
-		WebElement alertBtn = driver.findElement(By.xpath(alertstr));
+		driver.get(pro1.getProperty("interneturl"));
+		WebElement alertBtn = driver.findElement(By.xpath(pro2.getProperty("alertstr")));
 		alertBtn.click();
 		
-		//get the text
+		//Enter the text
 		driver.switchTo().alert().sendKeys("Software testing");
 		String msg = driver.switchTo().alert().getText();
 		System.out.println(msg);
 		
-		//ok or submit or accept
 		driver.switchTo().alert().accept();
-		CommonFunctions.WaitExpt(driver, alertstr);
+		CommonFunctions.WaitExpt(driver, pro2.getProperty("alertstr"));
 		alertBtn.click();
 		CommonFunctions.Screenshots_ImageIO("AlertExample");
 		driver.switchTo().alert().dismiss();

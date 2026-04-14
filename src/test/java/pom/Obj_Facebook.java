@@ -25,8 +25,15 @@ public class Obj_Facebook {
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // 10-second timeout
 		PageFactory.initElements(driver, this);
 	}
-
-
+	public void openFacebook() {
+		driver.get("https://www.facebook.com"); 
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(260));
+	}
+	public void enterEmail(String val) {
+		driver.findElement(By.name("email")).sendKeys(val);
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(300));
+	}
+	
 	public void clickCreateNewAccount() {
 		String text = driver.findElement(By.linkText("Create new account")).getText();
 		WebElement ele= driver.findElement(By.xpath(str));
@@ -40,6 +47,7 @@ public class Obj_Facebook {
 		//	WebElement ele= driver.findElement(By.xpath(str));
 			ele.click();
 		}
+		driver.navigate().back();
 	}
 	
 

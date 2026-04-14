@@ -21,21 +21,28 @@ public class Base {
 
 	WebDriver driver;
 	public String url="";
-	public Properties prop;
+	public Properties pro1;
+	public Properties pro2;
 	
-	public void loadPropertiesFile() {
+	public Base() throws Exception {
 		
-        String path = "C://Users//Dell Enterprise//eclipse-workspace//EdurekaTesting//src//test//java//Utilities//config.properties";
-        prop = new Properties();
-        File propFile = new File(path); // Corrected line
+        String path = ".\\src\\test\\java\\Utilities\\config.properties";
+        pro1 = new Properties();
+        File propFile = new File(".\\src\\test\\java\\Utilities\\config.properties"); // Corrected line
 
         try (FileInputStream fis = new FileInputStream(propFile)) {
-            prop.load(fis);
+            pro1.load(fis);
           //  System.out.println("Defult url=" + prop.getProperty("url"));
         } catch (IOException e) { // Catching a more specific exception
             e.printStackTrace();
             System.err.println("Error loading properties file: " + e.getMessage());
         }
+        
+		
+		// locators properties file		
+		FileInputStream fis2=new FileInputStream(".\\src\\test\\java\\Utilities\\locators.properties");
+		pro2=new Properties();
+		pro2.load(fis2);
     }
 	public WebDriver intilizeBrowserAndOpenApplication(String browser) {
 		if(browser.equalsIgnoreCase("chrome")) 

@@ -54,10 +54,3 @@ public class SetupBrowser {
 	    
   }
 }
-// implicit wait ==>  at pom Level
-//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(50));
-// Scirpt load timeout ==>either in POM or in project Level.
-
-/*
- * // WebDriver wd=new FirefoxDriver(); WebDriver wd=new EdgeDriver();
- */

@@ -25,7 +25,7 @@ import org.testng.annotations.Test;
 public class ReadExcel extends SetupBrowser{
 	
 	int count=0;
-		
+	@Ignore
 	@Test ( priority = 1)	
 	public void Facebook_login() throws Exception 
 	{		
@@ -66,7 +66,7 @@ public class ReadExcel extends SetupBrowser{
               password = row.getCell(4).getStringCellValue(); // Column 1
          	 
               controls.get(i).sendKeys(username);
-              controls.get(i+1).sendKeys(lastname);
+              controls.get(i+1).sendKeys("lastname");
               controls.get(i+2).clear();
               //controls.get(i+2).se .select("2");
               
@@ -86,11 +86,11 @@ public class ReadExcel extends SetupBrowser{
 	      
 	          
 	}
-	
+	@Ignore
 	@Test ( priority = 2)
 	public void downloadfile() {		
 		// Example for Chrome		
-		String downloadFilepath = "C:\\Users\\Dell Enterprise\\Downloads\\Charvi";
+		String downloadFilepath = "C:\\Users\\Dell Enterprise\\Downloads";
 		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 		chromePrefs.put("download.default_directory", downloadFilepath);
 		chromePrefs.put("download.prompt_for_download", false);

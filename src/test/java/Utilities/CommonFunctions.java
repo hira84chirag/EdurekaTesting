@@ -94,10 +94,12 @@ public class CommonFunctions {
 	public static void waitForElementToClick(WebDriver driver, String Webele){
 		WebElement ele=driver.findElement(By.xpath(Webele));
  		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(120));
-		wait.until(ExpectedConditions.visibilityOf(ele));
 		wait.until(ExpectedConditions.elementToBeClickable(ele)).click();
+		
 	}
-
+	public static void partiallinktext(WebDriver driver, String str){
+		driver.findElement(By.partialLinkText(str)).click();
+	}
 	// Wait for click createlink
 	public static void Clickbutton(WebDriver driver,String xpath) {
 		//xpath="//span[contains(text(),'Create account')]";
@@ -111,7 +113,11 @@ public class CommonFunctions {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(100));		  
 		WebElement text=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));			
 	}
+	public static void waitforelement(WebDriver driver,String id) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
 
+	}
 	public static void waitImplicit(WebDriver driver,int num){
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(num));
 	}

@@ -1,7 +1,10 @@
 package test;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Collections;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,22 +18,24 @@ import org.testng.annotations.BeforeClass;
 import com.edurekatesting.Base;
 
 public class BaseTest extends Base {
-	
-	static WebDriver driver;
+		
+	public static WebDriver driver;
 	String browser="chrome", url="";
+	
+	public BaseTest() throws Exception {
+		super();		
+	}
 	
 	@BeforeClass
 	public void setUp() {
-		loadPropertiesFile();	
-		browser=prop.getProperty("browser");
+		//loadPropertiesFile();	
+		browser=pro1.getProperty("browser");
 		driver=intilizeBrowserAndOpenApplication(browser);	
 		//Thread.sleep(1000);
 	}
 	
 	
-	public void navigatetourl(String url) {
-		driver.get(url);
-	}
+	
 	
 	public void quit() {
 		driver.quit();
