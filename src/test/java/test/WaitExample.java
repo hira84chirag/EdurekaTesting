@@ -12,12 +12,16 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class WaitExample extends SetupBrowser{
+public class WaitExample extends BaseTest{
 	
+	public WaitExample() throws Exception {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	@Test 
 	public void facebook_explitcitWaitExample() {
 		
-		driver.get( "https://www.facebook.com");
+		driver.get( pro1.getProperty("fburl"));
 		//	obj.explitcitWaitExample();
 		WebElement email = driver.findElement(By.name("email"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

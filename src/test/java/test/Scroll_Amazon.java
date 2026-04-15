@@ -6,21 +6,19 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 import Utilities.CommonFunctions;
 
-public class List_WebElement_Amazon extends SetupBrowser{
-	String url="https://www.amazon.in";
+public class Scroll_Amazon extends SetupBrowser{
+	
+	
 	@Test(priority = 1) 
 	public void Amazon_product_scrolling() throws InterruptedException {
 		// TODO Auto-generated method stub
-		driver.get(url);
+		driver.get("https://www.amazon.in");
 		driver.findElement(By.partialLinkText("Bestsellers")).click();
 		String todaydeal= "//a[contains(text(),'Deals')]";
 		String classname="//a//span[@class='a-truncate-cut']";
 		String strprod="//a[contains(@href, '/dp/')]";
 		CommonFunctions.waitThread(300);
-		//driver.navigate().back();
-		//Thread.sleep(1000);
-		//driver.navigate().refresh();
-		
+
 // Click Today deals link
 
 		CommonFunctions.waitForElementToClick(driver,todaydeal);

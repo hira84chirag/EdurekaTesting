@@ -1,14 +1,15 @@
 package test;
-import java.time.Duration;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-
-import Utilities.CommonFunctions;
 import pom.Obj_Facebook;
-public class Test_facebook extends SetupBrowser{	
+public class Test_facebook extends BaseTest{	
 //	String path="//input[@aria-label='Email address or phone number']";
 //	String path1 = ("//input[@autocomplete='username webauthn']"); // update path
 	
+	public Test_facebook() throws Exception {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	@Test 
 	public void facebook_locator()
 	{				

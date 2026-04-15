@@ -1,28 +1,23 @@
 package test;
 
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
-
 import Utilities.CommonFunctions;
 
-public class WebElementCommand extends SetupBrowser {
+public class WebElementCommand extends BaseTest {
+	public WebElementCommand() throws Exception {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
-	// Code error needs to resolved
-	
-	String field,fieldx;
-	@Ignore
-	//@Parameters({"browser,Fb"})
+	String field="";
 	@Test(priority =1)
-	public void facebook_elementAction() {
+	public void fb_elementAttribute() {
 	
-		driver.get("https://www.facebook.com");
-		driver.manage().window().maximize();
+		driver.get(pro1.getProperty("fburl"));
 		WebElement we = driver.findElement(By.name("email"));
 		Reporter.log("is emaild displayed or not=" + we.isDisplayed());
 		Reporter.log("is Email enabled or not=" + we.isEnabled());
@@ -32,19 +27,13 @@ public class WebElementCommand extends SetupBrowser {
 			Reporter.log("is hidden element displayed=" + hiddenEle.get(0).isDisplayed());
 		else
 			Reporter.log("Hidden element NOT present in DOM");	
-		List<WebElement> c1= driver.findElements(By.xpath("//div[@role='none' and @data-visualcompletion='ignore']"));		
-		c1.get(2).click();
-		
-		WebElement malerradiobutton=driver.findElement(By.xpath("//span[contains(text(),'Select your gender')]"));
-		malerradiobutton.click();
-		Reporter.log("Before clcking- is the male radio button selected=" +malerradiobutton.isSelected());
 	}
 	
-	@Test(priority =1)
-	public void facebook_ButtonAttribute() {
+	@Test(priority =2)
+	public void fb_ButtonAttribute() {
 		// TODO Auto-generated method stub
 		
-		driver.get("https://www.facebook.com");
+		driver.get(pro1.getProperty("fburl"));
 
 		WebElement we=driver.findElement(By.name("email"));
 		field=we.getAttribute("placeholder");
@@ -64,15 +53,14 @@ public class WebElementCommand extends SetupBrowser {
 		Reporter.log("Current URL=" + we.getLocation());
 		Reporter.log(fieldx +"Co-ordinate of controls on page=" +  fieldy);	
 		Reporter.log("Login size=" + we.getSize());
-		Reporter.log(we.getSize().height +"Login button =" +  we.getSize().width);	
-				
-		//we=driver.findElement(By.xpath("//h2[@class='_8eso']"));	
-		
-		//field=we.getText(); 
-		//Reporter.log("Welcome Message: =" + field);
+		Reporter.log(we.getSize().height +"Login button =" +  we.getSize().width);					
 		field=we.getTagName(); 
 		Reporter.log("TagName =" + field);
-					
+		// Click on Create new button
+		CommonFunctions.Clickbutton(driver, "//span[contains(text(),'Create new account')]");
+	
+		
+
 	}
 	
 	
