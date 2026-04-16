@@ -29,7 +29,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
-import test.SetupBrowser;
+import com.edurekatesting.SetupBrowser;
 public class CommonFunctions {
 	
    public static boolean isElementPresent(WebDriver driver, By by) {
@@ -97,15 +97,16 @@ public class CommonFunctions {
 		wait.until(ExpectedConditions.elementToBeClickable(ele)).click();
 		
 	}
+
+	public static void waitForid(WebDriver driver,String str) {
+		WebElement ele=driver.findElement(By.id(str));
+ 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5120));
+		wait.until(ExpectedConditions.elementToBeClickable(ele)).click();
+		}
+
+	
 	public static void partiallinktext(WebDriver driver, String str){
 		driver.findElement(By.partialLinkText(str)).click();
-	}
-	// Wait for click createlink
-	public static void Clickbutton(WebDriver driver,String xpath) {
-		//xpath="//span[contains(text(),'Create account')]";
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(100));		  
-		WebElement elewait=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));			
-		elewait.click();
 	}
 
 	// Wait for Element	
@@ -226,10 +227,11 @@ public class CommonFunctions {
 	}
 	public static void BrokenLinks(WebDriver driver,String xpath)  {		 
 	    List<WebElement> products=driver.findElements(By.xpath(xpath)); 			
-			for (WebElement product : products) {
+	    System.out.println("Total links=" + products.size());
+	    for (WebElement product : products) {
 	         String linkText = product.getText() ; //.getAttribute("value");
 	         String url = product.getAttribute("href"); // element.getAttribute("value"); 
-	        // System.out.println("Total links=" + products.size());
+	      
 	         if (url != null && !url.isEmpty()) {
 	        	 try {
 	 	            URL urltest = new URL(url);
@@ -256,27 +258,3 @@ public class CommonFunctions {
 }
 	
 
-	
-/*
-public static void CreateImage123(WebDriver driver,String fileName)  {
-try {
-    // Take a screenshot and store it as a file
-    File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-    long currentTimeMillis = System.currentTimeMillis();        	        
-    // Define the destination file path like "D:/screenshot.png";
-    String filestr= System.getProperty("user.dir")+"\\test-output\\Screenshot\\";
-    //Timeslot combination
-    LocalTime filestr1 = LocalTime.now();
-    fileName=filestr + fileName + currentTimeMillis+ ".jpg";
-    // Copy the screenshot to the destination file
-    FileUtils.copyFile(screenshot, new File(fileName));
-	System.out.println("Screenshot saved at: " + fileName );
-} catch (IOException e) {
-    System.out.println("Failed to save screenshot: " + e.getMessage());
-} finally {
-    // Close the browser
-
-}
-}
-
-*/

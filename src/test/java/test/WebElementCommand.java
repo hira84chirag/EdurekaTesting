@@ -45,7 +45,7 @@ public class WebElementCommand extends BaseTest {
 		we=driver.findElement(By.xpath("//div[@aria-label='Log in']"));	
 		field=we.getText(); 
 		Reporter.log("Login button name=" + field);
-		Reporter.log("Button font size=" + we.getCssValue("font-size"));
+		//Reporter.log("Button font size=" + we.getCssValue("font-size"));
 		Reporter.log("Button width=" + we.getCssValue("width"));	
 		
 		int fieldx = we.getLocation().x;
@@ -57,7 +57,7 @@ public class WebElementCommand extends BaseTest {
 		field=we.getTagName(); 
 		Reporter.log("TagName =" + field);
 		// Click on Create new button
-		CommonFunctions.Clickbutton(driver, "//span[contains(text(),'Create new account')]");
+		CommonFunctions.waitForElementToClick(driver, "//span[contains(text(),'Create new account')]");
 	
 		
 

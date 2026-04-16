@@ -18,7 +18,7 @@ public class IframeExample extends BaseTest{
 		  System.out.println(closebtn);
 		driver.get(pro1.getProperty("internet"));
 	//	code would be enabled if closebtn is enabled 
-		CommonFunctions.Clickbutton(driver, closebtn);
+		CommonFunctions.waitForElementToClick(driver, closebtn);
 		driver.manage().window().maximize();				
 		driver.switchTo().frame("mce_0_ifr");	
 		

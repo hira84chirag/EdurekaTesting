@@ -1,4 +1,4 @@
-package test;
+package com.edurekatesting;
 
 import java.time.Duration;
 import org.openqa.selenium.chrome.ChromeDriver;

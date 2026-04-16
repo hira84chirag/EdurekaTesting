@@ -21,7 +21,7 @@ public void Google_Url() {
 		//CommonFunctions.waitForElementToClick(driver, path);
 		CommonFunctions.partiallinktext(driver, "Sign in");			
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(700));		
-		CommonFunctions.Clickbutton(driver, path);
+		CommonFunctions.waitForElementToClick(driver, path);
 	}
 //code done
 public void f() {

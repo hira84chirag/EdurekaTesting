@@ -20,10 +20,17 @@ import org.testng.Reporter;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
+import com.edurekatesting.SetupBrowser;
+
 //error aave che
 
-public class ReadExcel extends SetupBrowser{
+public class ReadExcel extends BaseTest{
 	
+	public ReadExcel() throws Exception {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	int count=0;
 	@Ignore
 	@Test ( priority = 1)	

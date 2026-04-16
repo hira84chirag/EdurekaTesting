@@ -9,7 +9,7 @@ import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import Utilities.CommonFunctions;
-import Utilities.GenericFun_bkp;
+import Utilities.Z_genericFun_bkp;
 public class ScrollExample extends BaseTest {
 
 	public ScrollExample() throws Exception {

@@ -24,7 +24,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class GenericFun_bkp {
+public class Z_genericFun_bkp {
 	
 	public static void ScreenShot(String Name, WebDriver ldriver)
 	{
@@ -242,7 +242,7 @@ public class GenericFun_bkp {
 		{
 			if(!e.isSelected())
 			{
-				GenericFun_bkp.BtnClick(e, driver);
+				Z_genericFun_bkp.BtnClick(e, driver);
 			}
 		}
 		catch(Exception ex)
@@ -253,7 +253,7 @@ public class GenericFun_bkp {
 	
 	public static void CheckboxUntick(WebElement e, WebDriver driver)
 	{
-		GenericFun_bkp.BtnClick(e, driver);
+		Z_genericFun_bkp.BtnClick(e, driver);
 	}
 
 	public static void WriteForSuccess(String s3i, String ENm, String SNm, int Rid) throws IOException
