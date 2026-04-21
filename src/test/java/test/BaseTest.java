@@ -13,18 +13,71 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 
 import com.edurekatesting.Base;
 
 public class BaseTest extends Base {
-		
+	String browser="chrome";
 	public static WebDriver driver;
-	String browser="chrome", url="";
+	public String url="";
+	public Properties pro1;
+	public Properties pro2;
+	
 	
 	public BaseTest() throws Exception {
-		super();		
+		 // String path = ".\\src\\test\\java\\Utilities\\config.properties";
+        File propFile = new File(".\\src\\test\\java\\Utilities\\config.properties"); // Corrected line
+		pro1 = new Properties();
+
+        try (FileInputStream fis = new FileInputStream(propFile)) {
+            pro1.load(fis);
+          //  System.out.println("Defult url=" + prop.getProperty("url"));
+        } catch (IOException e) { // Catching a more specific exception
+            e.printStackTrace();
+            System.err.println("Error loading properties file: " + e.getMessage());
+        }
+        
+		
+		// locators properties file		
+		FileInputStream fis2=new FileInputStream(".\\src\\test\\java\\Utilities\\locators.properties");
+		pro2=new Properties();
+		pro2.load(fis2);
 	}
+	public WebDriver intilizeBrowserAndOpenApplication(String browser) {
+		if(browser.equalsIgnoreCase("chrome")) 
+			{
+	//		System.setProperty("webdriver.chrome.driver", "C:/Program Files/Google/Chrome/Application/chrome.exe");
+			 // Create ChromeOptions and add incognito argument
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--disable-extensions");
+	        options.addArguments("--incognito");
+			driver = new ChromeDriver(options);
+			
+			}
+		else if(browser.equalsIgnoreCase("firefox"))
+			driver = new FirefoxDriver();
+		else if(browser.equalsIgnoreCase("edge"))
+			driver = new EdgeDriver();
+		else if(browser.equalsIgnoreCase("safari"))
+			driver = new SafariDriver();
+		else {
+			System.out.println("valid browser is not provided, hence quitting the automation run");
+			System.exit(0);
+		}
+//		url=prop.getProperty("url");
+		System.out.println("Browser launched and navigated to site=");	
+
+
+		if(url!="")
+			driver.get(url);
+		else
+			driver.get("about:blank");
+		return driver;
+	}
+
 	
 	@BeforeClass
 	public void setUp() {
@@ -45,19 +98,12 @@ public class BaseTest extends Base {
 	            System.out.println("Browser closed");
 	        }
 	  }
+	
+	@AfterSuite
+	public void tearDown1() {
+        if (driver != null) {
+            driver.quit();
+            System.out.println("All Browser closed");
+        }
+	}   
 }
-
-
-
-/*
- * // object of ChromeOptions ChromeOptions opt = new ChromeOptions(); // adding
- * .crx extension
- * 
- * opt.addExtensions(new
- * File("C:\\Users\\Dell Enterprise\\eclipse-workspace\\Training\\src\\test\\Resources\\SeleniumIDE.crx"
- * )); // Initiate the Webdriver // WebDriver driver = new ChromeDriver(opt);
- * 
- * // disable information bar opt.setExperimentalOption("excludeSwitches",
- * Collections.singletonList("enable-automation"));
- * 
- */		    
