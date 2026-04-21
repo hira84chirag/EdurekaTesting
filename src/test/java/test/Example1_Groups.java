@@ -2,7 +2,7 @@ package test;
 
 import org.testng.annotations.Test;
 // Execute script in order of method provided by groups in Test.
-public class GroupsExample {
+public class Example1_Groups {
 	
 	@Test 	
 	public void a1() {

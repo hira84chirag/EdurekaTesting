@@ -14,7 +14,7 @@ public class WebElementCommand extends BaseTest {
 	}
 
 	String field="";
-	@Test(priority =1)
+	@Test(description="Verify attribute of Fb elment")
 	public void fb_elementAttribute() {
 	
 		driver.get(pro1.getProperty("fburl"));
@@ -29,7 +29,7 @@ public class WebElementCommand extends BaseTest {
 			Reporter.log("Hidden element NOT present in DOM");	
 	}
 	
-	@Test(priority =2)
+	@Test(description="Get attribute of Fb elment")
 	public void fb_ButtonAttribute() {
 		// TODO Auto-generated method stub
 		

@@ -34,9 +34,6 @@ public class BaseTest extends Base {
 		//Thread.sleep(1000);
 	}
 	
-	
-	
-	
 	public void quit() {
 		driver.quit();
 	}

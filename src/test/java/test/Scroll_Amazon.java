@@ -1,6 +1,10 @@
 package test;
 import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import Utilities.CommonFunctions;
 
@@ -46,4 +50,31 @@ public class Scroll_Amazon extends BaseTest{
 		// wait page load time and select new Releases menu		
 		driver.findElement(By.linkText("New Releases")).click();		
 	}	
+	
+	@Test
+	public void Count_Product()  {
+	       // Set path to your ChromeDriver
+	        try {
+	            driver.get(pro1.getProperty("amazonurl"));
+	            String path="//a[contains(@href, '/dp/')]";
+	            List<WebElement> productLinks = driver.findElements(By.xpath("//a[contains(@href, '/dp/')]"));
+	            // Wait for page to load & Find all product link elements=
+	            CommonFunctions.WaitExpt(driver, path);	
+	            
+	            System.out.println("Found " + productLinks.size() + " product links:");
+	            for (WebElement link : productLinks) {
+	                String productUrl = link.getAttribute("href");
+	                if (productUrl != null && productUrl.contains("/dp/")) {
+	                    Reporter.log(productUrl);
+	                }
+	                
+	            }
+	            CommonFunctions.scrollpage(driver,1000);
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        } finally {
+	           // driver.quit();
+	        }
+	}
+	
 }

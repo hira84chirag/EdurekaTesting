@@ -44,7 +44,7 @@ public class ScrollExample extends BaseTest {
 
 	@Test(priority = 2)
 	public void githubScrolling() throws InterruptedException {
-		driver.get("https://www.github.com/");
+		driver.get(pro1.getProperty("git"));
 		driver.manage().window().maximize();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0, document.body.scrollHeight);");
@@ -53,14 +53,12 @@ public class ScrollExample extends BaseTest {
 	}	
 
 		@Test(priority = 3)
-		public void youtubeScrolling() throws InterruptedException {
-			driver.get("https://www.youtube.com/watch?v=nIHyr_fp_yI");
-			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(1960));
+		public void youtubeScrolling() throws InterruptedException {			
+			driver.get(pro1.getProperty("tubeyou"));
 			driver.manage().window().maximize();
 			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("window.scrollBy(0, document.body.scrollHeight);");
-			Thread.sleep(4000);
-			CommonFunctions.ScrollingPageSize(driver,2500);
+			js.executeScript("window.scrollBy(0, document.body.scrollHeight);");	
+			CommonFunctions.ScrollingPageSize(driver,5600);
 
 		}
 	

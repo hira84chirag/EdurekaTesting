@@ -6,19 +6,20 @@
 	<test thread-count="1" name="Test">
 		<parameter name="Username" value="software@qa.com"></parameter>		
 		<parameter name="Password" value="mypassword"></parameter>
-		<parameter name="Username1" value="software@qa.com"></parameter>		
-		<parameter name="Password1" value="mypassword"></parameter>
-		<parameter name="uname" value="software@qa.com"></parameter>
-		<parameter name="password" value="mypassword"></parameter>	
+		<parameter name="Username1" value="1software@qa.com"></parameter>		
+		<parameter name="Password1" value="1mypassword"></parameter>
+		<parameter name="uname" value="3software@qa.com"></parameter>
+		<parameter name="password" value="3mypassword"></parameter>	
 	
 		<packages>				 
-			<package name="test"></package>
+			<package name="test"></package>	
 		</packages>	
  	</test> 
  	
 </suite> 
 
 <!-- 
+<package name="test"></package>
 		 	parameter  para_exmple for that
 			<classes> 	 			 		 
 			</classes>

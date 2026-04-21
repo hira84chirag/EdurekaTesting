@@ -18,7 +18,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class Base {
-
+	String browser="chrome";
 	WebDriver driver;
 	public String url="";
 	public Properties pro1;
@@ -44,6 +44,8 @@ public class Base {
 		pro2=new Properties();
 		pro2.load(fis2);
     }
+
+	
 	public WebDriver intilizeBrowserAndOpenApplication(String browser) {
 		if(browser.equalsIgnoreCase("chrome")) 
 			{
@@ -76,6 +78,8 @@ public class Base {
 			driver.get("about:blank");
 		return driver;
 	}
+	
+	
 	
 	@AfterSuite
 	public void tearDown() {

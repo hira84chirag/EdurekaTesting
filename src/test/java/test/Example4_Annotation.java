@@ -10,7 +10,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-public class AllAnnotationExample {
+public class Example4_Annotation {
   @Test
   public void T1() {
 	  System.out.println("from Method T1");

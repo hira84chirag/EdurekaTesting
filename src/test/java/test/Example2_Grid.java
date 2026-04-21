@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class GridExample {
+public class Example2_Grid {
 	
 	String browser="chrome";
 	String url="https://www.rolls-royce.com";	
@@ -46,7 +46,7 @@ public class GridExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		GridExample ge=new GridExample();
+		Example2_Grid ge=new Example2_Grid();
 		ge.Rolls_royce_gridSetup();
 		ge.pageTitleValidation();
 	}

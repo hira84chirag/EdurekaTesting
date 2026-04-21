@@ -1,13 +1,20 @@
 package test;
 
-import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-
 import org.testng.Reporter;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class HardAssertExample {
+	
+	@Parameters({"Username","Password"})
+	@Test
+	public void Validusername(String username,String password) {
+	  Reporter.log("Username=" + username);
+	  Reporter.log("Password=" + password);
+	  
+	}
+	
 	@Test
 	public void tc1() {
 		int a=6;

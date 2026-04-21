@@ -46,7 +46,7 @@ public class GoogleLogin extends BaseTest{
 		account("childparent", "mychild", strcreatebtn);		
 		account("businessparent", "business", strcreatebtn);
 		CommonFunctions.ScreenShot(driver,"GoogleMenu");
-		driver.quit();
+		
 		 
 	}
 	public void account(String s1,String s2,String btn) throws InterruptedException {

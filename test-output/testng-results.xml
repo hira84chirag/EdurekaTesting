@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=147.0.7727.56)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [32298c61ba20560dc8eae7e0ec542b8d, clickElement {id=f.DAFBE8C0DF2507AB309BFE9BB72C9AE2.d.BFE6088F03E0A46B113D5088288F0B5E.e.3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\DELLEN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57712}, goog:processID: 21056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57712/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (32298c61ba20560dc8eae7e0ec542b8d)] -> name: email]
-Session ID: 32298c61ba20560dc8eae7e0ec542b8d]]>
-    </line>
   </reporter-output>
-  <suite started-at="2026-04-16T12:33:53 IST" name="Default suite" finished-at="2026-04-16T12:34:08 IST" duration-ms="15399">
+  <suite started-at="2026-04-21T15:39:14 IST" name="Default suite" finished-at="2026-04-21T15:39:29 IST" duration-ms="14651">
     <groups>
     </groups>
-    <test started-at="2026-04-16T12:33:53 IST" name="Default test" finished-at="2026-04-16T12:34:08 IST" duration-ms="15399">
-      <class name="test.StaleElementExample">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.StaleElementExample@28194a50]" started-at="2026-04-16T12:33:53 IST" name="setUp" finished-at="2026-04-16T12:33:56 IST" duration-ms="3058" status="PASS">
+    <test started-at="2026-04-21T15:39:14 IST" name="Default test" finished-at="2026-04-21T15:39:29 IST" duration-ms="14651">
+      <class name="test.Example3_Iframe">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Example3_Iframe@50029372]" started-at="2026-04-21T15:39:14 IST" name="setUp" finished-at="2026-04-21T15:39:18 IST" duration-ms="3267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Hiddenexample()[pri:0, instance:test.StaleElementExample@28194a50]" started-at="2026-04-16T12:33:56 IST" name="Hiddenexample" finished-at="2026-04-16T12:34:08 IST" duration-ms="12245" status="PASS">
+        <test-method signature="Internet_iframeDemo()[pri:0, instance:test.Example3_Iframe@50029372]" started-at="2026-04-21T15:39:18 IST" name="Internet_iframeDemo" finished-at="2026-04-21T15:39:28 IST" duration-ms="10222" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=147.0.7727.56)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [32298c61ba20560dc8eae7e0ec542b8d, clickElement {id=f.DAFBE8C0DF2507AB309BFE9BB72C9AE2.d.BFE6088F03E0A46B113D5088288F0B5E.e.3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\DELLEN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57712}, goog:processID: 21056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57712/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (32298c61ba20560dc8eae7e0ec542b8d)] -> name: email]
-Session ID: 32298c61ba20560dc8eae7e0ec542b8d]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- Hiddenexample -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.StaleElementExample@28194a50]" started-at="2026-04-16T12:34:08 IST" name="tearDown" finished-at="2026-04-16T12:34:08 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- Internet_iframeDemo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Example3_Iframe@50029372]" started-at="2026-04-21T15:39:28 IST" name="tearDown" finished-at="2026-04-21T15:39:29 IST" duration-ms="1032" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.StaleElementExample -->
+      </class> <!-- test.Example3_Iframe -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

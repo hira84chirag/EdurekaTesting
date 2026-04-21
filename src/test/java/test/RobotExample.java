@@ -20,7 +20,7 @@ public class RobotExample  extends BaseTest{
 
 	@Test
 	public void tinypng_robotExample() throws Exception {
-		driver.get("https://tinypng.com/");
+		driver.get(pro1.getProperty("tiny"));
 //		driver.manage().window().maximize();
 		CommonFunctions.waitThread(400);
 		driver.findElement(By.xpath("//section[@class='target']")).click();
@@ -39,7 +39,7 @@ public class RobotExample  extends BaseTest{
 		clipboard.setContents(stringSelection, stringSelection);
 		
 		//Thread.sleep is used only for demonstration purpose
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_V);
@@ -47,9 +47,9 @@ public class RobotExample  extends BaseTest{
 		Thread.sleep(1000);
 		robot.keyPress(KeyEvent.VK_TAB);
 		robot.keyPress(KeyEvent.VK_TAB);
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		CommonFunctions.Snap(driver, "RobotExample");
-		driver.quit();		
+
 	}
 }

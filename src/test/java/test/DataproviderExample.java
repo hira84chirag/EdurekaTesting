@@ -1,5 +1,4 @@
 package test;
-
 import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -21,5 +20,6 @@ public class DataproviderExample {
       new String[] { "Testing software123", "testing Method123" },
     };
   }
-  
+
+	
 }

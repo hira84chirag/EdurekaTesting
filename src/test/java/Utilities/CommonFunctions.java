@@ -74,14 +74,9 @@ public class CommonFunctions {
 		    elements.get(0).click(); // Interact with the first element found
         	
 		} else {
-			/*
-			 * WebElement Webtech= driver.findElement(By.xpath(techstr)); JavascriptExecutor
-			 * js=(JavascriptExecutor)(SetupBrowser.driver);
-			 * js.executeScript("arguments[0].scrollIntoView();",Webtech);
-			 */			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(930));
-		
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(930));		
 		    System.out.println("The element is not present on the page.");
-		    // Continue with alternative actions
+		    
 		}
 
     }
