@@ -3,9 +3,7 @@ package test;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Collections;
 import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,9 +14,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 
-import com.edurekatesting.Base;
 
-public class BaseTest extends Base {
+public class BaseTest  {
 	String browser="chrome";
 	public static WebDriver driver;
 	public String url="";

@@ -35,7 +35,7 @@ public class CommonFunctions {
    public static boolean isElementPresent(WebDriver driver, By by) {
     	
 	        try {
-	            driver.findElement(by);
+	            driver.findElement(by).click();
 	            return true;
 	        } catch (NoSuchElementException e) {
 	            return false;
