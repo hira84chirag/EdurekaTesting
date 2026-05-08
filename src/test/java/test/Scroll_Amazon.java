@@ -17,12 +17,12 @@ public class Scroll_Amazon extends BaseTest{
 	}
 
 	@Test(priority = 1) 
-	public void Amazon_product_scrolling() throws Exception {
+	public void Amazon_products() throws Exception {
 		// TODO Auto-generated method stub
 		AmazonOR obj=new AmazonOR();
 		obj.Openurl();
 		obj.find_hiddenEle();
-		//obj.Count_Product();
+		obj.Count_Product();
 	}
 	
 		

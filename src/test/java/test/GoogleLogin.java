@@ -1,10 +1,7 @@
 package test;
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import Utilities.CommonFunctions;
 
@@ -16,8 +13,7 @@ public class GoogleLogin extends BaseTest{
 	}
 
 	@Test(invocationCount=1) // Running looping multiple Times
-	public void Google_LoginTC() throws Exception  {
-		String path="";		
+	public void Google_LoginTC() throws Exception  {	
 		driver.get(pro1.getProperty("googleurl"));
 		driver.manage().window().maximize();
 		
@@ -31,7 +27,7 @@ public class GoogleLogin extends BaseTest{
 
 // print validation message for email field
 		WebElement Emailmsg=driver.findElement(By.xpath(pro2.getProperty("emailmsg")));
-		System.out.println(Emailmsg.getText());
+		Reporter.log(Emailmsg.getText());
 		
 // Click on Create link here
 		CommonFunctions.waitThread(100);
@@ -45,9 +41,7 @@ public class GoogleLogin extends BaseTest{
 		account("personalparent", "personal", strcreatebtn);
 		account("childparent", "mychild", strcreatebtn);		
 		account("businessparent", "business", strcreatebtn);
-		CommonFunctions.ScreenShot(driver,"GoogleMenu");
-		
-		 
+		CommonFunctions.ScreenShot(driver,"GoogleMenu");		 
 	}
 	public void account(String s1,String s2,String btn) throws InterruptedException {
 		CommonFunctions.WaitExpt(driver,pro2.getProperty("personaluseEle"));		
@@ -58,7 +52,6 @@ public class GoogleLogin extends BaseTest{
 			Createpersonal.click(); 
 			driver.navigate().back(); 
 			CommonFunctions.WaitExpt(driver,pro2.getProperty("personaluseEle"));		
-
 			CommonFunctions.waitForElementToClick(driver, strcreatebtn);
 	}
 }

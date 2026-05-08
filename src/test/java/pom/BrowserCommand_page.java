@@ -37,9 +37,12 @@ public void f() {
 		Reporter.log("Navigating forward to youtube page");
 		driver.navigate().forward();
 		CommonFunctions.waitforelement(driver, "endpoint");
+		CommonFunctions.waitImplicit(driver, 1500);
 		// refresh
 		Reporter.log("Navigating to refresh youtube page");
 		driver.navigate().refresh();
+		CommonFunctions.waitImplicit(driver, 1500);
+		
 	}
 	// code optimizatin is pedning
 	public void googleNavigate() throws InterruptedException {

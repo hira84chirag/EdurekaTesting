@@ -29,7 +29,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
-import com.edurekatesting.SetupBrowser;
+
 public class CommonFunctions {
 	
    public static boolean isElementPresent(WebDriver driver, By by) {

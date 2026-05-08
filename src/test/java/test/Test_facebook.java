@@ -1,10 +1,7 @@
 package test;
 import org.testng.annotations.Test;
 import pom.Obj_Facebook;
-public class Test_facebook extends BaseTest{	
-//	String path="//input[@aria-label='Email address or phone number']";
-//	String path1 = ("//input[@autocomplete='username webauthn']"); // update path
-	
+public class Test_facebook extends BaseTest{		
 	public Test_facebook() throws Exception {
 		super();
 		// TODO Auto-generated constructor stub

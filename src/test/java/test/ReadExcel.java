@@ -20,7 +20,6 @@ import org.testng.Reporter;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-import com.edurekatesting.SetupBrowser;
 
 //error aave che
 

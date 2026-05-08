@@ -24,23 +24,25 @@ public class BaseTest  {
 	
 	
 	public BaseTest() throws Exception {
-		 // String path = ".\\src\\test\\java\\Utilities\\config.properties";
-        File propFile = new File(".\\src\\test\\java\\Utilities\\config.properties"); // Corrected line
-		pro1 = new Properties();
+		 String path = ".\\src\\test\\java\\Utilities"; //\\config.properties";
+         File propFile = new File(path+"\\config.properties"); // Corrected line
 
         try (FileInputStream fis = new FileInputStream(propFile)) {
+    		pro1 = new Properties();
             pro1.load(fis);
           //  System.out.println("Defult url=" + prop.getProperty("url"));
+    		// locators properties file		
+    		FileInputStream fis2=new FileInputStream(path+"\\locators.properties");
+    		pro2=new Properties();
+    		pro2.load(fis2); 
+            
         } catch (IOException e) { // Catching a more specific exception
             e.printStackTrace();
             System.err.println("Error loading properties file: " + e.getMessage());
         }
         
 		
-		// locators properties file		
-		FileInputStream fis2=new FileInputStream(".\\src\\test\\java\\Utilities\\locators.properties");
-		pro2=new Properties();
-		pro2.load(fis2);
+
 	}
 	public WebDriver intilizeBrowserAndOpenApplication(String browser) {
 		if(browser.equalsIgnoreCase("chrome")) 
