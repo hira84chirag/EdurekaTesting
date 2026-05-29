@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.Sr5_Alert">
+      <class name="test.ElementAttribute">
         <methods>
           <include name="tearDown1"/>
           <include name="tearDown"/>
-          <include name="InternetURL_alertDemo"/>
           <include name="setUp"/>
+          <include name="fb_elementAttribute"/>
         </methods>
-      </class> <!-- test.Sr5_Alert -->
+      </class> <!-- test.ElementAttribute -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

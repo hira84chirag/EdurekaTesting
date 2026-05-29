@@ -14,7 +14,7 @@ public class BrowserCommand_page extends BaseTest {
 		driver.manage().window().maximize();
 		System.out.println("Navigating to "+ url);
 	}
-public void Google_Url() {
+	public void Google_Url()  {
 		navigatetourl("googlesignin");
 		// adding this code later
 		navigatetourl("googleurl");	

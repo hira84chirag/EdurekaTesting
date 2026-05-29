@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>39/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>37/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 23 16:08:17 IST 2026</td>
+<td>Started on:</td><td>Fri May 29 12:50:25 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>273 seconds (273304 ms)</td>
+<tr><td>Total time:</td><td>433 seconds (433120 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,106 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.ElementAttribute.fb_elementAttribute()'><b>fb_elementAttribute</b><br>Test class: test.ElementAttribute<br>Test method: Verify attribute of Fb elment<br/>
+<a href="#Output-316355462" onClick='toggleBox("Output-316355462", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-316355462" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-316355462">
+is emaild displayed or not=true<br/>
+is Email enabled or not=true<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8c888771-12f8-48ca-9aa0-ae4af4d24c95, findElements {value=jazoest, using=name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.2, moz:accessibilityChecks: false, moz:buildID: 20260525130955, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14020, moz:profile: C:\Users\DELLEN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 8c888771-12f8-48ca-9aa0-ae4af4d24c95
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:428)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:220)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:183)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:104)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:431)
+	at test.ElementAttribute.fb_elementAttribute(ElementAttribute.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace316355462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace316355462'><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8c888771-12f8-48ca-9aa0-ae4af4d24c95, findElements {value=jazoest, using=name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.2, moz:accessibilityChecks: false, moz:buildID: 20260525130955, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14020, moz:profile: C:\Users\DELLEN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 8c888771-12f8-48ca-9aa0-ae4af4d24c95
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:428)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:220)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:183)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:104)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:431)
+	at test.ElementAttribute.fb_elementAttribute(ElementAttribute.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>180</td>
+<td>test.ElementAttribute@7b993c65</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,140 +176,171 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.GroupsTesting.Updatepassword()'><b>Updatepassword</b><br>Test class: test.GroupsTesting</td>
-<td></td>
-<td>0</td>
-<td>test.GroupsTesting@7f284218</td></tr>
-<tr>
-<td title='test.GroupsTesting.Read()'><b>Read</b><br>Test class: test.GroupsTesting</td>
-<td></td>
-<td>0</td>
-<td>test.GroupsTesting@7f284218</td></tr>
-<tr>
-<td title='test.Sr3_Iframe.Internet_iframeDemo()'><b>Internet_iframeDemo</b><br>Test class: test.Sr3_Iframe</td>
-<td></td>
-<td>52</td>
-<td>test.Sr3_Iframe@64e7619d</td></tr>
-<tr>
-<td title='test.GroupsTesting.a1()'><b>a1</b><br>Test class: test.GroupsTesting</td>
-<td></td>
-<td>0</td>
-<td>test.GroupsTesting@7f284218</td></tr>
-<tr>
-<td title='test.DependacyExample.Deleteuser()'><b>Deleteuser</b><br>Test class: test.DependacyExample</td>
-<td></td>
-<td>0</td>
-<td>test.DependacyExample@37911f88</td></tr>
-<tr>
-<td title='test.DependacyExample.Updatepassword()'><b>Updatepassword</b><br>Test class: test.DependacyExample</td>
-<td></td>
-<td>0</td>
-<td>test.DependacyExample@37911f88</td></tr>
-<tr>
-<td title='test.DataproviderExample.validLogin()'><b>validLogin</b><br>Test class: test.DataproviderExample<br>Parameters: Testing software, testing Method<br/>
-<a href="#Output-1923810797" onClick='toggleBox("Output-1923810797", this, "Show output", "Hide output");'>Show output</a>
+<td title='test.Scroll_Amazon.Amazon_products()'><b>Amazon_products</b><br>Test class: test.Scroll_Amazon<br/>
+<a href="#Output-1487814699" onClick='toggleBox("Output-1487814699", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1923810797" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1923810797">
-Username =Testing software<br/>
-Passowrd =testing Method<br/>
+<a href="#Output-1487814699" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1487814699">
+URL :https://www.amazon.in/vivo-Storage-Additional-Exchange-Offers/dp/B0GX94B58L?ref=dlx_deals_dg_dcl_B0GX94B58L_dt_sl10_33_pi&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/vivo-Storage-Additional-Exchange-Offers/dp/B0GX94B58L?ref=dlx_deals_dg_dcl_B0GX94B58L_dt_sl10_33&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/vivo-Storage-Additional-Exchange-Offers/dp/B0GX94B58L?ref=dlx_deals_dg_dcl_B0GX94B58L_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B0GX9GCM48?ref=dlx_deals_dg_dcl_B0GX9GCM48_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B0GX9K4H5Y?ref=dlx_deals_dg_dcl_B0GX9K4H5Y_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Safari-Pentagon-Polypropylene-Wheeling-Suitcase/dp/B097G96VT8?ref=dlx_deals_dg_dcl_B097G96VT8_dt_sl10_33_pi&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Safari-Pentagon-Polypropylene-Wheeling-Suitcase/dp/B097G96VT8?ref=dlx_deals_dg_dcl_B097G96VT8_dt_sl10_33&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Safari-Pentagon-Polypropylene-Wheeling-Suitcase/dp/B097G96VT8?ref=dlx_deals_dg_dcl_B097G96VT8_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B097BGSJX1?ref=dlx_deals_dg_dcl_B097BGSJX1_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B097BGVP2V?ref=dlx_deals_dg_dcl_B097BGVP2V_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B097JMRDJD?ref=dlx_deals_dg_dcl_B097JMRDJD_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B097BJHP5B?ref=dlx_deals_dg_dcl_B097BJHP5B_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B00R45VXHI?ref=dlx_deals_dg_dcl_B00R45VXHI_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Safari-Pentagon-Polypropylene-Wheeling-Suitcase/dp/B097G96VT8?ref=dlx_deals_dg_dcl_B097G96VT8_dt_sl10_33_csml&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Nothing-Phone-Black-12GB-256GB/dp/B0F7R6V1LM?ref=dlx_deals_dg_dcl_B0F7R6V1LM_dt_sl10_33_pi&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Nothing-Phone-Black-12GB-256GB/dp/B0F7R6V1LM?ref=dlx_deals_dg_dcl_B0F7R6V1LM_dt_sl10_33&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Nothing-Phone-Black-12GB-256GB/dp/B0F7R6V1LM?ref=dlx_deals_dg_dcl_B0F7R6V1LM_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B0F7R9LPP8?ref=dlx_deals_dg_dcl_B0F7R9LPP8_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/OnePlus-13-256GB-Midnight-Ocean/dp/B0DPS7FB4J?ref=dlx_deals_dg_dcl_B0DPS7FB4J_dt_sl10_33_pi&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/OnePlus-13-256GB-Midnight-Ocean/dp/B0DPS7FB4J?ref=dlx_deals_dg_dcl_B0DPS7FB4J_dt_sl10_33&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/OnePlus-13-256GB-Midnight-Ocean/dp/B0DPS7FB4J?ref=dlx_deals_dg_dcl_B0DPS7FB4J_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B0DQ8R1DB5?ref=dlx_deals_dg_dcl_B0DQ8R1DB5_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B0DQ8MGRNX?ref=dlx_deals_dg_dcl_B0DQ8MGRNX_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Lloyd-Convertible-Installation-Indication-GLS18I3AGGSC/dp/B0GJDVGS6P?ref=dlx_deals_dg_dcl_B0GJDVGS6P_dt_sl10_33_pi&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Lloyd-Convertible-Installation-Indication-GLS18I3AGGSC/dp/B0GJDVGS6P?ref=dlx_deals_dg_dcl_B0GJDVGS6P_dt_sl10_33&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Safari-Trolley-Polypropylene-Wheeling-Suitcase/dp/B0F67G7R9M?ref=dlx_deals_dg_dcl_B0F67G7R9M_dt_sl10_33_pi&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Safari-Trolley-Polypropylene-Wheeling-Suitcase/dp/B0F67G7R9M?ref=dlx_deals_dg_dcl_B0F67G7R9M_dt_sl10_33&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Safari-Trolley-Polypropylene-Wheeling-Suitcase/dp/B0F67G7R9M?ref=dlx_deals_dg_dcl_B0F67G7R9M_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B0FLYJD912?ref=dlx_deals_dg_dcl_B0FLYJD912_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B0FLYG7ZQD?ref=dlx_deals_dg_dcl_B0FLYG7ZQD_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B0F67HZNXG?ref=dlx_deals_dg_dcl_B0F67HZNXG_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B0F67GJLPW?ref=dlx_deals_dg_dcl_B0F67GJLPW_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/dp/B0F67GV4NL?ref=dlx_deals_dg_dcl_B0F67GV4NL_dt_sl10_33_cs&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Samsung-inches-Crystal-Vision-UA43UE86AHULXL/dp/B0GXB76VRW?ref=dlx_deals_dg_dcl_B0GXB76VRW_dt_sl10_33_pi&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Samsung-inches-Crystal-Vision-UA43UE86AHULXL/dp/B0GXB76VRW?ref=dlx_deals_dg_dcl_B0GXB76VRW_dt_sl10_33&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Philips-trimming-Grooming-attachment-MG3927/dp/B0G6DVB6DG?ref=dlx_deals_dg_dcl_B0G6DVB6DG_dt_sl10_33_pi&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Philips-trimming-Grooming-attachment-MG3927/dp/B0G6DVB6DG?ref=dlx_deals_dg_dcl_B0G6DVB6DG_dt_sl10_33&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Philips-trimming-Grooming-attachment-MG3927/dp/B0G6DVB6DG?ref=dlx_deals_dg_dcl_B0G6DVB6DG_dt_sl10_33_csml&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Samsung-Graphite-Processor-Monitoring-Anti-oxidant/dp/B0FDQK5KSZ?ref=dlx_deals_dg_dcl_B0FDQK5KSZ_dt_sl10_33_pi&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Samsung-Graphite-Processor-Monitoring-Anti-oxidant/dp/B0FDQK5KSZ?ref=dlx_deals_dg_dcl_B0FDQK5KSZ_dt_sl10_33&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/Samsung-Graphite-Processor-Monitoring-Anti-oxidant/dp/B0FDQK5KSZ?ref=dlx_deals_dg_dcl_B0FDQK5KSZ_dt_sl10_33_csml&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/HP-Upgradeable-Response-Office24-am0240tx/dp/B0G3VCGXH6?ref=dlx_deals_dg_dcl_B0G3VCGXH6_dt_sl10_33_pi&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+URL :https://www.amazon.in/HP-Upgradeable-Response-Office24-am0240tx/dp/B0G3VCGXH6?ref=dlx_deals_dg_dcl_B0G3VCGXH6_dt_sl10_33&pf_rd_r=08HTQB4CA97A9NA9FYCY&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/vivo-Storage-Additional-Exchange-Offers/dp/B0GX94B58L?ref=dlx_deals_dg_dcl_B0GX94B58L_dt_sl10_33_pi&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/vivo-Storage-Additional-Exchange-Offers/dp/B0GX94B58L?ref=dlx_deals_dg_dcl_B0GX94B58L_dt_sl10_33&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/vivo-Storage-Additional-Exchange-Offers/dp/B0GX94B58L?ref=dlx_deals_dg_dcl_B0GX94B58L_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/dp/B0GX9GCM48?ref=dlx_deals_dg_dcl_B0GX9GCM48_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/dp/B0GX9K4H5Y?ref=dlx_deals_dg_dcl_B0GX9K4H5Y_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/Safari-Pentagon-Polypropylene-Wheeling-Suitcase/dp/B097G96VT8?ref=dlx_deals_dg_dcl_B097G96VT8_dt_sl10_33_pi&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/Safari-Pentagon-Polypropylene-Wheeling-Suitcase/dp/B097G96VT8?ref=dlx_deals_dg_dcl_B097G96VT8_dt_sl10_33&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/Safari-Pentagon-Polypropylene-Wheeling-Suitcase/dp/B097G96VT8?ref=dlx_deals_dg_dcl_B097G96VT8_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/dp/B097BGSJX1?ref=dlx_deals_dg_dcl_B097BGSJX1_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/dp/B097BGVP2V?ref=dlx_deals_dg_dcl_B097BGVP2V_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/dp/B097JMRDJD?ref=dlx_deals_dg_dcl_B097JMRDJD_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/dp/B097BJHP5B?ref=dlx_deals_dg_dcl_B097BJHP5B_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/dp/B00R45VXHI?ref=dlx_deals_dg_dcl_B00R45VXHI_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/Safari-Pentagon-Polypropylene-Wheeling-Suitcase/dp/B097G96VT8?ref=dlx_deals_dg_dcl_B097G96VT8_dt_sl10_33_csml&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/Nothing-Phone-Black-12GB-256GB/dp/B0F7R6V1LM?ref=dlx_deals_dg_dcl_B0F7R6V1LM_dt_sl10_33_pi&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/Nothing-Phone-Black-12GB-256GB/dp/B0F7R6V1LM?ref=dlx_deals_dg_dcl_B0F7R6V1LM_dt_sl10_33&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/Nothing-Phone-Black-12GB-256GB/dp/B0F7R6V1LM?ref=dlx_deals_dg_dcl_B0F7R6V1LM_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/dp/B0F7R9LPP8?ref=dlx_deals_dg_dcl_B0F7R9LPP8_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/OnePlus-13-256GB-Midnight-Ocean/dp/B0DPS7FB4J?ref=dlx_deals_dg_dcl_B0DPS7FB4J_dt_sl10_33_pi&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/OnePlus-13-256GB-Midnight-Ocean/dp/B0DPS7FB4J?ref=dlx_deals_dg_dcl_B0DPS7FB4J_dt_sl10_33&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/OnePlus-13-256GB-Midnight-Ocean/dp/B0DPS7FB4J?ref=dlx_deals_dg_dcl_B0DPS7FB4J_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/dp/B0DQ8R1DB5?ref=dlx_deals_dg_dcl_B0DQ8R1DB5_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/dp/B0DQ8MGRNX?ref=dlx_deals_dg_dcl_B0DQ8MGRNX_dt_sl10_33_cs&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/Lloyd-Convertible-Installation-Indication-GLS18I3AGGSC/dp/B0GJDVGS6P?ref=dlx_deals_dg_dcl_B0GJDVGS6P_dt_sl10_33_pi&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
+https://www.amazon.in/Lloyd-Convertible-Installation-Indication-GLS18I3AGGSC/dp/B0GJDVGS6P?ref=dlx_deals_dg_dcl_B0GJDVGS6P_dt_sl10_33&pf_rd_r=9SPBBTX1Y3F6T2RNK2MA&pf_rd_p=fe0f0412-ad29-4a5e-9882-655ba37dbf33<br/>
 </div>
 </td>
 <td></td>
-<td>0</td>
-<td>test.DataproviderExample@1df8b5b8</td></tr>
+<td>57</td>
+<td>test.Scroll_Amazon@2a7ed1f</td></tr>
 <tr>
-<td title='test.DataproviderExample.validLogin()'><b>validLogin</b><br>Test class: test.DataproviderExample<br>Parameters: Testing software123, testing Method123<br/>
-<a href="#Output-669200356" onClick='toggleBox("Output-669200356", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-669200356" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-669200356">
-Username =Testing software123<br/>
-Passowrd =testing Method123<br/>
-</div>
-</td>
+<td title='test.Sr8_Scroll.amazonScrolling()'><b>amazonScrolling</b><br>Test class: test.Sr8_Scroll</td>
 <td></td>
-<td>0</td>
-<td>test.DataproviderExample@1df8b5b8</td></tr>
-<tr>
-<td title='test.Sr1_Groups.Deleteuser()'><b>Deleteuser</b><br>Test class: test.Sr1_Groups</td>
-<td></td>
-<td>0</td>
-<td>test.Sr1_Groups@5f0fd5a0</td></tr>
+<td>6</td>
+<td>test.Sr8_Scroll@4fa1c212</td></tr>
 <tr>
 <td title='test.DataproviderExample.validLogin()'><b>validLogin</b><br>Test class: test.DataproviderExample<br>Parameters: Software Testing, Method Testing<br/>
-<a href="#Output-435175610" onClick='toggleBox("Output-435175610", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1101451553" onClick='toggleBox("Output-1101451553", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-435175610" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-435175610">
+<a href="#Output-1101451553" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1101451553">
 Username =Software Testing<br/>
 Passowrd =Method Testing<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>test.DataproviderExample@1df8b5b8</td></tr>
+<td>test.DataproviderExample@7d94beb9</td></tr>
 <tr>
-<td title='test.HardAssertExample.tc1()'><b>tc1</b><br>Test class: test.HardAssertExample<br/>
-<a href="#Output-1580153829" onClick='toggleBox("Output-1580153829", this, "Show output", "Hide output");'>Show output</a>
+<td title='test.GroupsTesting.Deleteuser()'><b>Deleteuser</b><br>Test class: test.GroupsTesting</td>
+<td></td>
+<td>0</td>
+<td>test.GroupsTesting@6f1c29b7</td></tr>
+<tr>
+<td title='test.Sr1_Groups.Read1()'><b>Read1</b><br>Test class: test.Sr1_Groups</td>
+<td></td>
+<td>0</td>
+<td>test.Sr1_Groups@2cb2fc20</td></tr>
+<tr>
+<td title='test.DataproviderExample.validLogin()'><b>validLogin</b><br>Test class: test.DataproviderExample<br>Parameters: Testing software, testing Method<br/>
+<a href="#Output-1329897103" onClick='toggleBox("Output-1329897103", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1580153829" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1580153829">
-a = 6<br/>
+<a href="#Output-1329897103" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1329897103">
+Username =Testing software<br/>
+Passowrd =testing Method<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>test.HardAssertExample@407a7f2a</td></tr>
+<td>test.DataproviderExample@7d94beb9</td></tr>
 <tr>
-<td title='test.Sr4_Annotation.T1()'><b>T1</b><br>Test class: test.Sr4_Annotation</td>
+<td title='test.Sr1_Groups.Deleteuser()'><b>Deleteuser</b><br>Test class: test.Sr1_Groups</td>
 <td></td>
 <td>0</td>
-<td>test.Sr4_Annotation@495ee280</td></tr>
+<td>test.Sr1_Groups@2cb2fc20</td></tr>
 <tr>
-<td title='test.Sr5_Alert.InternetURL_alertDemo()'><b>InternetURL_alertDemo</b><br>Test class: test.Sr5_Alert</td>
-<td></td>
-<td>4</td>
-<td>test.Sr5_Alert@4fa1c212</td></tr>
-<tr>
-<td title='test.Rollsroyce.Rolls_royce_media()'><b>Rolls_royce_media</b><br>Test class: test.Rollsroyce</td>
-<td></td>
-<td>12</td>
-<td>test.Rollsroyce@3fa247d1</td></tr>
-<tr>
-<td title='test.RobotExample.tinypng_robotExample()'><b>tinypng_robotExample</b><br>Test class: test.RobotExample</td>
-<td></td>
-<td>10</td>
-<td>test.RobotExample@2a7ed1f</td></tr>
-<tr>
-<td title='test.Sr4_Annotation.T2()'><b>T2</b><br>Test class: test.Sr4_Annotation</td>
+<td title='test.SoftAssertExample.tc2()'><b>tc2</b><br>Test class: test.SoftAssertExample</td>
 <td></td>
 <td>0</td>
-<td>test.Sr4_Annotation@495ee280</td></tr>
+<td>test.SoftAssertExample@3fa247d1</td></tr>
 <tr>
-<td title='test.DependacyExample.Createuser()'><b>Createuser</b><br>Test class: test.DependacyExample</td>
+<td title='test.GroupsTesting.a1()'><b>a1</b><br>Test class: test.GroupsTesting</td>
 <td></td>
 <td>0</td>
-<td>test.DependacyExample@37911f88</td></tr>
+<td>test.GroupsTesting@6f1c29b7</td></tr>
 <tr>
-<td title='test.HardAssertExample.Validusername()'><b>Validusername</b><br>Test class: test.HardAssertExample<br>Parameters: software@qa.com, mypassword<br/>
-<a href="#Output-1033425208" onClick='toggleBox("Output-1033425208", this, "Show output", "Hide output");'>Show output</a>
+<td title='test.Sr7_StaleEle.Fb_Hiddenele()'><b>Fb_Hiddenele</b><br>Test class: test.Sr7_StaleEle<br/>
+<a href="#Output-630669831" onClick='toggleBox("Output-630669831", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1033425208" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1033425208">
-Username=software@qa.com<br/>
-Password=mypassword<br/>
+<a href="#Output-630669831" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-630669831">
+The element with the reference d084ae62-7e95-4eaa-a805-030c3c4dc944 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [b065b240-763c-42bb-b2d5-e9d87f342811, clickElement {id=d084ae62-7e95-4eaa-a805-030c3c4dc944}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 151.0.2, moz:accessibilityChecks: false, moz:buildID: 20260525130955, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21612, moz:profile: C:\Users\DELLEN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (b065b240-763c-42bb-b2d5-e9d87f342811)] -> name: email]
+Session ID: b065b240-763c-42bb-b2d5-e9d87f342811<br/>
 </div>
 </td>
 <td></td>
+<td>3</td>
+<td>test.Sr7_StaleEle@495ee280</td></tr>
+<tr>
+<td title='test.DependacyExample.Read()'><b>Read</b><br>Test class: test.DependacyExample</td>
+<td></td>
 <td>0</td>
-<td>test.HardAssertExample@407a7f2a</td></tr>
+<td>test.DependacyExample@23202fce</td></tr>
 <tr>
 <td title='test.ElementAttribute.fb_ButtonAttribute()'><b>fb_ButtonAttribute</b><br>Test class: test.ElementAttribute<br>Test method: Get attribute of Fb elment<br/>
-<a href="#Output-405950359" onClick='toggleBox("Output-405950359", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-806572546" onClick='toggleBox("Output-806572546", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-405950359" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-405950359">
+<a href="#Output-806572546" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-806572546">
 Current URL=Email address or mobile number<br/>
 Tooltips of link=<br/>
 Login button name=Log in<br/>
@@ -223,216 +354,193 @@ TagName =div<br/>
 </td>
 <td></td>
 <td>3</td>
-<td>test.ElementAttribute@6f1c29b7</td></tr>
+<td>test.ElementAttribute@7b993c65</td></tr>
 <tr>
-<td title='test.ScrollExample.amazonScrolling()'><b>amazonScrolling</b><br>Test class: test.ScrollExample</td>
+<td title='test.GroupsTesting.Updatepassword()'><b>Updatepassword</b><br>Test class: test.GroupsTesting</td>
+<td></td>
+<td>0</td>
+<td>test.GroupsTesting@6f1c29b7</td></tr>
+<tr>
+<td title='test.HardAssertExample.Validusername()'><b>Validusername</b><br>Test class: test.HardAssertExample<br>Parameters: software@qa.com, mypassword<br/>
+<a href="#Output-1746590863" onClick='toggleBox("Output-1746590863", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1746590863" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1746590863">
+Username=software@qa.com<br/>
+Password=mypassword<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>test.HardAssertExample@4d6025c5</td></tr>
+<tr>
+<td title='test.Sr1_Groups.Updatepassword()'><b>Updatepassword</b><br>Test class: test.Sr1_Groups</td>
+<td></td>
+<td>0</td>
+<td>test.Sr1_Groups@2cb2fc20</td></tr>
+<tr>
+<td title='test.Sr4_Annotation.T2()'><b>T2</b><br>Test class: test.Sr4_Annotation</td>
+<td></td>
+<td>0</td>
+<td>test.Sr4_Annotation@723e88f9</td></tr>
+<tr>
+<td title='test.Sr5_Alert.InternetURL_alertDemo()'><b>InternetURL_alertDemo</b><br>Test class: test.Sr5_Alert</td>
+<td></td>
+<td>4</td>
+<td>test.Sr5_Alert@5f0fd5a0</td></tr>
+<tr>
+<td title='test.Sr8_Scroll.githubScrolling()'><b>githubScrolling</b><br>Test class: test.Sr8_Scroll</td>
 <td></td>
 <td>6</td>
-<td>test.ScrollExample@2cb2fc20</td></tr>
+<td>test.Sr8_Scroll@4fa1c212</td></tr>
+<tr>
+<td title='test.Sr8_Wait.facebook_explitcitWaitExample()'><b>facebook_explitcitWaitExample</b><br>Test class: test.Sr8_Wait</td>
+<td></td>
+<td>12</td>
+<td>test.Sr8_Wait@6ea2bc93</td></tr>
+<tr>
+<td title='test.GroupsTesting.Read()'><b>Read</b><br>Test class: test.GroupsTesting</td>
+<td></td>
+<td>0</td>
+<td>test.GroupsTesting@6f1c29b7</td></tr>
+<tr>
+<td title='test.HardAssertExample.tc1()'><b>tc1</b><br>Test class: test.HardAssertExample<br/>
+<a href="#Output-910101408" onClick='toggleBox("Output-910101408", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-910101408" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-910101408">
+a = 6<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>test.HardAssertExample@4d6025c5</td></tr>
+<tr>
+<td title='test.DependacyExample.Updatepassword()'><b>Updatepassword</b><br>Test class: test.DependacyExample</td>
+<td></td>
+<td>0</td>
+<td>test.DependacyExample@23202fce</td></tr>
+<tr>
+<td title='test.HardAssertExample.tc2()'><b>tc2</b><br>Test class: test.HardAssertExample</td>
+<td></td>
+<td>0</td>
+<td>test.HardAssertExample@4d6025c5</td></tr>
 <tr>
 <td title='test.GoogleLogin.Google_LoginTC()'><b>Google_LoginTC</b><br>Test class: test.GoogleLogin<br/>
-<a href="#Output-1210600718" onClick='toggleBox("Output-1210600718", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1927776715" onClick='toggleBox("Output-1927776715", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1210600718" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1210600718">
+<a href="#Output-1927776715" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1927776715">
 Enter an email or phone number<br/>
 </div>
 </td>
 <td></td>
 <td>12</td>
-<td>test.GoogleLogin@4d6025c5</td></tr>
+<td>test.GoogleLogin@37911f88</td></tr>
 <tr>
-<td title='test.DependacyExample.Read()'><b>Read</b><br>Test class: test.DependacyExample</td>
+<td title='test.DependacyExample.Createuser()'><b>Createuser</b><br>Test class: test.DependacyExample</td>
 <td></td>
 <td>0</td>
-<td>test.DependacyExample@37911f88</td></tr>
-<tr>
-<td title='test.Sr1_Groups.a1()'><b>a1</b><br>Test class: test.Sr1_Groups</td>
-<td></td>
-<td>0</td>
-<td>test.Sr1_Groups@5f0fd5a0</td></tr>
-<tr>
-<td title='test.Sr1_Groups.Updatepassword()'><b>Updatepassword</b><br>Test class: test.Sr1_Groups</td>
-<td></td>
-<td>0</td>
-<td>test.Sr1_Groups@5f0fd5a0</td></tr>
-<tr>
-<td title='test.Scroll_Amazon.Amazon_product_scrolling()'><b>Amazon_product_scrolling</b><br>Test class: test.Scroll_Amazon<br/>
-<a href="#Output-571251299" onClick='toggleBox("Output-571251299", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-571251299" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-571251299">
-URL :https://www.amazon.in/Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL87VP7N?ref=dlx_deals_dg_dcl_B0GL87VP7N_dt_sl10_0c_pi&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL87VP7N?ref=dlx_deals_dg_dcl_B0GL87VP7N_dt_sl10_0c&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL87VP7N?ref=dlx_deals_dg_dcl_B0GL87VP7N_dt_sl10_0c_cs&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/dp/B0GL8GCFR9?ref=dlx_deals_dg_dcl_B0GL8GCFR9_dt_sl10_0c_cs&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/dp/B0GL8LDFF4?ref=dlx_deals_dg_dcl_B0GL8LDFF4_dt_sl10_0c_cs&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/dp/B0GL8BYCVM?ref=dlx_deals_dg_dcl_B0GL8BYCVM_dt_sl10_0c_cs&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/Panasonic-DustBuster-Convertible-CS-CU-SU18BKY3W/dp/B0GHQVNMKQ?ref=dlx_deals_dg_dcl_B0GHQVNMKQ_dt_sl10_0c_pi&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/Panasonic-DustBuster-Convertible-CS-CU-SU18BKY3W/dp/B0GHQVNMKQ?ref=dlx_deals_dg_dcl_B0GHQVNMKQ_dt_sl10_0c&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8G49LV?ref=dlx_deals_dg_dcl_B0GL8G49LV_dt_sl10_0c_pi&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8G49LV?ref=dlx_deals_dg_dcl_B0GL8G49LV_dt_sl10_0c&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8G49LV?ref=dlx_deals_dg_dcl_B0GL8G49LV_dt_sl10_0c_cs&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/dp/B0GLH1M7SK?ref=dlx_deals_dg_dcl_B0GLH1M7SK_dt_sl10_0c_cs&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/dp/B0GLH9DPLD?ref=dlx_deals_dg_dcl_B0GLH9DPLD_dt_sl10_0c_cs&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/dp/B0GLGYF3RD?ref=dlx_deals_dg_dcl_B0GLGYF3RD_dt_sl10_0c_cs&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/OnePlus-Snapdragon-Segments-Complete-Personalized/dp/B0GRBBPBGQ?ref=dlx_deals_dg_dcl_B0GRBBPBGQ_dt_sl10_0c_pi&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/OnePlus-Snapdragon-Segments-Complete-Personalized/dp/B0GRBBPBGQ?ref=dlx_deals_dg_dcl_B0GRBBPBGQ_dt_sl10_0c&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/Protection-Resistant-Communication-Cancellation-Identification/dp/B0GLZMSN46?ref=dlx_deals_dg_dcl_B0GLZMSN46_dt_sl10_0c_pi&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/Protection-Resistant-Communication-Cancellation-Identification/dp/B0GLZMSN46?ref=dlx_deals_dg_dcl_B0GLZMSN46_dt_sl10_0c&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/Protection-Resistant-Communication-Cancellation-Identification/dp/B0GLZMSN46?ref=dlx_deals_dg_dcl_B0GLZMSN46_dt_sl10_0c_cs&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-URL :https://www.amazon.in/dp/B0GLZPHBHW?ref=dlx_deals_dg_dcl_B0GLZPHBHW_dt_sl10_0c_cs&pf_rd_r=Z26WZNMXC1PBGPBVEVQV&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL87VP7N?ref=dlx_deals_dg_dcl_B0GL87VP7N_dt_sl10_0c_pi&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL87VP7N?ref=dlx_deals_dg_dcl_B0GL87VP7N_dt_sl10_0c&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL87VP7N?ref=dlx_deals_dg_dcl_B0GL87VP7N_dt_sl10_0c_cs&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/dp/B0GL8GCFR9?ref=dlx_deals_dg_dcl_B0GL8GCFR9_dt_sl10_0c_cs&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/dp/B0GL8LDFF4?ref=dlx_deals_dg_dcl_B0GL8LDFF4_dt_sl10_0c_cs&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/dp/B0GL8BYCVM?ref=dlx_deals_dg_dcl_B0GL8BYCVM_dt_sl10_0c_cs&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/Panasonic-DustBuster-Convertible-CS-CU-SU18BKY3W/dp/B0GHQVNMKQ?ref=dlx_deals_dg_dcl_B0GHQVNMKQ_dt_sl10_0c_pi&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/Panasonic-DustBuster-Convertible-CS-CU-SU18BKY3W/dp/B0GHQVNMKQ?ref=dlx_deals_dg_dcl_B0GHQVNMKQ_dt_sl10_0c&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8G49LV?ref=dlx_deals_dg_dcl_B0GL8G49LV_dt_sl10_0c_pi&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8G49LV?ref=dlx_deals_dg_dcl_B0GL8G49LV_dt_sl10_0c&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8G49LV?ref=dlx_deals_dg_dcl_B0GL8G49LV_dt_sl10_0c_cs&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/dp/B0GLH1M7SK?ref=dlx_deals_dg_dcl_B0GLH1M7SK_dt_sl10_0c_cs&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/dp/B0GLH9DPLD?ref=dlx_deals_dg_dcl_B0GLH9DPLD_dt_sl10_0c_cs&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/dp/B0GLGYF3RD?ref=dlx_deals_dg_dcl_B0GLGYF3RD_dt_sl10_0c_cs&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/OnePlus-Snapdragon-Segments-Complete-Personalized/dp/B0GRBBPBGQ?ref=dlx_deals_dg_dcl_B0GRBBPBGQ_dt_sl10_0c_pi&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/OnePlus-Snapdragon-Segments-Complete-Personalized/dp/B0GRBBPBGQ?ref=dlx_deals_dg_dcl_B0GRBBPBGQ_dt_sl10_0c&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/OnePlus-Snapdragon-Segments-Complete-Personalized/dp/B0GRBBPBGQ?ref=dlx_deals_dg_dcl_B0GRBBPBGQ_dt_sl10_0c_csml&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/Protection-Resistant-Communication-Cancellation-Identification/dp/B0GLZMSN46?ref=dlx_deals_dg_dcl_B0GLZMSN46_dt_sl10_0c_pi&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/Protection-Resistant-Communication-Cancellation-Identification/dp/B0GLZMSN46?ref=dlx_deals_dg_dcl_B0GLZMSN46_dt_sl10_0c&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/Protection-Resistant-Communication-Cancellation-Identification/dp/B0GLZMSN46?ref=dlx_deals_dg_dcl_B0GLZMSN46_dt_sl10_0c_cs&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-https://www.amazon.in/dp/B0GLZPHBHW?ref=dlx_deals_dg_dcl_B0GLZPHBHW_dt_sl10_0c_cs&pf_rd_r=XWDA7TYNQX97S7567F20&pf_rd_p=12d8f2f1-ce93-4306-9978-bd33cc17090c<br/>
-</div>
-</td>
-<td></td>
-<td>42</td>
-<td>test.Scroll_Amazon@4f4c4b1a</td></tr>
-<tr>
-<td title='test.ElementAttribute.fb_elementAttribute()'><b>fb_elementAttribute</b><br>Test class: test.ElementAttribute<br>Test method: Verify attribute of Fb elment<br/>
-<a href="#Output-1878225987" onClick='toggleBox("Output-1878225987", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1878225987" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1878225987">
-is emaild displayed or not=true<br/>
-is Email enabled or not=true<br/>
-Hidden element NOT present in DOM<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>test.ElementAttribute@6f1c29b7</td></tr>
-<tr>
-<td title='test.Sr1_Groups.Read()'><b>Read</b><br>Test class: test.Sr1_Groups</td>
-<td></td>
-<td>0</td>
-<td>test.Sr1_Groups@5f0fd5a0</td></tr>
-<tr>
-<td title='test.Sr1_Groups.Read1()'><b>Read1</b><br>Test class: test.Sr1_Groups</td>
-<td></td>
-<td>0</td>
-<td>test.Sr1_Groups@5f0fd5a0</td></tr>
-<tr>
-<td title='test.Sr7_StaleEle.Fb_Hiddenele()'><b>Fb_Hiddenele</b><br>Test class: test.Sr7_StaleEle<br/>
-<a href="#Output-2067076166" onClick='toggleBox("Output-2067076166", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2067076166" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2067076166">
-The element with the reference 868ee694-1169-494b-95f3-420024f1edae is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [0bffb0ae-3bba-4bc5-ae44-af3f50091cad, clickElement {id=868ee694-1169-494b-95f3-420024f1edae}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 149.0.2, moz:accessibilityChecks: false, moz:buildID: 20260403140140, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3020, moz:profile: C:\Users\DELLEN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (0bffb0ae-3bba-4bc5-ae44-af3f50091cad)] -> name: email]
-Session ID: 0bffb0ae-3bba-4bc5-ae44-af3f50091cad<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>test.Sr7_StaleEle@3116c353</td></tr>
+<td>test.DependacyExample@23202fce</td></tr>
 <tr>
 <td title='test.Sr6_WindowHandle.facebook_WindowHandlesdemo()'><b>facebook_WindowHandlesdemo</b><br>Test class: test.Sr6_WindowHandle<br/>
-<a href="#Output-487964833" onClick='toggleBox("Output-487964833", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-739812330" onClick='toggleBox("Output-739812330", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-487964833" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-487964833">
+<a href="#Output-739812330" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-739812330">
 page title:  Facebook<br/>
-current window id - 413f3deb-f88f-421b-a67d-84d69669507d<br/>
-total window id's [413f3deb-f88f-421b-a67d-84d69669507d]<br/>
+current window id - 0ff23451-6470-4455-9667-0a76cbef2b2b<br/>
+total window id's [0ff23451-6470-4455-9667-0a76cbef2b2b]<br/>
 
 ********************* After opening the insta page ********************************<br/>
 page title: Instagram<br/>
-current window id - 413f3deb-f88f-421b-a67d-84d69669507d<br/>
-total window id's [413f3deb-f88f-421b-a67d-84d69669507d, 1e6cdf71-5466-44ab-be17-1e020343f3d1]<br/>
+current window id - 0ff23451-6470-4455-9667-0a76cbef2b2b<br/>
+total window id's [0ff23451-6470-4455-9667-0a76cbef2b2b, 32e852a1-4f4c-41a4-ac97-dcc96b0eeed4]<br/>
 
 ********************* After switching to the insta page ********************************<br/>
 page title: Instagram<br/>
-current window id - 413f3deb-f88f-421b-a67d-84d69669507d<br/>
-total window id's [413f3deb-f88f-421b-a67d-84d69669507d, 1e6cdf71-5466-44ab-be17-1e020343f3d1]<br/>
+current window id - 0ff23451-6470-4455-9667-0a76cbef2b2b<br/>
+total window id's [0ff23451-6470-4455-9667-0a76cbef2b2b, 32e852a1-4f4c-41a4-ac97-dcc96b0eeed4]<br/>
 
 ********************* After switching to the fb page ********************************<br/>
 page title: Instagram<br/>
-current window id - 413f3deb-f88f-421b-a67d-84d69669507d<br/>
-total window id's [413f3deb-f88f-421b-a67d-84d69669507d, 1e6cdf71-5466-44ab-be17-1e020343f3d1]<br/>
+current window id - 0ff23451-6470-4455-9667-0a76cbef2b2b<br/>
+total window id's [0ff23451-6470-4455-9667-0a76cbef2b2b, 32e852a1-4f4c-41a4-ac97-dcc96b0eeed4]<br/>
 </div>
 </td>
 <td></td>
 <td>5</td>
-<td>test.Sr6_WindowHandle@6ea2bc93</td></tr>
+<td>test.Sr6_WindowHandle@64e7619d</td></tr>
+<tr>
+<td title='test.Sr4_Annotation.T1()'><b>T1</b><br>Test class: test.Sr4_Annotation</td>
+<td></td>
+<td>0</td>
+<td>test.Sr4_Annotation@723e88f9</td></tr>
+<tr>
+<td title='test.Sr8_Scroll.youtubeScrolling()'><b>youtubeScrolling</b><br>Test class: test.Sr8_Scroll</td>
+<td></td>
+<td>11</td>
+<td>test.Sr8_Scroll@4fa1c212</td></tr>
+<tr>
+<td title='test.DataproviderExample.validLogin()'><b>validLogin</b><br>Test class: test.DataproviderExample<br>Parameters: Testing software123, testing Method123<br/>
+<a href="#Output-1091736037" onClick='toggleBox("Output-1091736037", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1091736037" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1091736037">
+Username =Testing software123<br/>
+Passowrd =testing Method123<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>test.DataproviderExample@7d94beb9</td></tr>
+<tr>
+<td title='test.DependacyExample.Deleteuser()'><b>Deleteuser</b><br>Test class: test.DependacyExample</td>
+<td></td>
+<td>0</td>
+<td>test.DependacyExample@23202fce</td></tr>
+<tr>
+<td title='test.Sr1_Groups.Read()'><b>Read</b><br>Test class: test.Sr1_Groups</td>
+<td></td>
+<td>0</td>
+<td>test.Sr1_Groups@2cb2fc20</td></tr>
 <tr>
 <td title='test.BrowserCommand.GoogleUrl()'><b>GoogleUrl</b><br>Test class: test.BrowserCommand</td>
 <td></td>
-<td>18</td>
-<td>test.BrowserCommand@560348e6</td></tr>
-<tr>
-<td title='test.ScrollExample.githubScrolling()'><b>githubScrolling</b><br>Test class: test.ScrollExample</td>
-<td></td>
-<td>8</td>
-<td>test.ScrollExample@2cb2fc20</td></tr>
-<tr>
-<td title='test.Sr8_Wait.facebook_explitcitWaitExample()'><b>facebook_explitcitWaitExample</b><br>Test class: test.Sr8_Wait</td>
-<td></td>
-<td>14</td>
-<td>test.Sr8_Wait@f627d13</td></tr>
-<tr>
-<td title='test.GroupsTesting.Deleteuser()'><b>Deleteuser</b><br>Test class: test.GroupsTesting</td>
-<td></td>
-<td>0</td>
-<td>test.GroupsTesting@7f284218</td></tr>
-<tr>
-<td title='test.HardAssertExample.tc2()'><b>tc2</b><br>Test class: test.HardAssertExample</td>
-<td></td>
-<td>0</td>
-<td>test.HardAssertExample@407a7f2a</td></tr>
-<tr>
-<td title='test.Test_facebook.facebook_locator()'><b>facebook_locator</b><br>Test class: test.Test_facebook</td>
-<td></td>
-<td>4</td>
-<td>test.Test_facebook@4e928fbf</td></tr>
-<tr>
-<td title='test.ScrollExample.youtubeScrolling()'><b>youtubeScrolling</b><br>Test class: test.ScrollExample</td>
-<td></td>
-<td>6</td>
-<td>test.ScrollExample@2cb2fc20</td></tr>
+<td>16</td>
+<td>test.BrowserCommand@609bcfb6</td></tr>
 <tr>
 <td title='test.SoftAssertExample.tc1()'><b>tc1</b><br>Test class: test.SoftAssertExample<br/>
-<a href="#Output-475157807" onClick='toggleBox("Output-475157807", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2134194703" onClick='toggleBox("Output-2134194703", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-475157807" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-475157807">
+<a href="#Output-2134194703" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2134194703">
 a = 48<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>test.SoftAssertExample@723e88f9</td></tr>
+<td>test.SoftAssertExample@3fa247d1</td></tr>
 <tr>
-<td title='test.SoftAssertExample.tc2()'><b>tc2</b><br>Test class: test.SoftAssertExample</td>
+<td title='test.Sr1_Groups.a1()'><b>a1</b><br>Test class: test.Sr1_Groups</td>
 <td></td>
 <td>0</td>
-<td>test.SoftAssertExample@723e88f9</td></tr>
+<td>test.Sr1_Groups@2cb2fc20</td></tr>
+<tr>
+<td title='test.Sr3_Iframe.Internet_iframeDemo()'><b>Internet_iframeDemo</b><br>Test class: test.Sr3_Iframe</td>
+<td></td>
+<td>5</td>
+<td>test.Sr3_Iframe@4f4c4b1a</td></tr>
+<tr>
+<td title='test.Rollsroyce.Rolls_royce_media()'><b>Rolls_royce_media</b><br>Test class: test.Rollsroyce</td>
+<td></td>
+<td>15</td>
+<td>test.Rollsroyce@4ea5b703</td></tr>
+<tr>
+<td title='test.RobotExample.tinypng_robotExample()'><b>tinypng_robotExample</b><br>Test class: test.RobotExample</td>
+<td></td>
+<td>7</td>
+<td>test.RobotExample@407a7f2a</td></tr>
 </table><p>
 </body>
 </html>

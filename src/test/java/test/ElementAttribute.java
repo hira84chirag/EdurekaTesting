@@ -1,5 +1,6 @@
 package test;
 
+import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -16,17 +17,23 @@ public class ElementAttribute extends BaseTest {
 	String field="";
 	@Test(description="Verify attribute of Fb elment")
 	public void fb_elementAttribute() {
-	
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get(pro1.getProperty("fburl"));
 		WebElement we = driver.findElement(By.name("email"));
 		Reporter.log("is emaild displayed or not=" + we.isDisplayed());
 		Reporter.log("is Email enabled or not=" + we.isEnabled());
-
-		List<WebElement> hiddenEle=driver.findElements(By.name("jazoest"));		
+	
+		List<WebElement> hiddenEle=driver.findElements(By.name("jazoest"));
 		if(hiddenEle.size() > 0) 
-			Reporter.log("is hidden element displayed=" + hiddenEle.get(0).isDisplayed());
-		else
+			{
+			WebElement hidden = hiddenEle.get(0);
+	        Reporter.log("Hidden element present in DOM = true");
+	        Reporter.log("Is hidden element displayed = " + hidden.isDisplayed());
+	        Reporter.log("Hidden value = " + hidden.getAttribute("value"));		
+	        }
+		else{
 			Reporter.log("Hidden element NOT present in DOM");	
+			}	
 	}
 	
 	@Test(description="Get attribute of Fb elment")
@@ -45,6 +52,7 @@ public class ElementAttribute extends BaseTest {
 		we=driver.findElement(By.xpath(pro2.getProperty("login")));	
 		field=we.getText(); 
 		Reporter.log("Login button name=" + field);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
 		Reporter.log("Button width=" + we.getCssValue("width"));	
 		
 		int fieldx = we.getLocation().x;
@@ -57,9 +65,6 @@ public class ElementAttribute extends BaseTest {
 		Reporter.log("TagName =" + field);
 		// Click on Create new button
 		CommonFunctions.waitForElementToClick(driver,pro2.getProperty("createaccount"));
-	
-		
-
 	}
 	
 	

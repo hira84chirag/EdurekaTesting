@@ -9,13 +9,14 @@
     <parameter name="Password1" value="1mypassword"/>
     <parameter name="Password" value="mypassword"/>
     <classes>
-      <class name="test.Example3_Iframe">
+      <class name="test.ElementAttribute">
         <methods>
+          <include name="tearDown1"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="Internet_iframeDemo"/>
+          <include name="fb_elementAttribute"/>
         </methods>
-      </class> <!-- test.Example3_Iframe -->
+      </class> <!-- test.ElementAttribute -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

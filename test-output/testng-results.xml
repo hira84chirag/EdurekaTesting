@@ -1,29 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Current URL=Email address or mobile number]]>
+    </line>
+    <line>
+      <![CDATA[Tooltips of link=]]>
+    </line>
+    <line>
+      <![CDATA[Login button name=Log in]]>
+    </line>
+    <line>
+      <![CDATA[Button width=546px]]>
+    </line>
+    <line>
+      <![CDATA[Current URL=(768, 333)]]>
+    </line>
+    <line>
+      <![CDATA[768Co-ordinate of controls on page=333]]>
+    </line>
+    <line>
+      <![CDATA[Login size=(546, 44)]]>
+    </line>
+    <line>
+      <![CDATA[44Login button =546]]>
+    </line>
+    <line>
+      <![CDATA[TagName =div]]>
+    </line>
+    <line>
+      <![CDATA[is emaild displayed or not=true]]>
+    </line>
+    <line>
+      <![CDATA[is Email enabled or not=true]]>
+    </line>
+    <line>
+      <![CDATA[Hidden element NOT present in DOM]]>
+    </line>
   </reporter-output>
-  <suite started-at="2026-05-08T18:01:38 IST" name="Default suite" finished-at="2026-05-08T18:02:04 IST" duration-ms="25886">
+  <suite started-at="2026-05-29T13:21:04 IST" name="Default suite" finished-at="2026-05-29T13:21:33 IST" duration-ms="28940">
     <groups>
     </groups>
-    <test started-at="2026-05-08T18:01:38 IST" name="Default test" finished-at="2026-05-08T18:02:04 IST" duration-ms="25886">
-      <class name="test.BrowserCommand">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.BrowserCommand@1a5b6f42]" started-at="2026-05-08T18:01:38 IST" name="setUp" finished-at="2026-05-08T18:01:43 IST" duration-ms="5136" status="PASS">
+    <test started-at="2026-05-29T13:21:04 IST" name="Default test" finished-at="2026-05-29T13:21:33 IST" duration-ms="28940">
+      <class name="test.ElementAttribute">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.ElementAttribute@18f8cd79]" started-at="2026-05-29T13:21:04 IST" name="setUp" finished-at="2026-05-29T13:21:08 IST" duration-ms="3480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="GoogleUrl()[pri:1, instance:test.BrowserCommand@1a5b6f42]" started-at="2026-05-08T18:01:43 IST" name="GoogleUrl" finished-at="2026-05-08T18:02:02 IST" duration-ms="18772" status="PASS">
+        <test-method signature="fb_ButtonAttribute()[pri:0, instance:test.ElementAttribute@18f8cd79]" started-at="2026-05-29T13:21:08 IST" name="fb_ButtonAttribute" description="Get attribute of Fb elment" finished-at="2026-05-29T13:21:11 IST" duration-ms="3376" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Current URL=Email address or mobile number]]>
+            </line>
+            <line>
+              <![CDATA[Tooltips of link=]]>
+            </line>
+            <line>
+              <![CDATA[Login button name=Log in]]>
+            </line>
+            <line>
+              <![CDATA[Button width=546px]]>
+            </line>
+            <line>
+              <![CDATA[Current URL=(768, 333)]]>
+            </line>
+            <line>
+              <![CDATA[768Co-ordinate of controls on page=333]]>
+            </line>
+            <line>
+              <![CDATA[Login size=(546, 44)]]>
+            </line>
+            <line>
+              <![CDATA[44Login button =546]]>
+            </line>
+            <line>
+              <![CDATA[TagName =div]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- GoogleUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.BrowserCommand@1a5b6f42]" started-at="2026-05-08T18:02:02 IST" name="tearDown" finished-at="2026-05-08T18:02:04 IST" duration-ms="1769" status="PASS">
+        </test-method> <!-- fb_ButtonAttribute -->
+        <test-method signature="fb_elementAttribute()[pri:0, instance:test.ElementAttribute@18f8cd79]" started-at="2026-05-29T13:21:11 IST" name="fb_elementAttribute" description="Verify attribute of Fb elment" finished-at="2026-05-29T13:21:33 IST" duration-ms="21297" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[is emaild displayed or not=true]]>
+            </line>
+            <line>
+              <![CDATA[is Email enabled or not=true]]>
+            </line>
+            <line>
+              <![CDATA[Hidden element NOT present in DOM]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fb_elementAttribute -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.ElementAttribute@18f8cd79]" started-at="2026-05-29T13:21:33 IST" name="tearDown" finished-at="2026-05-29T13:21:33 IST" duration-ms="622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown1()[pri:0, instance:test.BrowserCommand@1a5b6f42]" started-at="2026-05-08T18:02:04 IST" name="tearDown1" finished-at="2026-05-08T18:02:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown1()[pri:0, instance:test.ElementAttribute@18f8cd79]" started-at="2026-05-29T13:21:33 IST" name="tearDown1" finished-at="2026-05-29T13:21:33 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown1 -->
-      </class> <!-- test.BrowserCommand -->
+      </class> <!-- test.ElementAttribute -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

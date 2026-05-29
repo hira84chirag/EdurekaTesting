@@ -106,7 +106,7 @@ public class CommonFunctions {
 
 	// Wait for Element	
 	public static void WaitExpt(WebDriver driver,String xpath) {
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(100));		  
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(1000));		  
 		WebElement text=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));			
 	}
 	public static void waitforelement(WebDriver driver,String id) {

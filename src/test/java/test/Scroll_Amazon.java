@@ -1,12 +1,5 @@
 package test;
-import java.time.Duration;
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Reporter;
 import org.testng.annotations.Test;
-import Utilities.CommonFunctions;
 import pom.AmazonOR;
 
 public class Scroll_Amazon extends BaseTest{
