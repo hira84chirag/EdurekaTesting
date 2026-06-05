@@ -1,5 +1,5 @@
 package test;
-import java.awt.AWTException;
+
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
@@ -36,6 +36,7 @@ public class RobotExample  extends BaseTest{
 		
 		StringSelection stringSelection = new StringSelection(fileName);
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+		CommonFunctions.waitThread(400);
 		clipboard.setContents(stringSelection, stringSelection);
 		
 		//Thread.sleep is used only for demonstration purpose
