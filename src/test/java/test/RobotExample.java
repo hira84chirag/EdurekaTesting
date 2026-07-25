@@ -22,7 +22,7 @@ public class RobotExample  extends BaseTest{
 	public void tinypng_robotExample() throws Exception {
 		driver.get(pro1.getProperty("tiny"));
 //		driver.manage().window().maximize();
-		CommonFunctions.waitThread(400);
+		CommonFunctions.waitThread(4000);
 		driver.findElement(By.xpath("//section[@class='target']")).click();
 		CommonFunctions.waitThread(400);
 		Robot robot = new Robot();

@@ -1,39 +1,1027 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="3" total="41" passed="38" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Username =Software Testing]]>
+    </line>
+    <line>
+      <![CDATA[Passowrd =Method Testing]]>
+    </line>
+    <line>
+      <![CDATA[Username =Testing software]]>
+    </line>
+    <line>
+      <![CDATA[Passowrd =testing Method]]>
+    </line>
+    <line>
+      <![CDATA[Username =Testing software123]]>
+    </line>
+    <line>
+      <![CDATA[Passowrd =testing Method123]]>
+    </line>
+    <line>
+      <![CDATA[Current URL=]]>
+    </line>
+    <line>
+      <![CDATA[Tooltips of link=]]>
+    </line>
+    <line>
+      <![CDATA[Login button name=Log in]]>
+    </line>
+    <line>
+      <![CDATA[Button width=546px]]>
+    </line>
+    <line>
+      <![CDATA[Current URL=(768, 333)]]>
+    </line>
+    <line>
+      <![CDATA[768Co-ordinate of controls on page=333]]>
+    </line>
+    <line>
+      <![CDATA[Login size=(546, 44)]]>
+    </line>
+    <line>
+      <![CDATA[44Login button =546]]>
+    </line>
+    <line>
+      <![CDATA[TagName =div]]>
+    </line>
+    <line>
+      <![CDATA[is emaild displayed or not=true]]>
+    </line>
+    <line>
+      <![CDATA[is Email enabled or not=true]]>
+    </line>
+    <line>
+      <![CDATA[Hidden element NOT present in DOM]]>
+    </line>
+    <line>
+      <![CDATA[Enter an email or phone number]]>
+    </line>
+    <line>
+      <![CDATA[Username=software@qa.com]]>
+    </line>
+    <line>
+      <![CDATA[Password=mypassword]]>
+    </line>
+    <line>
+      <![CDATA[a = 6]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Samsung-SM-F971B-Galaxy-Unpacked/dp/B0H6WLQJNS?ref=dlx_deals_dg_dcl_B0H6WLQJNS_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Samsung-SM-F971B-Galaxy-Unpacked/dp/B0H6WLQJNS?ref=dlx_deals_dg_dcl_B0H6WLQJNS_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Samsung-SM-F971B-Galaxy-Unpacked/dp/B0H6WLQJNS?ref=dlx_deals_dg_dcl_B0H6WLQJNS_dt_sl10_80_csml&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/ASUS-3050-4GB-Upgradeable-Graphite-FA506NCQ-HN006W/dp/B0GW85JTBN?ref=dlx_deals_dg_dcl_B0GW85JTBN_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/ASUS-3050-4GB-Upgradeable-Graphite-FA506NCQ-HN006W/dp/B0GW85JTBN?ref=dlx_deals_dg_dcl_B0GW85JTBN_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Samsung-Galaxy-Display-Refresh-Storage/dp/B0FNWNZZ1B?ref=dlx_deals_dg_dcl_B0FNWNZZ1B_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Samsung-Galaxy-Display-Refresh-Storage/dp/B0FNWNZZ1B?ref=dlx_deals_dg_dcl_B0FNWNZZ1B_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Samsung-Galaxy-Display-Refresh-Storage/dp/B0FNWNZZ1B?ref=dlx_deals_dg_dcl_B0FNWNZZ1B_dt_sl10_80_cs&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/dp/B0FNWQD7Y2?ref=dlx_deals_dg_dcl_B0FNWQD7Y2_dt_sl10_80_cs&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/dp/B0FNWSP5L3?ref=dlx_deals_dg_dcl_B0FNWSP5L3_dt_sl10_80_cs&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Samsung-SM-F976B-Galaxy-Unpacked/dp/B0H6WHHLVK?ref=dlx_deals_dg_dcl_B0H6WHHLVK_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Samsung-SM-F976B-Galaxy-Unpacked/dp/B0H6WHHLVK?ref=dlx_deals_dg_dcl_B0H6WHHLVK_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Samsung-SM-F976B-Galaxy-Unpacked/dp/B0H6WHHLVK?ref=dlx_deals_dg_dcl_B0H6WHHLVK_dt_sl10_80_csml&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/vivo-Storage-Additional-Exchange-Offers/dp/B0GX94B58L?ref=dlx_deals_dg_dcl_B0GX94B58L_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/vivo-Storage-Additional-Exchange-Offers/dp/B0GX94B58L?ref=dlx_deals_dg_dcl_B0GX94B58L_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/vivo-Storage-Additional-Exchange-Offers/dp/B0GX94B58L?ref=dlx_deals_dg_dcl_B0GX94B58L_dt_sl10_80_cs&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/dp/B0GX9GCM48?ref=dlx_deals_dg_dcl_B0GX9GCM48_dt_sl10_80_cs&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/dp/B0GX9K4H5Y?ref=dlx_deals_dg_dcl_B0GX9K4H5Y_dt_sl10_80_cs&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Native-M2-Pro-Dispensing-Mineraliser/dp/B0G4CHKBGP?ref=dlx_deals_dg_dcl_B0G4CHKBGP_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Native-M2-Pro-Dispensing-Mineraliser/dp/B0G4CHKBGP?ref=dlx_deals_dg_dcl_B0G4CHKBGP_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Native-Purifier-Real-Time-Mineraliser-Unconditional/dp/B0GWQFXMTY?ref=dlx_deals_dg_dcl_B0GWQFXMTY_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Native-Purifier-Real-Time-Mineraliser-Unconditional/dp/B0GWQFXMTY?ref=dlx_deals_dg_dcl_B0GWQFXMTY_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/ECOVACS-N50-Self-Emptying-Omni-Station-Zerotangle/dp/B0GKFDM4JZ?ref=dlx_deals_dg_dcl_B0GKFDM4JZ_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/ECOVACS-N50-Self-Emptying-Omni-Station-Zerotangle/dp/B0GKFDM4JZ?ref=dlx_deals_dg_dcl_B0GKFDM4JZ_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/ECOVACS-N50-Self-Emptying-Omni-Station-Zerotangle/dp/B0GKFDM4JZ?ref=dlx_deals_dg_dcl_B0GKFDM4JZ_dt_sl10_80_csml&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/inches-Frameless-Ready-QLED-VW40S1/dp/B0GXKC3ZXH?ref=dlx_deals_dg_dcl_B0GXKC3ZXH_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/inches-Frameless-Ready-QLED-VW40S1/dp/B0GXKC3ZXH?ref=dlx_deals_dg_dcl_B0GXKC3ZXH_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Haier-Refrigerator-HRB-600PW-Convertible-Technology/dp/B0GP71N4DY?ref=dlx_deals_dg_dcl_B0GP71N4DY_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Haier-Refrigerator-HRB-600PW-Convertible-Technology/dp/B0GP71N4DY?ref=dlx_deals_dg_dcl_B0GP71N4DY_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+    </line>
+    <line>
+      <![CDATA[https://www.amazon.in/Haier-Refrigerator-HRB-600PW-Convertible-Technology/dp/B0GP71N4DY?ref=dlx_deals_dg_dcl_B0GP71N4DY_dt_sl10_80_csml&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+    </line>
+    <line>
+      <![CDATA[a = 48]]>
+    </line>
+    <line>
+      <![CDATA[page title:  Facebook]]>
+    </line>
+    <line>
+      <![CDATA[current window id - c4836bf0-ae73-42d5-b48f-4f1349732ca2]]>
+    </line>
+    <line>
+      <![CDATA[total window id's [c4836bf0-ae73-42d5-b48f-4f1349732ca2]]]>
+    </line>
+    <line>
+      <![CDATA[
+********************* After opening the insta page ********************************]]>
+    </line>
+    <line>
+      <![CDATA[page title: Instagram]]>
+    </line>
+    <line>
+      <![CDATA[current window id - c4836bf0-ae73-42d5-b48f-4f1349732ca2]]>
+    </line>
+    <line>
+      <![CDATA[total window id's [c4836bf0-ae73-42d5-b48f-4f1349732ca2, 6c775633-87b7-4520-83c6-88c5f2ec06b6]]]>
+    </line>
+    <line>
+      <![CDATA[
+********************* After switching to the insta page ********************************]]>
+    </line>
+    <line>
+      <![CDATA[page title: Instagram]]>
+    </line>
+    <line>
+      <![CDATA[current window id - c4836bf0-ae73-42d5-b48f-4f1349732ca2]]>
+    </line>
+    <line>
+      <![CDATA[total window id's [c4836bf0-ae73-42d5-b48f-4f1349732ca2, 6c775633-87b7-4520-83c6-88c5f2ec06b6]]]>
+    </line>
+    <line>
+      <![CDATA[
+********************* After switching to the fb page ********************************]]>
+    </line>
+    <line>
+      <![CDATA[page title: Instagram]]>
+    </line>
+    <line>
+      <![CDATA[current window id - c4836bf0-ae73-42d5-b48f-4f1349732ca2]]>
+    </line>
+    <line>
+      <![CDATA[total window id's [c4836bf0-ae73-42d5-b48f-4f1349732ca2, 6c775633-87b7-4520-83c6-88c5f2ec06b6]]]>
+    </line>
+    <line>
+      <![CDATA[The element with the reference 6da3ee68-8d76-4a54-ad4c-86f1e2ee84f4 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7565f74d-611f-49d6-9144-ae8faf50256b, clickElement {id=6da3ee68-8d76-4a54-ad4c-86f1e2ee84f4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 153.0, moz:accessibilityChecks: false, moz:buildID: 20260715202819, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18568, moz:profile: C:\Users\DELLEN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (7565f74d-611f-49d6-9144-ae8faf50256b)] -> name: email]
+Session ID: 7565f74d-611f-49d6-9144-ae8faf50256b]]>
+    </line>
   </reporter-output>
-  <suite started-at="2026-06-08T11:28:29 IST" name="Default suite" finished-at="2026-06-08T11:28:29 IST" duration-ms="221">
+  <suite started-at="2026-07-25T17:04:16 IST" name="Suite" finished-at="2026-07-25T17:08:20 IST" duration-ms="243488">
     <groups>
+      <group name="Aws.bug">
+        <method signature="Sr1_Groups.Read()[pri:0, instance:test.Sr1_Groups@2cb2fc20]" name="Read" class="test.Sr1_Groups"/>
+        <method signature="Sr1_Groups.Updatepassword()[pri:0, instance:test.Sr1_Groups@2cb2fc20]" name="Updatepassword" class="test.Sr1_Groups"/>
+      </group> <!-- Aws.bug -->
+      <group name="Bug">
+        <method signature="Sr1_Groups.Read()[pri:0, instance:test.Sr1_Groups@2cb2fc20]" name="Read" class="test.Sr1_Groups"/>
+        <method signature="Sr1_Groups.Read1()[pri:0, instance:test.Sr1_Groups@2cb2fc20]" name="Read1" class="test.Sr1_Groups"/>
+      </group> <!-- Bug -->
       <group name="Regression">
-        <method signature="GroupsTesting.Read()[pri:0, instance:test.GroupsTesting@14dd7b39]" name="Read" class="test.GroupsTesting"/>
-        <method signature="GroupsTesting.Updatepassword()[pri:0, instance:test.GroupsTesting@14dd7b39]" name="Updatepassword" class="test.GroupsTesting"/>
-        <method signature="GroupsTesting.a1()[pri:0, instance:test.GroupsTesting@14dd7b39]" name="a1" class="test.GroupsTesting"/>
+        <method signature="GroupsTesting.Read()[pri:0, instance:test.GroupsTesting@6f1c29b7]" name="Read" class="test.GroupsTesting"/>
+        <method signature="GroupsTesting.Updatepassword()[pri:0, instance:test.GroupsTesting@6f1c29b7]" name="Updatepassword" class="test.GroupsTesting"/>
+        <method signature="GroupsTesting.a1()[pri:0, instance:test.GroupsTesting@6f1c29b7]" name="a1" class="test.GroupsTesting"/>
       </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="GroupsTesting.Deleteuser()[pri:0, instance:test.GroupsTesting@14dd7b39]" name="Deleteuser" class="test.GroupsTesting"/>
-        <method signature="GroupsTesting.Read()[pri:0, instance:test.GroupsTesting@14dd7b39]" name="Read" class="test.GroupsTesting"/>
-        <method signature="GroupsTesting.Updatepassword()[pri:0, instance:test.GroupsTesting@14dd7b39]" name="Updatepassword" class="test.GroupsTesting"/>
+        <method signature="GroupsTesting.Deleteuser()[pri:0, instance:test.GroupsTesting@6f1c29b7]" name="Deleteuser" class="test.GroupsTesting"/>
+        <method signature="GroupsTesting.Read()[pri:0, instance:test.GroupsTesting@6f1c29b7]" name="Read" class="test.GroupsTesting"/>
+        <method signature="GroupsTesting.Updatepassword()[pri:0, instance:test.GroupsTesting@6f1c29b7]" name="Updatepassword" class="test.GroupsTesting"/>
+        <method signature="Sr1_Groups.Deleteuser()[pri:0, instance:test.Sr1_Groups@2cb2fc20]" name="Deleteuser" class="test.Sr1_Groups"/>
+        <method signature="Sr1_Groups.Updatepassword()[pri:0, instance:test.Sr1_Groups@2cb2fc20]" name="Updatepassword" class="test.Sr1_Groups"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2026-06-08T11:28:29 IST" name="Default test" finished-at="2026-06-08T11:28:29 IST" duration-ms="221">
+    <test started-at="2026-07-25T17:04:16 IST" name="Test" finished-at="2026-07-25T17:08:20 IST" duration-ms="243488">
       <class name="test.GroupsTesting">
-        <test-method signature="Deleteuser()[pri:0, instance:test.GroupsTesting@14dd7b39]" started-at="2026-06-08T11:28:29 IST" name="Deleteuser" finished-at="2026-06-08T11:28:29 IST" duration-ms="46" status="PASS">
+        <test-method signature="Deleteuser()[pri:0, instance:test.GroupsTesting@6f1c29b7]" started-at="2026-07-25T17:05:30 IST" name="Deleteuser" finished-at="2026-07-25T17:05:30 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Deleteuser -->
-        <test-method signature="Read()[pri:0, instance:test.GroupsTesting@14dd7b39]" started-at="2026-06-08T11:28:29 IST" name="Read" finished-at="2026-06-08T11:28:29 IST" duration-ms="5" status="PASS">
+        <test-method signature="Read()[pri:0, instance:test.GroupsTesting@6f1c29b7]" started-at="2026-07-25T17:05:30 IST" name="Read" finished-at="2026-07-25T17:05:30 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Read -->
-        <test-method signature="Updatepassword()[pri:0, instance:test.GroupsTesting@14dd7b39]" started-at="2026-06-08T11:28:29 IST" name="Updatepassword" finished-at="2026-06-08T11:28:29 IST" duration-ms="5" status="PASS">
+        <test-method signature="Updatepassword()[pri:0, instance:test.GroupsTesting@6f1c29b7]" started-at="2026-07-25T17:05:30 IST" name="Updatepassword" finished-at="2026-07-25T17:05:30 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Updatepassword -->
-        <test-method signature="a1()[pri:0, instance:test.GroupsTesting@14dd7b39]" started-at="2026-06-08T11:28:29 IST" name="a1" finished-at="2026-06-08T11:28:29 IST" duration-ms="5" status="PASS">
+        <test-method signature="a1()[pri:0, instance:test.GroupsTesting@6f1c29b7]" started-at="2026-07-25T17:05:30 IST" name="a1" finished-at="2026-07-25T17:05:30 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- a1 -->
       </class> <!-- test.GroupsTesting -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="test.Sr5_Alert">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Sr5_Alert@5f0fd5a0]" started-at="2026-07-25T17:06:55 IST" name="setUp" finished-at="2026-07-25T17:06:59 IST" duration-ms="4072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="InternetURL_alertDemo()[pri:0, instance:test.Sr5_Alert@5f0fd5a0]" started-at="2026-07-25T17:06:59 IST" name="InternetURL_alertDemo" finished-at="2026-07-25T17:07:08 IST" duration-ms="8589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InternetURL_alertDemo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Sr5_Alert@5f0fd5a0]" started-at="2026-07-25T17:07:08 IST" name="tearDown" finished-at="2026-07-25T17:07:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.Sr5_Alert -->
+      <class name="test.DependacyExample">
+        <test-method signature="Createuser()[pri:0, instance:test.DependacyExample@23202fce]" started-at="2026-07-25T17:04:42 IST" name="Createuser" finished-at="2026-07-25T17:04:42 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Createuser -->
+        <test-method signature="Updatepassword()[pri:0, instance:test.DependacyExample@23202fce]" started-at="2026-07-25T17:04:42 IST" name="Updatepassword" finished-at="2026-07-25T17:04:42 IST" depends-on-methods="test.DependacyExample.Createuser" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Updatepassword -->
+        <test-method signature="Deleteuser()[pri:0, instance:test.DependacyExample@23202fce]" started-at="2026-07-25T17:04:42 IST" name="Deleteuser" finished-at="2026-07-25T17:04:42 IST" depends-on-methods="test.DependacyExample.Updatepassword, test.DependacyExample.Createuser" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deleteuser -->
+        <test-method signature="Read()[pri:2, instance:test.DependacyExample@23202fce]" started-at="2026-07-25T17:04:42 IST" name="Read" finished-at="2026-07-25T17:04:42 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Read -->
+      </class> <!-- test.DependacyExample -->
+      <class name="test.HardAssertExample">
+        <test-method signature="Validusername(java.lang.String,java.lang.String)[pri:0, instance:test.HardAssertExample@4d6025c5]" started-at="2026-07-25T17:05:30 IST" name="Validusername" finished-at="2026-07-25T17:05:30 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[software@qa.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mypassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Username=software@qa.com]]>
+            </line>
+            <line>
+              <![CDATA[Password=mypassword]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Validusername -->
+        <test-method signature="tc1()[pri:0, instance:test.HardAssertExample@4d6025c5]" started-at="2026-07-25T17:05:30 IST" name="tc1" finished-at="2026-07-25T17:05:30 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[a = 6]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method signature="tc2()[pri:0, instance:test.HardAssertExample@4d6025c5]" started-at="2026-07-25T17:05:30 IST" name="tc2" finished-at="2026-07-25T17:05:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+      </class> <!-- test.HardAssertExample -->
+      <class name="test.ElementAttribute">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.ElementAttribute@7b993c65]" started-at="2026-07-25T17:04:42 IST" name="setUp" finished-at="2026-07-25T17:04:46 IST" duration-ms="4212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fb_ButtonAttribute()[pri:0, instance:test.ElementAttribute@7b993c65]" started-at="2026-07-25T17:04:46 IST" name="fb_ButtonAttribute" description="Get attribute of Fb elment" finished-at="2026-07-25T17:04:50 IST" duration-ms="4121" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Current URL=]]>
+            </line>
+            <line>
+              <![CDATA[Tooltips of link=]]>
+            </line>
+            <line>
+              <![CDATA[Login button name=Log in]]>
+            </line>
+            <line>
+              <![CDATA[Button width=546px]]>
+            </line>
+            <line>
+              <![CDATA[Current URL=(768, 333)]]>
+            </line>
+            <line>
+              <![CDATA[768Co-ordinate of controls on page=333]]>
+            </line>
+            <line>
+              <![CDATA[Login size=(546, 44)]]>
+            </line>
+            <line>
+              <![CDATA[44Login button =546]]>
+            </line>
+            <line>
+              <![CDATA[TagName =div]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fb_ButtonAttribute -->
+        <test-method signature="fb_elementAttribute()[pri:0, instance:test.ElementAttribute@7b993c65]" started-at="2026-07-25T17:04:50 IST" name="fb_elementAttribute" description="Verify attribute of Fb elment" finished-at="2026-07-25T17:05:11 IST" duration-ms="21041" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[is emaild displayed or not=true]]>
+            </line>
+            <line>
+              <![CDATA[is Email enabled or not=true]]>
+            </line>
+            <line>
+              <![CDATA[Hidden element NOT present in DOM]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fb_elementAttribute -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.ElementAttribute@7b993c65]" started-at="2026-07-25T17:05:11 IST" name="tearDown" finished-at="2026-07-25T17:05:12 IST" duration-ms="755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.ElementAttribute -->
+      <class name="test.Sr8_Wait">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Sr8_Wait@6ea2bc93]" started-at="2026-07-25T17:08:01 IST" name="setUp" finished-at="2026-07-25T17:08:06 IST" duration-ms="4229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="facebook_explitcitWaitExample()[pri:0, instance:test.Sr8_Wait@6ea2bc93]" started-at="2026-07-25T17:08:06 IST" name="facebook_explitcitWaitExample" finished-at="2026-07-25T17:08:19 IST" duration-ms="13158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebook_explitcitWaitExample -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Sr8_Wait@6ea2bc93]" started-at="2026-07-25T17:08:19 IST" name="tearDown" finished-at="2026-07-25T17:08:20 IST" duration-ms="964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.Sr8_Wait -->
+      <class name="test.Sr1_Groups">
+        <test-method signature="Deleteuser()[pri:0, instance:test.Sr1_Groups@2cb2fc20]" started-at="2026-07-25T17:06:45 IST" name="Deleteuser" finished-at="2026-07-25T17:06:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deleteuser -->
+        <test-method signature="Read()[pri:0, instance:test.Sr1_Groups@2cb2fc20]" started-at="2026-07-25T17:06:45 IST" name="Read" finished-at="2026-07-25T17:06:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Read -->
+        <test-method signature="Read1()[pri:0, instance:test.Sr1_Groups@2cb2fc20]" started-at="2026-07-25T17:06:45 IST" name="Read1" finished-at="2026-07-25T17:06:45 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Read1 -->
+        <test-method signature="Updatepassword()[pri:0, instance:test.Sr1_Groups@2cb2fc20]" started-at="2026-07-25T17:06:45 IST" name="Updatepassword" finished-at="2026-07-25T17:06:45 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Updatepassword -->
+        <test-method signature="a1()[pri:0, instance:test.Sr1_Groups@2cb2fc20]" started-at="2026-07-25T17:06:45 IST" name="a1" finished-at="2026-07-25T17:06:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a1 -->
+      </class> <!-- test.Sr1_Groups -->
+      <class name="test.GoogleLogin">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.GoogleLogin@37911f88]" started-at="2026-07-25T17:05:12 IST" name="setUp" finished-at="2026-07-25T17:05:16 IST" duration-ms="3870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Google_LoginTC()[pri:0, instance:test.GoogleLogin@37911f88]" started-at="2026-07-25T17:05:16 IST" name="Google_LoginTC" finished-at="2026-07-25T17:05:29 IST" duration-ms="12741" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Enter an email or phone number]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Google_LoginTC -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.GoogleLogin@37911f88]" started-at="2026-07-25T17:05:29 IST" name="tearDown" finished-at="2026-07-25T17:05:30 IST" duration-ms="895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.GoogleLogin -->
+      <class name="test.Sr8_Scroll">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Sr8_Scroll@4fa1c212]" started-at="2026-07-25T17:07:29 IST" name="setUp" finished-at="2026-07-25T17:07:33 IST" duration-ms="4343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="amazonScrolling()[pri:0, instance:test.Sr8_Scroll@4fa1c212]" started-at="2026-07-25T17:07:33 IST" name="amazonScrolling" finished-at="2026-07-25T17:07:39 IST" duration-ms="6111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonScrolling -->
+        <test-method signature="githubScrolling()[pri:2, instance:test.Sr8_Scroll@4fa1c212]" started-at="2026-07-25T17:07:39 IST" name="githubScrolling" finished-at="2026-07-25T17:07:45 IST" duration-ms="5981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- githubScrolling -->
+        <test-method signature="youtubeScrolling()[pri:3, instance:test.Sr8_Scroll@4fa1c212]" started-at="2026-07-25T17:07:45 IST" name="youtubeScrolling" finished-at="2026-07-25T17:08:00 IST" duration-ms="14457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- youtubeScrolling -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Sr8_Scroll@4fa1c212]" started-at="2026-07-25T17:08:00 IST" name="tearDown" finished-at="2026-07-25T17:08:01 IST" duration-ms="1486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.Sr8_Scroll -->
+      <class name="test.SoftAssertExample">
+        <test-method signature="tc1()[pri:0, instance:test.SoftAssertExample@3fa247d1]" started-at="2026-07-25T17:06:45 IST" name="tc1" finished-at="2026-07-25T17:06:45 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[a = 48]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method signature="tc2()[pri:0, instance:test.SoftAssertExample@3fa247d1]" started-at="2026-07-25T17:06:45 IST" name="tc2" finished-at="2026-07-25T17:06:45 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+      </class> <!-- test.SoftAssertExample -->
+      <class name="test.Scroll_Amazon">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Scroll_Amazon@2a7ed1f]" started-at="2026-07-25T17:06:06 IST" name="setUp" finished-at="2026-07-25T17:06:10 IST" duration-ms="4090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Amazon_products()[pri:1, instance:test.Scroll_Amazon@2a7ed1f]" started-at="2026-07-25T17:06:10 IST" name="Amazon_products" finished-at="2026-07-25T17:06:43 IST" duration-ms="33665" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Samsung-SM-F971B-Galaxy-Unpacked/dp/B0H6WLQJNS?ref=dlx_deals_dg_dcl_B0H6WLQJNS_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Samsung-SM-F971B-Galaxy-Unpacked/dp/B0H6WLQJNS?ref=dlx_deals_dg_dcl_B0H6WLQJNS_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Samsung-SM-F971B-Galaxy-Unpacked/dp/B0H6WLQJNS?ref=dlx_deals_dg_dcl_B0H6WLQJNS_dt_sl10_80_csml&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/ASUS-3050-4GB-Upgradeable-Graphite-FA506NCQ-HN006W/dp/B0GW85JTBN?ref=dlx_deals_dg_dcl_B0GW85JTBN_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/ASUS-3050-4GB-Upgradeable-Graphite-FA506NCQ-HN006W/dp/B0GW85JTBN?ref=dlx_deals_dg_dcl_B0GW85JTBN_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Samsung-Galaxy-Display-Refresh-Storage/dp/B0FNWNZZ1B?ref=dlx_deals_dg_dcl_B0FNWNZZ1B_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Samsung-Galaxy-Display-Refresh-Storage/dp/B0FNWNZZ1B?ref=dlx_deals_dg_dcl_B0FNWNZZ1B_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Samsung-Galaxy-Display-Refresh-Storage/dp/B0FNWNZZ1B?ref=dlx_deals_dg_dcl_B0FNWNZZ1B_dt_sl10_80_cs&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/dp/B0FNWQD7Y2?ref=dlx_deals_dg_dcl_B0FNWQD7Y2_dt_sl10_80_cs&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/dp/B0FNWSP5L3?ref=dlx_deals_dg_dcl_B0FNWSP5L3_dt_sl10_80_cs&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Samsung-SM-F976B-Galaxy-Unpacked/dp/B0H6WHHLVK?ref=dlx_deals_dg_dcl_B0H6WHHLVK_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Samsung-SM-F976B-Galaxy-Unpacked/dp/B0H6WHHLVK?ref=dlx_deals_dg_dcl_B0H6WHHLVK_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Samsung-SM-F976B-Galaxy-Unpacked/dp/B0H6WHHLVK?ref=dlx_deals_dg_dcl_B0H6WHHLVK_dt_sl10_80_csml&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/vivo-Storage-Additional-Exchange-Offers/dp/B0GX94B58L?ref=dlx_deals_dg_dcl_B0GX94B58L_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/vivo-Storage-Additional-Exchange-Offers/dp/B0GX94B58L?ref=dlx_deals_dg_dcl_B0GX94B58L_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/vivo-Storage-Additional-Exchange-Offers/dp/B0GX94B58L?ref=dlx_deals_dg_dcl_B0GX94B58L_dt_sl10_80_cs&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/dp/B0GX9GCM48?ref=dlx_deals_dg_dcl_B0GX9GCM48_dt_sl10_80_cs&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/dp/B0GX9K4H5Y?ref=dlx_deals_dg_dcl_B0GX9K4H5Y_dt_sl10_80_cs&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Native-M2-Pro-Dispensing-Mineraliser/dp/B0G4CHKBGP?ref=dlx_deals_dg_dcl_B0G4CHKBGP_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Native-M2-Pro-Dispensing-Mineraliser/dp/B0G4CHKBGP?ref=dlx_deals_dg_dcl_B0G4CHKBGP_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Native-Purifier-Real-Time-Mineraliser-Unconditional/dp/B0GWQFXMTY?ref=dlx_deals_dg_dcl_B0GWQFXMTY_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Native-Purifier-Real-Time-Mineraliser-Unconditional/dp/B0GWQFXMTY?ref=dlx_deals_dg_dcl_B0GWQFXMTY_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/ECOVACS-N50-Self-Emptying-Omni-Station-Zerotangle/dp/B0GKFDM4JZ?ref=dlx_deals_dg_dcl_B0GKFDM4JZ_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/ECOVACS-N50-Self-Emptying-Omni-Station-Zerotangle/dp/B0GKFDM4JZ?ref=dlx_deals_dg_dcl_B0GKFDM4JZ_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/ECOVACS-N50-Self-Emptying-Omni-Station-Zerotangle/dp/B0GKFDM4JZ?ref=dlx_deals_dg_dcl_B0GKFDM4JZ_dt_sl10_80_csml&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/inches-Frameless-Ready-QLED-VW40S1/dp/B0GXKC3ZXH?ref=dlx_deals_dg_dcl_B0GXKC3ZXH_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/inches-Frameless-Ready-QLED-VW40S1/dp/B0GXKC3ZXH?ref=dlx_deals_dg_dcl_B0GXKC3ZXH_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Haier-Refrigerator-HRB-600PW-Convertible-Technology/dp/B0GP71N4DY?ref=dlx_deals_dg_dcl_B0GP71N4DY_dt_sl10_80_pi&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Haier-Refrigerator-HRB-600PW-Convertible-Technology/dp/B0GP71N4DY?ref=dlx_deals_dg_dcl_B0GP71N4DY_dt_sl10_80&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D is a broken link.]]>
+            </line>
+            <line>
+              <![CDATA[ HTTP status code: 500=Internal Server Error]]>
+            </line>
+            <line>
+              <![CDATA[https://www.amazon.in/Haier-Refrigerator-HRB-600PW-Convertible-Technology/dp/B0GP71N4DY?ref=dlx_deals_dg_dcl_B0GP71N4DY_dt_sl10_80_csml&pf_rd_r=932V490WEQ1QFJTCKNJ9&pf_rd_p=8bb69005-170a-4c0b-87ee-0c57c0c3a680 is a broken link.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Amazon_products -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Scroll_Amazon@2a7ed1f]" started-at="2026-07-25T17:06:43 IST" name="tearDown" finished-at="2026-07-25T17:06:45 IST" duration-ms="1406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.Scroll_Amazon -->
+      <class name="test.BrowserCommand">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.BrowserCommand@609bcfb6]" started-at="2026-07-25T17:04:16 IST" name="setUp" finished-at="2026-07-25T17:04:21 IST" duration-ms="4759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="GoogleUrl()[pri:1, instance:test.BrowserCommand@609bcfb6]" started-at="2026-07-25T17:04:21 IST" name="GoogleUrl" finished-at="2026-07-25T17:04:41 IST" duration-ms="19404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.BrowserCommand@609bcfb6]" started-at="2026-07-25T17:04:41 IST" name="tearDown" finished-at="2026-07-25T17:04:42 IST" duration-ms="1302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.BrowserCommand -->
+      <class name="test.DataproviderExample">
+        <test-method signature="validLogin(java.lang.String,java.lang.String)[pri:0, instance:test.DataproviderExample@7d94beb9]" started-at="2026-07-25T17:04:42 IST" name="validLogin" data-provider="dp" finished-at="2026-07-25T17:04:42 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Software Testing]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Method Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Username =Software Testing]]>
+            </line>
+            <line>
+              <![CDATA[Passowrd =Method Testing]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method signature="validLogin(java.lang.String,java.lang.String)[pri:0, instance:test.DataproviderExample@7d94beb9]" started-at="2026-07-25T17:04:42 IST" name="validLogin" data-provider="dp" finished-at="2026-07-25T17:04:42 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testing software]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testing Method]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Username =Testing software]]>
+            </line>
+            <line>
+              <![CDATA[Passowrd =testing Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method signature="validLogin(java.lang.String,java.lang.String)[pri:0, instance:test.DataproviderExample@7d94beb9]" started-at="2026-07-25T17:04:42 IST" name="validLogin" data-provider="dp" finished-at="2026-07-25T17:04:42 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testing software123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testing Method123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Username =Testing software123]]>
+            </line>
+            <line>
+              <![CDATA[Passowrd =testing Method123]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+      </class> <!-- test.DataproviderExample -->
+      <class name="test.Rollsroyce">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Rollsroyce@4ea5b703]" started-at="2026-07-25T17:05:46 IST" name="setUp" finished-at="2026-07-25T17:05:50 IST" duration-ms="4109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Rolls_royce_media()[pri:0, instance:test.Rollsroyce@4ea5b703]" started-at="2026-07-25T17:05:50 IST" name="Rolls_royce_media" finished-at="2026-07-25T17:06:05 IST" duration-ms="14414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Rolls_royce_media -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Rollsroyce@4ea5b703]" started-at="2026-07-25T17:06:05 IST" name="tearDown" finished-at="2026-07-25T17:06:06 IST" duration-ms="1014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.Rollsroyce -->
+      <class name="test.Sr7_StaleEle">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Sr7_StaleEle@495ee280]" started-at="2026-07-25T17:07:20 IST" name="setUp" finished-at="2026-07-25T17:07:24 IST" duration-ms="4453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Fb_Hiddenele()[pri:0, instance:test.Sr7_StaleEle@495ee280]" started-at="2026-07-25T17:07:24 IST" name="Fb_Hiddenele" finished-at="2026-07-25T17:07:28 IST" duration-ms="3513" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[The element with the reference 6da3ee68-8d76-4a54-ad4c-86f1e2ee84f4 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7565f74d-611f-49d6-9144-ae8faf50256b, clickElement {id=6da3ee68-8d76-4a54-ad4c-86f1e2ee84f4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 153.0, moz:accessibilityChecks: false, moz:buildID: 20260715202819, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18568, moz:profile: C:\Users\DELLEN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (7565f74d-611f-49d6-9144-ae8faf50256b)] -> name: email]
+Session ID: 7565f74d-611f-49d6-9144-ae8faf50256b]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Fb_Hiddenele -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Sr7_StaleEle@495ee280]" started-at="2026-07-25T17:07:28 IST" name="tearDown" finished-at="2026-07-25T17:07:29 IST" duration-ms="1116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.Sr7_StaleEle -->
+      <class name="test.Sr3_Iframe">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Sr3_Iframe@4f4c4b1a]" started-at="2026-07-25T17:06:45 IST" name="setUp" finished-at="2026-07-25T17:06:50 IST" duration-ms="4742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Internet_iframeDemo()[pri:0, instance:test.Sr3_Iframe@4f4c4b1a]" started-at="2026-07-25T17:06:50 IST" name="Internet_iframeDemo" finished-at="2026-07-25T17:06:54 IST" duration-ms="4847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Internet_iframeDemo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Sr3_Iframe@4f4c4b1a]" started-at="2026-07-25T17:06:54 IST" name="tearDown" finished-at="2026-07-25T17:06:55 IST" duration-ms="839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.Sr3_Iframe -->
+      <class name="test.Sr4_Annotation">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.Sr4_Annotation@723e88f9]" started-at="2026-07-25T17:04:16 IST" name="beforeSuite" finished-at="2026-07-25T17:04:16 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.Sr4_Annotation@723e88f9]" started-at="2026-07-25T17:04:16 IST" name="beforeTest" finished-at="2026-07-25T17:04:16 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.Sr4_Annotation@723e88f9]" started-at="2026-07-25T17:06:55 IST" name="beforeClass" finished-at="2026-07-25T17:06:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:test.Sr4_Annotation@723e88f9]" started-at="2026-07-25T17:06:55 IST" name="BeforeMethod" finished-at="2026-07-25T17:06:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="T1()[pri:0, instance:test.Sr4_Annotation@723e88f9]" started-at="2026-07-25T17:06:55 IST" name="T1" finished-at="2026-07-25T17:06:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T1 -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:test.Sr4_Annotation@723e88f9]" started-at="2026-07-25T17:06:55 IST" name="AfterMethod" finished-at="2026-07-25T17:06:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:test.Sr4_Annotation@723e88f9]" started-at="2026-07-25T17:06:55 IST" name="BeforeMethod" finished-at="2026-07-25T17:06:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="T2()[pri:0, instance:test.Sr4_Annotation@723e88f9]" started-at="2026-07-25T17:06:55 IST" name="T2" finished-at="2026-07-25T17:06:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T2 -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:test.Sr4_Annotation@723e88f9]" started-at="2026-07-25T17:06:55 IST" name="AfterMethod" finished-at="2026-07-25T17:06:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.Sr4_Annotation@723e88f9]" started-at="2026-07-25T17:06:55 IST" name="afterClass" finished-at="2026-07-25T17:06:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.Sr4_Annotation@723e88f9]" started-at="2026-07-25T17:08:20 IST" name="afterTest" finished-at="2026-07-25T17:08:20 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.Sr4_Annotation@723e88f9]" started-at="2026-07-25T17:08:20 IST" name="afterSuite" finished-at="2026-07-25T17:08:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- test.Sr4_Annotation -->
+      <class name="test.BaseTest">
+        <test-method is-config="true" signature="tearDown1()[pri:0, instance:test.BaseTest@205d38da]" started-at="2026-07-25T17:08:20 IST" name="tearDown1" finished-at="2026-07-25T17:08:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown1 -->
+      </class> <!-- test.BaseTest -->
+      <class name="test.RobotExample">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.RobotExample@407a7f2a]" started-at="2026-07-25T17:05:30 IST" name="setUp" finished-at="2026-07-25T17:05:34 IST" duration-ms="4177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tinypng_robotExample()[pri:0, instance:test.RobotExample@407a7f2a]" started-at="2026-07-25T17:05:34 IST" name="tinypng_robotExample" finished-at="2026-07-25T17:05:45 IST" duration-ms="11285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tinypng_robotExample -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.RobotExample@407a7f2a]" started-at="2026-07-25T17:05:45 IST" name="tearDown" finished-at="2026-07-25T17:05:46 IST" duration-ms="870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.RobotExample -->
+      <class name="test.Sr6_WindowHandle">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Sr6_WindowHandle@64e7619d]" started-at="2026-07-25T17:07:08 IST" name="setUp" finished-at="2026-07-25T17:07:12 IST" duration-ms="4097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="facebook_WindowHandlesdemo()[pri:0, instance:test.Sr6_WindowHandle@64e7619d]" started-at="2026-07-25T17:07:12 IST" name="facebook_WindowHandlesdemo" finished-at="2026-07-25T17:07:19 IST" duration-ms="6849" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[page title:  Facebook]]>
+            </line>
+            <line>
+              <![CDATA[current window id - c4836bf0-ae73-42d5-b48f-4f1349732ca2]]>
+            </line>
+            <line>
+              <![CDATA[total window id's [c4836bf0-ae73-42d5-b48f-4f1349732ca2]]]>
+            </line>
+            <line>
+              <![CDATA[
+********************* After opening the insta page ********************************]]>
+            </line>
+            <line>
+              <![CDATA[page title: Instagram]]>
+            </line>
+            <line>
+              <![CDATA[current window id - c4836bf0-ae73-42d5-b48f-4f1349732ca2]]>
+            </line>
+            <line>
+              <![CDATA[total window id's [c4836bf0-ae73-42d5-b48f-4f1349732ca2, 6c775633-87b7-4520-83c6-88c5f2ec06b6]]]>
+            </line>
+            <line>
+              <![CDATA[
+********************* After switching to the insta page ********************************]]>
+            </line>
+            <line>
+              <![CDATA[page title: Instagram]]>
+            </line>
+            <line>
+              <![CDATA[current window id - c4836bf0-ae73-42d5-b48f-4f1349732ca2]]>
+            </line>
+            <line>
+              <![CDATA[total window id's [c4836bf0-ae73-42d5-b48f-4f1349732ca2, 6c775633-87b7-4520-83c6-88c5f2ec06b6]]]>
+            </line>
+            <line>
+              <![CDATA[
+********************* After switching to the fb page ********************************]]>
+            </line>
+            <line>
+              <![CDATA[page title: Instagram]]>
+            </line>
+            <line>
+              <![CDATA[current window id - c4836bf0-ae73-42d5-b48f-4f1349732ca2]]>
+            </line>
+            <line>
+              <![CDATA[total window id's [c4836bf0-ae73-42d5-b48f-4f1349732ca2, 6c775633-87b7-4520-83c6-88c5f2ec06b6]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- facebook_WindowHandlesdemo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Sr6_WindowHandle@64e7619d]" started-at="2026-07-25T17:07:19 IST" name="tearDown" finished-at="2026-07-25T17:07:20 IST" duration-ms="978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.Sr6_WindowHandle -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
