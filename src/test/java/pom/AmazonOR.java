@@ -1,9 +1,8 @@
 package pom;
-
-import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -104,18 +103,39 @@ public class AmazonOR extends BaseTest {
 	    // Set path to your ChromeDriver    
         driver.get(pro1.getProperty("amazonurl"));
         String xpath=pro2.getProperty("amzpro");
+        // 1. Wait for page/elements to load
+	    CommonFunctions.WaitExpt(driver, xpath);
+	    
         List<WebElement> productLinks = driver.findElements(By.xpath(xpath));
-        // Wait for page to load & Find all product link elements=
+        // Wait for page to load 
         CommonFunctions.WaitExpt(driver, xpath);	
+        Reporter.log("product links: " + productLinks);
+        System.out.println(" product links: " + productLinks.size());        
+        List<String> hrefs = new ArrayList<>();
         
-        System.out.println(" product links: " + productLinks.size());
         for (WebElement link : productLinks) {
-            String productUrl = link.getAttribute("href");
-            if (productUrl != null && productUrl.contains("/dp/")) {
-                Reporter.log(productUrl);
-            }                
-        }
+        	  try {
+        		String url = link.getAttribute("href");
+	            if (url != null) 
+	            	hrefs.add(url);
+        	  	}
+	        catch (StaleElementReferenceException e) {
+	            // Guard against stueness during initial extraction
+	            continue;
+	        	}              	
+                            
+        	}
+                
+     // 3. Loop over the collected String URLs safely
+	    for (String productUrl : hrefs) {
+	        if (productUrl.contains("/dp/")) {
+	            Reporter.log("found="+productUrl);
+	        } else {
+	            Reporter.log("Not found");
+	        }
+
         CommonFunctions.scrollpage(driver,1000);	        
 	}
 
+	}
 }

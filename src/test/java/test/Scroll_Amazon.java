@@ -16,7 +16,7 @@ public class Scroll_Amazon extends BaseTest{
 		obj.Openurl();
 		obj.find_hiddenEle();
 		// need to resolve an error so check it
-		// obj.Count_Product();
+		 obj.Count_Product();
 	}
 	
 		
