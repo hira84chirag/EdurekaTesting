@@ -31,15 +31,10 @@
 			<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.40.0</version>
+			<version>4.48.0</version>
 		</dependency>
 		
-			<dependency>
-			    <groupId>org.seleniumhq.selenium</groupId>
-			    <artifactId>selenium-devtools-v143</artifactId>
-			    <version>4.40.0</version>
-			    <scope>compile</scope>
-			</dependency>
+			
 			<dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
