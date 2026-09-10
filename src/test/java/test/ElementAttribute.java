@@ -47,7 +47,8 @@ public class ElementAttribute extends BaseTest {
 				
 		we=driver.findElement(By.partialLinkText("Instagram"));		
 		field=we.getAttribute("title");
-		Reporter.log("Tooltips of link=" + field);		
+		Reporter.log("Tooltips of link=" + field);	
+		 
 		we=driver.findElement(By.xpath(pro2.getProperty("login")));	
 		field=we.getText(); 
 		Reporter.log("Login button name=" + field);

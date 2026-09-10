@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.Scroll_Amazon">
+      <class name="test.ElementAttribute">
         <methods>
           <include name="tearDown1"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="Amazon_products"/>
+          <include name="fb_ButtonAttribute"/>
         </methods>
-      </class> <!-- test.Scroll_Amazon -->
+      </class> <!-- test.ElementAttribute -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
